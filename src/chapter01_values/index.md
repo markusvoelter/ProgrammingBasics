@@ -101,7 +101,7 @@ The first one must be a Boolean value; if it evaluates `true`, the overall
 `if` evaluates to the expression given in the `then` part; otherwise it 
 evaluates to the one given in the `else` part. Again, this one binds even
 less tightly than the comparison operators, so you can write complex expressions
-like the one given in the `$C3` cell.
+like the one given in the `$C2` cell.
 
 
 
