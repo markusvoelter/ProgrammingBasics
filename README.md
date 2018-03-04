@@ -1,2 +1,3 @@
-# ProgrammingBasics
-An online tutorial/book that teaches how to think like a programmer
+# Programming Basics
+
+* [Values](src/chapter01_values/index.md)
