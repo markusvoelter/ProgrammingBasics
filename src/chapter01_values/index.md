@@ -11,7 +11,7 @@ are exchangeable. Consider money: even though the varios 10 EUR bills
 are different "objects" (as exemplified by their serial numbers), to
 you, they are all the same. 10 EUR are 10 EUR.
 
-![](BasicValues/SheetWithValues.png)&nbsp;&nbsp;[|src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433039816)
+![](BasicValues/SheetWithValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433039816)
 
 There are other kinds of values, too. For example, `"Hello"` is a string
 value, i.e., one that does not represent a number, but a text. Again,
@@ -28,7 +28,7 @@ the kinds of values we will work with for now.
 Values can be computed. In the sheet below, all cells, when calculated,
 result in the value `7`. 
 
-![](BasicValues/ComputedValues.png)&nbsp;&nbsp;[|src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433277340)
+![](BasicValues/ComputedValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433277340)
 
 We call something like `3 + 7` or `14 / 2` an expression. When an
 expression is evaluated, a value results. This is maybe the most
@@ -41,7 +41,7 @@ The display of sheets can be changed to show the results of evaluating
 cells; see the sheet below. The first two columns are the evaluated
 versions of the first two columns of the previous sheet. 
 
-![](BasicValues/ComputedValuesValues.png)&nbsp;&nbsp;[|src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433355383)
+![](BasicValues/ComputedValuesValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433355383)
 
 The third column contains the three primitive values `7` from the first
 example sheet. If a cell contains a primitive value (such as `7`), then
@@ -77,7 +77,7 @@ and their results (in the sheet on the right). As you can see (and
 remember from school), you can chain arithmetic operators, according to
 their precedence (`*` has higher precedence than `+`, for example).
 
-![](BasicValues/Operators.png)&nbsp;&nbsp;[|src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433368810)
+![](BasicValues/Operators.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433368810)
 
 
 We also know the comparison operators: `>`, `>=`, `<`, `<=`, `==` and
