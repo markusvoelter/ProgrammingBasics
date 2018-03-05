@@ -1,3 +1,7 @@
+Go back to [Title Page / ToC](.)
+
+<hr/>
+
 # Chapter 1: Values and Expressions
 
 ### Primitive Values
