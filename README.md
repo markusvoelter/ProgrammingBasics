@@ -72,3 +72,4 @@ TBD
 ## Table of Contents
 
 * [Values and Expressions](src/chapter01_values/index.md)
+* [Testing Programs](src/chapter02_testing/index.md)
