@@ -1,5 +1,5 @@
 
-Continue with [Testing Programs](src/chapter02_testing/index.md)
+Continue with [Testing Programs](../chapter02_testing/index.md)
 
 <hr/>
 

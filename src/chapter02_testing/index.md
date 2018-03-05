@@ -1,4 +1,4 @@
-Go back to [Values and Expressions](src/chapter01_values/index.md)
+Go back to [Values and Expressions](../chapter01_values/index.md)
 
 <hr/>
 
@@ -158,5 +158,5 @@ essentially useless code.
 
 <hr/>
 
-Continue with [Types](src/chapter03_types/index.md)
+Continue with [Types](../chapter03_types/index.md)
 

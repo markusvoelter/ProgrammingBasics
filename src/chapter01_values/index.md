@@ -1,4 +1,4 @@
-Go back to [Title Page / ToC](.)
+Go back to [Title Page / ToC](../..)
 
 <hr/>
 
@@ -269,5 +269,5 @@ you have just made your first step outside of spreadsheets :-)
 
 <hr/>
 
-Continue with [Testing Programs](src/chapter02_testing/index.md)
+Continue with [Testing Programs](../chapter02_testing/index.md)
 
