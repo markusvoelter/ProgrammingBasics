@@ -244,8 +244,14 @@ names (again, the evaluated version is shown on the right):
 
 Still a regular spreadsheet, except that we now assigned names to
 cells `A0` and `A1` and use these names in the expression in cell
-`B0`. Now, instead of naming cells, we can also extract this same
-information into `val` declarations: 
+`B0`. 
+
+Names, by the way, are really important to make a program
+understandable: the above example is immediately and intuitively
+understandable. Make sure you spend some brain cycles on good names!
+
+Now, instead of naming cells, we can also extract this same information
+into `val` declarations: 
 
 ![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434287327)
 
