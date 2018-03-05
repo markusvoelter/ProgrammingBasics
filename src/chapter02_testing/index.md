@@ -96,11 +96,60 @@ when you write them, and then background tools, often called integration servers
 run them all the time. They notify you if something breaks. You can then run
 the test locally, investigate the problem, and fix it.
 
+### The problem of coverage
+
+Let us look at the following sheet, also used in a test case:
+
+![](TestingSheets/DivisionTest.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F2522748330435210357)
+
+Everything is fine, right? All our divisions work correctly. Of course
+if only we had thought of testing the division by 0, then we would have
+noticed that our program fails. Or if we had tried to divide `10 / 3`
+we would have noticed a problem with the number of decimal digits. 
+
+So what does this tell us? Testing has a coverage problem. We have to 
+test _all relevant cases_ to actually build trust in our program. It is
+not always easy to ensure this: we might simply forget to test a corner
+case, or there might be something particular about how the to-be-tested
+program is written that makes it fail for particular inputs. How could
+we know? We can't. Testing is by necessity an imperfect science, but this
+does not mean we shouldn't do it: some assurance of correctness is 
+better than no assurance at all.
 
 
+### Is my expected value correct?
 
+Let's say somebody tells you to write a program. If you will, he is your
+customer, and you "sell" him an implementation that performs the kind of
+calculations he is interested in. You talk to him, and you understand
+that he wants a spreadsheet that in column `C` sums up columns `A` and
+`B`. You build the sheets, and being a careful person, you also write
+tests that successfully ensure the correct summation of the values in
+the two columns. All is good. Except: your customer actually wanted you
+to build a sheet that computes the _difference_ between columns `A` and
+`B`: you misunderstood the requirements. So there was a problem even
+though your tests were all green. What can you do about that? 
 
-validation!
+One way of catching this issue is to let your customer review the tests
+directly. If they are written in a sufficiently "customer-friendly" way,
+this is completely feasible. Your customer will see the tests all green,
+but they will likely notice that the tests are wrong relative to what
+he wants the program to do.
 
+A second way of ensuring that the tests (and thus implicitly, the
+program) are _valid_ and not just technically correct is to ensure that
+(some of) the tests are written by somebody else, somebody who talks to
+the customer directly. This makes it less likely that there is the same
+misunderstanding between the customer and this second person. Notice how
+we again "do the same thing twice", but that thing is the understanding of 
+the customer requirements.
+
+### Where does this leave us?
+
+As we progress through this tutorial, we will make it a point to write
+tests for all our examples. This is the reason why we introduce testing
+this early in the tutorial. Writing tests along with your code is good
+coding practice, and you should make it a habit: untested code is
+essentially useless code. 
 
 
