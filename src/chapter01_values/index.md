@@ -243,13 +243,13 @@ cells `A0` and `A1` and use these names in the expression in cell
 `B0`. Now, instead of naming cells, we can also extract this same
 information into `val` declarations: 
 
-![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434280554)
+![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434287327)
 
 You can imagine those simply as "cells outside a spreadsheet": their
 value is still calculated only once (per program execution). Finally, 
 we can get rid of the spreadsheet completely:
 
-![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434283580)
+![](BasicValues2/NamedCellsAndExternalValsNoSheet.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434283580)
 
 Notice that we did _not_ change any of the semantics of the program
 (semantics refers to what a program means, i.e., what happens when
