@@ -1,5 +1,3 @@
-# Programming Basics
-
 ## What is this?
 
 This is a tutorial on how to think like a programmer, and to learn some
@@ -73,4 +71,4 @@ TBD
 
 ## Table of Contents
 
-* [Values](src/chapter01_values/index.md)
+* [Values and Expressions](src/chapter01_values/index.md)
