@@ -33,4 +33,26 @@ which we don't have to understand in detail for now. And since the values
 in `D` and `E` are the same, it's relatively likely, I guess, that they are
 correct.
 
+### Do the same thing twice!
+
+So this is the first thing we can note about testing: essentially, you
+do the same thing twice _using different approaches_ and then check that
+the two are the same. If the two agree, this means that the two are
+correct ... or that they are consistently wrong! How can you ensure
+that it is the former and not the latter? 
+
+Ultimately, we cannot really be sure, but we can use the following 
+strategy to dramatically increase the odds: we can make one approach
+much simpler than the other. The (potentially) complicated one is called
+the _actual_ value, i.e., the value calculated by the program, the
+we want to test for correctness. The simpler one is called the _expected_
+value. Ideally, the way we come up with it is "obvious", i.e., it is so
+simple that nothing can go wrong when we come up with it.
+
+
+
+
+validation!
+
+
 
