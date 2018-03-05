@@ -65,6 +65,8 @@ our tutorial on the basis of spreadsheets, since I assume that everybody
 knows Excel and its brethren. If not, doesn't matter, you'll learn 
 something about those along the way :-)
 
+I suggest you start out with [Values and Expressions](src/chapter01_values/index.md).
+
 ## Where can I run the examples?
 
 TBD
@@ -73,3 +75,4 @@ TBD
 
 * [Values and Expressions](src/chapter01_values/index.md)
 * [Testing Programs](src/chapter02_testing/index.md)
+* [Types](src/chapter03_types/index.md)

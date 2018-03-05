@@ -152,4 +152,7 @@ this early in the tutorial. Writing tests along with your code is good
 coding practice, and you should make it a habit: untested code is
 essentially useless code. 
 
+<hr/>
+
+Continue with [Types](src/chapter03_types/index.md)
 

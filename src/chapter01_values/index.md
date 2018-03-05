@@ -262,3 +262,8 @@ once per program execution, and the dependencies ...
 ... determines the order in which they are executed. Congratulations,
 you have just made your first step outside of spreadsheets :-)        
 
+
+<hr/>
+
+Continue with [Testing Programs](src/chapter02_testing/index.md)
+
