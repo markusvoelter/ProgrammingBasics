@@ -73,6 +73,6 @@ TBD
 
 ## Table of Contents
 
-* [Values and Expressions](src/chapter01_values/index.md)
-* [Testing Programs](src/chapter02_testing/index.md)
-* [Types](src/chapter03_types/index.md)
+1. [Values and Expressions](src/chapter01_values/index.md)
+2. [Testing Programs](src/chapter02_testing/index.md)
+3. [Types](src/chapter03_types/index.md)
