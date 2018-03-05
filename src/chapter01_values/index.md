@@ -108,7 +108,7 @@ like the one given in the `$C2` cell.
 
 Let us go back to spreadsheets, and take a look at the following one:
 
-![](BasicValues/SimpleRefs.png)&nbsp;&nbsp;[|src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434130263)
+![](BasicValues/SimpleRefs.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434130263)
 
 On the left we see the expressions in the cells, on the right we see the
 values that result from evaluating the expressions. As we know from
@@ -229,24 +229,36 @@ contents can change:
   spreadsheet is reevaluated completely.
   
 
-### Naming Cells
+### Naming Cells and Values
 
 Again, to recap: a cell is simply a way of identifying (potentially
 computed) values in a program. By default, you identify a cell through
 its coordinates. However, you can of course also give cells specific
-names:
+names (again, the evaluated version is shown on the right):
 
+![](BasicValues2/NamedCells.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434253246)
 
+Still a regular spreadsheet, except that we now assigned names to
+cells `A0` and `A1` and use these names in the expression in cell
+`B0`. Now, instead of naming cells, we can also extract this same
+information into `val` declarations: 
 
+![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434280554)
 
+You can imagine those simply as "cells outside a spreadsheet": their
+value is still calculated only once (per program execution). Finally, 
+we can get rid of the spreadsheet completely:
 
-So, this is probably 
-Cells are essentially names for values, 2 dim
+![](BasicValues2/NamedCellsAndExternalVals.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434283580)
 
+Notice that we did _not_ change any of the semantics of the program
+(semantics refers to what a program means, i.e., what happens when
+it is executed). These are still three values, all are executed only
+once per program execution, and the dependencies ...
 
-
-
-
-
-
+    speed -> distance
+          -> time
+          
+... determines the order in which they are executed. Congratulations,
+you have just made your first step outside of spreadsheets :-)        
 
