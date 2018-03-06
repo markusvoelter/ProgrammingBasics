@@ -172,15 +172,20 @@ where each user can switch between the regular, positional arguments and
 a text template.
 
 
-### Where have we come so far
+### Taking Stock
 
 Here is an example that wraps up everything we have learned so far:
 
 ![](WhereAreWe/ComplexExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168536890)
 
-The only new language construct is the `precision` expression. It can be used
-to change the number of decimal digits on numbers. Remember that a division always
-returns results in a infinite number of decimal digits. Here we `truncate` it to two.
-Instead of truncating, `round up` and `round down` would also be available options.
+The only new language construct is the `precision` expression. It can be
+used to change the number of decimal digits on numbers. Remember that a
+division always returns results in a infinite number of decimal digits.
+Here we `truncate` it to two. Instead of truncating, `round up` and
+`round down` would also be available options.
 
-
+If you really want to understand only the basic basics of programming,
+then this is the place to stop. Values, expressions, types, functions
+and tests are the absolute essence without which you can't do anything
+useful. On the other hand, if you're comfortable so far, why not continue
+and learn more interesting things about programming.
