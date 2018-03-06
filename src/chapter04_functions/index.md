@@ -12,7 +12,7 @@ and the `E` column calculates a (hypothetical) risk factor based on a person's
 age (`A`), their weight (`B`) and their diastolic (`C`) and systolic (`D`) blood
 pressures.
 
-![](Functions/ComplexSheet.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166694580)
+![](FunctionCells/ComplexSheet.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040166694580)
 
 You notice several things. First, it would be nice if we could rename
 the columns according to what is contained in them; right now the
@@ -57,7 +57,7 @@ So let us look at an example with cells. The cell labeled `riskFactor` at
 the very bottom is this box. It declares the parameters, and then the expression
 inside the `riskFactor` cell refers only to these parameters.
 
-![](Functions/ComplexSheetWithParamCell.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166746748)
+![](FunctionCells/ComplexSheetWithParamCell.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040166746748)
 
 The cells that formerly contained copies of the risk factor expression now
 simply refer to the `riskFactor` cell, providing specific values for the parameters;
