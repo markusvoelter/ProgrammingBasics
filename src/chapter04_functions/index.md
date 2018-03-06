@@ -1,5 +1,5 @@
 
-Go back to [Testing Programs](../chapter03_types/index.md)
+Go back to [Types](../chapter03_types/index.md)
 
 <hr/>
 

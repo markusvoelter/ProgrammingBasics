@@ -96,3 +96,5 @@ encounter a place where this is the case: functions.
 
 
 <hr/>
+
+Continue with [Functions](../chapter04_functions/index.md)
