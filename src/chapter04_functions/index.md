@@ -78,6 +78,50 @@ you need specific values for the parameters.
 
 ### The importance of types in Function Cells
 
+Let us look more closely at the expression inside a function: it is
+completely independent of where and how it is called. Said differently,
+when writing that expression, we make assumptions about the kinds, i.e.,
+types, of values that can be passed into the function for it to work.
+For example, in the `riskFactor` function cell above, we perform
+arithmetic computations with the parameters, so we implicitly assume
+that they are numbers. We have to make this assumption explicit, by
+specifying types for parameters. Once we have done this, the type
+checker will report errors if we try to call with invalid parameters.
+
+![](functionCellError.png)
+
+### From Function Cells to Functions
+
+Remember how we earlier moved the contents of cells into `val`s that exist
+next to, or independent from sheets? We can do the same with function cells.
+Not surprisingly, these end up in what we call functions:
+
+![](ActualFunction/ComplexSheetWithParamCell2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168353366)
+
+By default, a function is written with the keyword `fun`, followed by its name and a 
+list of parameters, each with a type, enclosed in parentheses. The expression that
+implements the function follows the equals sign. In terms of how it behaves, a 
+function is identical to the function cells. 		
+
+In many cases, functions will do relatively complicated things and more than a
+simple expression. Even the example above can be refactored to be more readable:
+
+![](ActualFunction/FunctionWithBody.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168374919)
+
+Here, we use a block expression `{...}` as the body of the function. A
+block can contain local values (also expressed with `val`) to represent
+the results of intermediate calculations. The value of the overall block
+is then computed by the _last_ expression in the block. 
+
+Types for the parameters are mandatory, because otherwise the type checker cannot
+check the expression in the body of the function. The type of the value _returned_
+by the function is optional; if you don't specify it, it is inferred from the 
+expression. But you can make it explicit, too; it is specified behind the argument
+list, separated, as usual, by a colon:
+
+![](ActualFunction/FunctionWithBodyAndType.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168458553)
+	
+	
 
 
 
