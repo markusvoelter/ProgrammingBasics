@@ -71,6 +71,10 @@ cell. The resulting value of the call is the value of the expression. As
 we can see, the resulting values are the same; but the code avoids the 
 duplication of the expression, it only exists once, inside the function cell.
 
+As a side remark: notice how in the evaluated version of the sheet (the one
+on the right) the function cell is represented exactly the same way as in the
+non-evaluated version of the left. Function cells themselves cannot be evaluated;
+you need specific values for the parameters.
 
 ### The importance of types in Function Cells
 
