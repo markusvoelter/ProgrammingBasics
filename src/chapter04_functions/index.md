@@ -40,7 +40,7 @@ must somehowget rid of these references!
 In programming, whenever we want to get rid of (outgoing) dependencies, we use
 the same approach. We create a new "box", and then parametrize it:
 
-![](functions.png)
+![](functions.png | width=500)
 
 A parameter is a named value, just like the `val`s shown earlier. But it
 is local to (i.e., visible only) inside that box. Inside the box you put
