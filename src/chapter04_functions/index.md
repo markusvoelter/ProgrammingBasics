@@ -38,9 +38,43 @@ must somehowget rid of these references!
 ### From Cells with Dependencies to Parametrized Cells
 
 In programming, whenever we want to get rid of (outgoing) dependencies, we use
-the same approach. We create a new "thing", and then parametrize it:
+the same approach. We create a new "box", and then parametrize it:
 
 ![](functions.png)
+
+A parameter is a named value, just like the `val`s shown earlier. But it
+is local to (i.e., visible only) inside that box. Inside the box you put
+the expression, but you express it in terms of only those parameters. So
+all dependencies in the expression are local to the box, the box is now
+generic. 
+
+When you want to use the expression, you map values from the using context
+to the parameters, so you "bind" the box to a context. The point is that in
+your program, you can have several such bindings, thereby using the box in
+different contexts. 
+
+So let us look at an example with cells. The cell labeled `riskFactor` at
+the very bottom is this box. It declares the parameters, and then the expression
+inside the `riskFactor` cell refers only to these parameters.
+
+![](Functions/ComplexSheetWithParamCell.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166746748)
+
+The cells that formerly contained copies of the risk factor expression now
+simply refer to the `riskFactor` cell, providing specific values for the parameters;
+the mapping is by position, i.e., the first passed value will be mapped to the
+first parameter, and so on. 
+
+We call a cell with parameters a _function cell_, and using it, with a
+mapping of the parameters, is referred to as a _call_. In a call, we
+first map the parameters and then run the expression inside the function
+cell. The resulting value of the call is the value of the expression. As
+we can see, the resulting values are the same; but the code avoids the 
+duplication of the expression, it only exists once, inside the function cell.
+
+
+### The importance of types in Function Cells
+
+
 
 
 
