@@ -98,6 +98,8 @@ Not surprisingly, these end up in what we call functions:
 
 ![](ActualFunction/ComplexSheetWithParamCell2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168353366)
 
+Have you spotted that the two last rows will result in type errors?
+
 By default, a function is written with the keyword `fun`, followed by its name and a 
 list of parameters, each with a type, enclosed in parentheses. The expression that
 implements the function follows the equals sign. In terms of how it behaves, a 
@@ -113,20 +115,58 @@ block can contain local values (also expressed with `val`) to represent
 the results of intermediate calculations. The value of the overall block
 is then computed by the _last_ expression in the block. 
 
-Types for the parameters are mandatory, because otherwise the type checker cannot
-check the expression in the body of the function. The type of the value _returned_
-by the function is optional; if you don't specify it, it is inferred from the 
-expression. But you can make it explicit, too; it is specified behind the argument
-list, separated, as usual, by a colon:
+Types for the parameters are mandatory, because otherwise the type
+checker cannot check the expression in the body of the function. The
+type of the value _returned_ by the function is optional; if you don't
+specify it, it is inferred from the expression. But you can make it
+explicit, too; it is specified behind the argument list, separated, as
+usual, by a colon:
 
 ![](ActualFunction/FunctionWithBodyAndType.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168458553)
 	
 	
 
+### Alternative Syntax for Functions
+
+The notion of functions is ubiquitous. They are used all over the place.
+Sometimes they "hide" behind a slightly different syntax, all with their
+own trade-offs. But in terms of what they do and how they work, they are
+identical. In this section we look at some examples.
+
+*Operators*: Remember `4 + 3`? This can be interpreted as a function
+call to a function `+` with the arguments `4` and `3`: `+(4, 2)`. In
+some languages one can literally write this, often using names such as
+`plus` instead of the symbol. A nested expression such as 
+`(4 + 3) / (10 	* 2)` would then be represented as `div(plus(4, 3), mul(10, 2))`. It is
+quite obvious that this representation is not as readable, which is why
+infix operators were introduced into all but very few languages. But in
+terms of _semantics_, operators use is just function calls.
 
 
+*Dot Expressions*: In many cases one uses a dot expression to invoke a function.
+Instead of writing `fun(a, b, c)`, one writes `a.fun(b, c)`. Usually the first
+argument naturally plays a special role compared to the others; for example, it
+might be a collection to which we add an argument or it might be a more complex
+object, such as a `Car`, where we increase the speed or something (we will talk
+about objects later). The advantage of this notation is that after one types
+`a.`, the tool can propose to the user only those functions that are valid for `a`. 
+Instead, in the regular function call syntax `fun(a, b, c)`, the editor has
+no context; it will propose all functions defined in the system.
 
 
+*Natural Language*: Going back to the `riskFactor` above, a call to the function
+might be hard to read: it's essentially a list of numbers, and it is hard to remember
+what is what. An alternative, better syntax would be 
 
+    risk factor for 100 kg, 60 years old and blood pressure of 120 over 80
 
+Here, the function would be defined using a text template with embedded arguments:
+  
+    risk factor for {weight: number[0|200]} kg, {age: number[0|110]} years old 
+                and blood pressure of {sys: systolic} over {dia: diastolic}
 
+If these text fragments become too long, readability suffers, but in
+general, this can be a good way of making the core more accessible for
+people who might only occasionally read code. We have also built systems
+where each user can switch between the regular, positional arguments and
+a text template.
