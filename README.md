@@ -6,6 +6,26 @@ present in all programming systems, from "real" programming languages
 over scripting languages and configuration files to domain-specific
 languages.
 
+
+## Table of Contents
+
+
+
+**Part 1: The Basics**
+
+1. [Values and Expressions](src/chapter01_values/index.md)
+2. [Testing Programs](src/chapter02_testing/index.md)
+3. [Types](src/chapter03_types/index.md)
+4. [Functions](src/chapter04_functions/index.md)
+
+**Part 2: Making Programming Useful**
+
+5. [Structured Values](src/chapter05_structuredValues/index.md)
+
+
+
+## Why, and Why now?
+
 In almost all domains, computers are getting more prevalent. And while
 those computers are progressively changing their interface to one that
 is closer to how humans intuitively communicate (natural language, voice
@@ -70,16 +90,4 @@ I suggest you start out with [Values and Expressions](src/chapter01_values/index
 ## Where can I run the examples?
 
 TBD
-
-## Table of Contents
-
-**Part 1: The Basics**
-
-1. [Values and Expressions](src/chapter01_values/index.md)
-2. [Testing Programs](src/chapter02_testing/index.md)
-3. [Types](src/chapter03_types/index.md)
-4. [Functions](src/chapter04_functions/index.md)
-
-**Part 2: Making Programming Useful**
-
 
