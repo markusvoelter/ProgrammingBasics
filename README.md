@@ -20,7 +20,7 @@ languages.
 
 **Part 2: Making Programming Useful**
 
-5. [User-defined Types](src/chapter05_udts/index.md)
+5. [Structured Values](src/chapter05_structuredValues/index.md)
 
 
 
