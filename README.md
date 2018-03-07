@@ -10,9 +10,9 @@ languages.
 ## Table of Contents
 
 <table>
-  <tr>
+  <tr valign="top">
     <td>
-**Part 1: The Basics**
+      <b>Part 1: The Basics</b>
     </td>
     <td>
 
