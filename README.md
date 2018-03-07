@@ -9,15 +9,25 @@ languages.
 
 ## Table of Contents
 
+<table>
+  <tr>
+    <td>
 **Part 1: The Basics**
+    </td>
+    <td>
 
 1. [Values and Expressions](src/chapter01_values/index.md)
 2. [Testing Programs](src/chapter02_testing/index.md)
 3. [Types](src/chapter03_types/index.md)
 4. [Functions](src/chapter04_functions/index.md)
 
+</td>
+</tr>
+</table>
+
 **Part 2: Making Programming Useful**
 
+5. [User-defined Types](src/chapter05_udts/index.md)
 
 
 
