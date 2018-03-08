@@ -189,8 +189,51 @@ spreadsheets: `makeRecord`, an example is shown in `D0`:
 brackets, by taking the values specified by the linear cell range given in
 between the square brackets.
 
+### Changing Record Values
 
-### Wrap Up ### 
+So let's say you want to change the systolic blood pressure after you perform
+a new measurement. Let's say, it is currently `#BloodPressure{120, 80}` and you
+want to change it to `#BloodPressure{120, 90}`. How do you do this?
+
+The first thing we have to remember, from the very beginning of this tutorial,
+is that _values never change_. If we add `8 + 5` nothething ever happens to those
+two values; instead we produce a _new_ value `13`. In fact, the definition of what
+a value is relies on the fact that it never changes. And at least for now, we will
+stay with this definition. So what do we do about changing the blood pressure? Well,
+we create a new instance of the record with the changed diastolic pressure. So:
+
+![](Records/Change1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172868475)
+
+The `with` operation allows you to create a copy of the current record value,
+with one or more of the members changed. The original value, the one on which
+you called `with` remains unchanged, as the test shows. Here is another example
+that changes a nested instance. You can see how we use the `old` keyword to
+refer to the value that is in the orignal value, the one on which we called `with`.
+
+![](Records/Change2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172977675)
+
+
+
+Why is this useful? Why don't just actually change a member? The reason is that
+this means our programs do not have to deal with time! If we were to actually 
+_change_ a value, then we as programmers, and all our tools, will have to track
+_how a value changes over time_. This makes everything more complicated. Sometimes
+this is in fact necessary, and we will cover changing, or _mutable_ data later
+in the tutorial. But for now, we stick with immutable data.
+
+Here is another reason. Imagine one part of the program, let's say part `S`,
+hands a value to another part of the program `R` for it to do something with. Now, while `R`  performs its work, that other part `S` of the program continues to run and modifies the value. This would mean that from the perspective of the receiver `R`,  the value changes by its own, spontaneously. This is really really bad for correctness
+of programs. If values cannot change, a whole class of errors that can occur if 
+parts of programs can run _concurrently_ are just impossible. 
+
+For now, we don't have concurrency in our progams. And it's quite possible that you will neer explicitly deal with concurrency in the code you write. But it is _very_
+likely that the code you write, for example, using a DSL for tax calculation, is
+actually executed in a concurrent context. And that context explicitly relies on 
+your data being immutable.
+
+
+
+### Wrap Up  
 
 With records, composition and references you can describe essentially arbitrarily
 structured data. Together with functions to express behavior, this gets your knowledge about programming almost to a workable level. What's missing is collections. We will discuss those next.
