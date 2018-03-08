@@ -129,7 +129,8 @@ records. Here there's something interesting. First the `PatientData` uses
 as a type, but as a _reference_. This is an important distinction:
 
 The regular use of a record type (in a member) represents _composition_.
-This means, that the respective 'BloodPressure' instance is _owned_ by the referencing `PatientData` record. A particular instance can only be owned
+This means, that the respective 'BloodPressure' instance is _owned_ by 
+the referencing `PatientData` record. A particular instance can only be owned
 by _one_ other instance, and if the owner is deleted, the composed/owned 
 instance is deleted as well. Essentially, composition creates a tree.
 
