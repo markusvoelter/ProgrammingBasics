@@ -20,7 +20,7 @@ languages.
 
 **Part 2: Making Programming Useful**
 
-5. [Structured Values](src/chapter05_structuredValues/index.md)
+5. [Structured Values](src/chapter05_structured/index.md)
 
 
 
