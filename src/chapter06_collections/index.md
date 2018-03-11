@@ -278,28 +278,99 @@ it is the driver's reponsibility to store the new `MonthlyTax` in the database a
 downstream processes (such as printing a tax bill).
 
 
+### Sets 
+
+Like a list, a set also contains several values of the same type, and it specifies that type 
+(and optionally, a size) as part of its type definition. So a set of strings would be a `set<string>`.
+However, sets are different in two important ways. First, its contents are _not_ ordered. So asking
+for `first`, `last` or `at(pos)` does not make sense. The higher order functions such as `map`, `where`,
+`all` or `any` do the same thing as with lists. The second difference is that every value can only
+be in the set once. Consider these tests:
+
+![](Sets/addingToLists.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196831048)
+
+In the value definitions, in case of the set, the second `World` is not added, because there is already
+a value `World` in the set. This is why resulting set only has two elements instead of three, as the list.
+The same is true when adding the string `42` (yes it is a string, not a number, because of the quotation marks).
+
+Consider the following example:
+
+![](Sets/SetsAndListsExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196860548)
+ 
+We create a list and set of unique numbers. No duplicates to be removed when creating the set, so
+both have a size of 10, as the test confirmes. We then define a function `halved` that divides a
+number by two, and then truncates is back to no decimals. The sheet shows the results for the 
+values 1 through 10. As you can see, this operation creates duplicates. So if we use `map` to 
+apply `halved` to each of the elements of the list and the set, what will the result be? In 
+particular, will a `map` (and similarly, a `where`) on a set produce another set and reduce
+the duplicates? According to the tests, it does not. 
+ 
+The reason is that all operations on any kind of collection (except lists), will give you a 
+`collection` as a result. `collection` is the supertype of `list` and `set`. It is unordered
+(so you cannot use `at` or `head`) and it is also read-only (you cannot add using `with`).
+However, you can transform them:
+
+![](Sets/toSetToList.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196964094)
+
+You can take any collection and transform it into a set using the `toSet` operation. Effectively,
+it removes duplicates. So if you do this with the `listHalved` or `setHalved` collections, you
+get a collection with 0, 1, 2, 3, 4, and 5. Its size size is 6, and the first three elements are
+0, 1 and 2, as the tests show. Of course you first have to transform the duplicate-free set back to
+a list to be able to access it in an ordered way. 
 
 
+
+### Maps
+
+Here is a sheet of the 10 biggest cities in Germany and their population in millions:
+
+![](Maps/biggestCities.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793197061137)
+
+How do you represent this as a data structure? One way would be to define a record `CityData` that
+stores the name and population size of a city ...
+
+![](Maps/Record.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793197104677)
+
+and then create a list of instances (using `makeRecord`) from the spreadsheet. Once we have this list,
+we can find the population for a city with this function:
+
+![](Maps/findPop.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793197111069)
+
+That's reasonably ok, I guess. But we have to always scan through the list to find the `CityData`
+we are interested in, and then ask for its population size. The syntax is awkward, and from a 
+performance perspective it also isn't that good because we have to _linearly_ scan through the
+list until we find something (that's what `findFirst` does internally). Again, you shouldn't be
+overly concerned with this, but I think it'd tell you :-)
+
+In practice it is very common to associate one value (population size) with another one (city name),
+and all programming languages provide direct support for that using the `map` datatype.
+
+![](Maps/cityDataMapFrame.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793198222198)
+
+A map is a collection of `key->value` pairs, where all keys and all values are of the same type
+(here: strings and numbers). The respective type reflects this; here the type would be a `map<string, number{1}>`, a type with two type parameters (lists and sets have one). You can look up the value
+associated with a key using the bracket notation:
+
+![](Maps/lookup.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793198628267)
+
+Again, looking at performance, because of the way maps work internally, the lookup is very fast, 
+independent of the size of the map. No linear scanning is required. However, the keys are a set,
+so you can only store one element per key. If you wanted to store several data items, for example,
+the population size and the state in which they are in, you'd either have to create several maps
+(one from city name to population size and one from city name to state name) or you have to store
+a record instance as the value that holds both.
+
+Here is how you add to lists:
+
+![](Maps/addingToMap.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793198739922)
+
+In the `modifiedMap` we have one more entry, the one for Heidenheim. The putting of Stuttgart
+overwrites the old value, because, as I said, there can only be one entry per key.
   
 
 
  
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 

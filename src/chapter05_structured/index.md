@@ -244,6 +244,7 @@ structured data. Together with functions to express behavior, this gets your kno
 
 <hr>
 
+Continue with [Collections](../chapter06_collections/index.md)
 
 
 
