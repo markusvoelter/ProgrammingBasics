@@ -129,8 +129,10 @@ records. Here there's something interesting. First the `PatientData` uses
 as a type, but as a _reference_. This is an important distinction:
 
 The regular use of a record type (in a member) represents _composition_.
-This means, that the respective 'BloodPressure' instance is _owned_ by the referencing `PatientData` record. A particular instance can only be owned
-by _one_ other instance, and if the owner is deleted, the composed/owned instance is deleted as well. Essentially, composition creates a tree.
+This means, that the respective 'BloodPressure' instance is _owned_ by 
+the referencing `PatientData` record. A particular instance can only be owned
+by _one_ other instance, and if the owner is deleted, the composed/owned 
+instance is deleted as well. Essentially, composition creates a tree.
 
 The relationship between `PatientData` and `Person` is different, it is
 a (non-composition) reference. Here, the target instance has stands on its
@@ -216,7 +218,7 @@ refer to the value that is in the orignal value, the one on which we called `wit
 
 Why is this useful? Why don't just actually change a member? The reason is that
 this means our programs do not have to deal with time! If we were to actually 
-_change_ a value, then we as programmers, and all our tools, will have to track
+_change_ a value, then we as programmers, and all our tools, will have to track
 _how a value changes over time_. This makes everything more complicated. Sometimes
 this is in fact necessary, and we will cover changing, or _mutable_ data later
 in the tutorial. But for now, we stick with immutable data.
@@ -226,7 +228,7 @@ hands a value to another part of the program `R` for it to do something with. No
 of programs. If values cannot change, a whole class of errors that can occur if 
 parts of programs can run _concurrently_ are just impossible. 
 
-For now, we don't have concurrency in our progams. And it's quite possible that you will neer explicitly deal with concurrency in the code you write. But it is _very_
+For now, we don't have concurrency in our progams. And it's quite possible that you will neer explicitly deal with concurrency in the code you write. But it is _very_
 likely that the code you write, for example, using a DSL for tax calculation, is
 actually executed in a concurrent context. And that context explicitly relies on 
 your data being immutable.

@@ -21,6 +21,7 @@ languages.
 **Part 2: Making Programming Useful**
 
 5. [Structured Values](src/chapter05_structured/index.md)
+5. [Collections](src/chapter06_collections/index.md)
 
 
 
