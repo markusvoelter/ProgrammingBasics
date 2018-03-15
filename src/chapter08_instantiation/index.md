@@ -164,28 +164,22 @@ you can use the `[]` notation to access the tuples' elements by position.
 
 So, as a brief recap, here's a comparion between records, lists and tuples:
 
-                                    | Record          | List       | Tuple
-------------------------------------|-----------------|------------|--------------
-**Number of Elements**              | Fixed           | Variable   | Fixed 
-**Are elements named?**             | Named           | Anonymous  | Anonymous 
-**All elements same type**          | Different Types | Same Type  | Different Types 
-**Explicitly declared and named?**  | Declared        | Anonymous  | Anonymous 
 
 <table>
 <tr>
-<td></td><td>Record</td><td>List</td><td>Tuple</td>
+<td></td><td><b>Record</b></td><td><b>List</b></td><td><b>Tuple</b></td>
 </tr> 
 <tr>
-<td>Number of Elements</td><td> Fixed </td><td> Variable </td><td> Fixed </td>
+<td><b>Number of Elements</b></td><td> Fixed </td><td> Variable </td><td> Fixed </td>
 </tr> 
 <tr>
-<td>Are elements named?</td><td> Named </td><td> Anonymous </td><td> Anonymous </td>
+<td><b>Are elements named?</b></td><td> Named </td><td> Anonymous </td><td> Anonymous </td>
 </tr> 
 <tr>
-<td>All elements same type?</td><td> Different Types </td><td> Same Type </td><td> Different Types </td>
+<td><b>All elements same type?</b></td><td> Different Types </td><td> Same Type </td><td> Different Types </td>
 </tr> 
 <tr>
-<td>Explicitly declared and named?</td><td> Declared </td><td> Anonymous </td><td> Anonymous </td>
+<td><b>Explicitly declared and named?</b></td><td> Declared </td><td> Anonymous </td><td> Anonymous </td>
 </tr> 
 </table>
 
