@@ -164,12 +164,12 @@ you can use the `[]` notation to access the tuples' elements by position.
 
 So, as a brief recap, here's a comparion between records, lists and tuples:
 
-           | Record | List       | Tuple
------------|--------|------------|--------------
-**Number of Elements**     | Fixed  | Variable   | Fixed 
-**Are elements named?** | Named    | Anonymous        | Anonymous 
-**All elements same type** | Different Types    | Same Type        | Different Types 
-**Explicitly declared and named?**   | Declared   | Anonymous         | Anonymous 
+                                    | Record          | List       | Tuple
+------------------------------------|-----------------|------------|--------------
+**Number of Elements**              | Fixed           | Variable   | Fixed 
+**Are elements named?**             | Named           | Anonymous  | Anonymous 
+**All elements same type**          | Different Types | Same Type  | Different Types 
+**Explicitly declared and named?**  | Declared        | Anonymous  | Anonymous 
 
 
 So, returning to our blocks, the expression `plusMinus(5, 2)` in the test case
