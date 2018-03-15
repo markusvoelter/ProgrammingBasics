@@ -173,12 +173,19 @@ So, as a brief recap, here's a comparion between records, lists and tuples:
 
 <table>
 <tr>
-<td>
-  Test
-</td>
-<td>
-  Test
-</td>
+<td></td><td>Record</td><td>List</td><td>Tuple</td>
+</tr> 
+<tr>
+<td>Number of Elements</td><td> Fixed </td><td> Variable </td><td> Fixed </td>
+</tr> 
+<tr>
+<td>Are elements named?</td><td> Named </td><td> Anonymous </td><td> Anonymous </td>
+</tr> 
+<tr>
+<td>All elements same type?</td><td> Different Types </td><td> Same Type </td><td> Different Types </td>
+</tr> 
+<tr>
+<td>Explicitly declared and named?</td><td> Declared </td><td> Anonymous </td><td> Anonymous </td>
 </tr> 
 </table>
 
