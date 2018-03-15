@@ -171,6 +171,18 @@ So, as a brief recap, here's a comparion between records, lists and tuples:
 **All elements same type**          | Different Types | Same Type  | Different Types 
 **Explicitly declared and named?**  | Declared        | Anonymous  | Anonymous 
 
+<table>
+<tr>
+<td>
+  Test
+</td>
+<td>
+  Test
+</td>
+</tr> 
+</table>
+
+
 
 So, returning to our blocks, the expression `plusMinus(5, 2)` in the test case
 calls a block, and receives the two results as a tuple. We express the expected
