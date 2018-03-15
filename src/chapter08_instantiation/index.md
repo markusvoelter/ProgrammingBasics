@@ -167,19 +167,19 @@ So, as a brief recap, here's a comparion between records, lists and tuples:
 
 <table>
 <tr>
-<td></td><td> Record </td><td><b>List</b></td><td><b>Tuple</b></td>
+<td></td><td>Record</td><td>List</td><td>Tuple</td>
 </tr> 
 <tr>
-<td><b>Number of Elements</b></td><td> Fixed </td><td> Variable </td><td> Fixed </td>
+<td>Number of Elements</td><td> Fixed </td><td> Variable </td><td> Fixed </td>
 </tr> 
 <tr>
-<td><b>Are elements named?</b></td><td> Named </td><td> Anonymous </td><td> Anonymous </td>
+<td>Are elements named?</td><td> Named </td><td> Anonymous </td><td> Anonymous </td>
 </tr> 
 <tr>
-<td><b>All elements same type?</b></td><td> Different Types </td><td> Same Type </td><td> Different Types </td>
+<td>All elements same type?</td><td> Different Types </td><td> Same Type </td><td> Different Types </td>
 </tr> 
 <tr>
-<td><b>Explicitly declared and named?</b></td><td> Declared </td><td> Anonymous </td><td> Anonymous </td>
+<td>Explicitly declared and named?</td><td> Declared </td><td> Anonymous </td><td> Anonymous </td>
 </tr> 
 </table>
 
