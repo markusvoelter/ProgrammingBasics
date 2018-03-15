@@ -21,7 +21,11 @@ languages.
 **Part 2: Making Programming Useful**
 
 5. [Structured Values](src/chapter05_structured/index.md)
-5. [Collections](src/chapter06_collections/index.md)
+6. [Collections](src/chapter06_collections/index.md)
+7. [Decisions and Calculations](src/chapter07_decAndCalc/index.md)
+8. [Instantiation](src/chapter08_instantiation/index.md)
+
+**Part 3: Advanced Topics**
 
 
 

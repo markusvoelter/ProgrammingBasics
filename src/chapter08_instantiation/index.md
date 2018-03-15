@@ -1,5 +1,5 @@
 
-Go back to [Types](../chapter06_collections/index.md)
+Go back to [Types](../chapter07_decAndCalc/index.md)
 
 <hr/>
 
@@ -337,7 +337,7 @@ with the element type of the collection on which `map` or `where` is called.
  
 
 
-
+<hr>
 
 
 

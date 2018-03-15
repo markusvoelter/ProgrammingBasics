@@ -284,8 +284,6 @@ that resembles the Word notation as closely as possible. Notice how the
 `l` function calls itself with a different value for the variable `x`. 
 
 
+<hr>
 
-
-
-### Tracing Computations
-
+Continue with [Instantiation](../chapter08_instantiation/index.md)
