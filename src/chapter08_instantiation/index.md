@@ -167,7 +167,7 @@ So, as a brief recap, here's a comparion between records, lists and tuples:
 
 <table>
 <tr>
-<td></td><td>**Record**</b></td><td><b>List</b></td><td><b>Tuple</b></td>
+<td></td><td> **Record** </td><td><b>List</b></td><td><b>Tuple</b></td>
 </tr> 
 <tr>
 <td><b>Number of Elements</b></td><td> Fixed </td><td> Variable </td><td> Fixed </td>
