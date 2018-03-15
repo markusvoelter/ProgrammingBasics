@@ -65,6 +65,10 @@ makes things much easier to read and understand. So, if you are involved
 with designing a DSL, make sure you properly motivate the language designers
 to use nice notations. It's not just "cosmetics"!
  
+ 
+ 
+  
+ 
 
 ### Complex Decisions
 
@@ -242,7 +246,8 @@ the other thing we know how to do, subtracting one. So we are at
     3 + 3 ==> (3 + (3 - 1)) + 1
 
 which means that we have sucessfully removed every operation except plus 
-and minus one. Here is the key observation: how can we compute `(3 + (3 - 1))`? We can simply _invoke `add` again_. If we expand the complete 
+and minus one. Here is the key observation: how can we compute 
+`(3 + (3 - 1))`? We can simply _invoke `add` again_. If we expand the complete 
 calculation, we get
 
     add(3, 3) 
@@ -261,7 +266,8 @@ A function calling itself with
 other arguments is called _recursive_. A recursive function must at some
 point stop calling itself; in our case, when we call add with the second
 argument as zero, we know that there's no more work to do and we can
-just return the first argument.
+just return the first argument. This is why we use the `alt` expression
+in the function to distinguish the recursive case from the base case.
 
 Recursion is not so easy to understand. Many programmers, including myself,
 have problems understanding it once its use becomes more involved than in
@@ -272,7 +278,12 @@ necessarily programmers. Take a look at the following code:
 ![](recuriveInsuranceMath.png) 
 
 And yes, this is code! It looks like a Word document, which is intended:
-these recursive formulas were found in a 
+these recursive formulas were found in a Word document that defines recursive,
+numerical functions in actuarial math in insurances. We have built a language
+that resembles the Word notation as closely as possible. Notice how the 
+`l` function calls itself with a different value for the variable `x`. 
+
+
 
 
 
