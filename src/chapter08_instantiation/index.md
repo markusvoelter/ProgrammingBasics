@@ -201,24 +201,91 @@ the second argument was zero.
 So what is the point of this exercise? These blocks can be used for graphical programming, where we draw diagrams that represent block instances and the flow of data
 between them. We package such diagrams into yet other blocks, so-called _composite_ blocks, which can then be instantiated further. Let's illustrate this.
 
-![](Dataflow/DataflowOne.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822144768116)
+![](Dataflow/composite-1.png)
 
+This graphical notation works as follows. The dark rectangles on the left (`a`, `b`) are
+inputs of the current block. The gray boxes with diagonal corners (`sum`, `difference`) 
+are outputs of the block. These are read-only, graphical representations of the block's interface that is defined textually in the header of the block:
+
+![](Dataflow/composite-2.png)
+
+The rest of the diagram, i.e., in this example, the `+` and `-` block instances
+and the connections, are done graphically. You drag and drop blocks from the palette, and then draw the connectors using the mouse:
+
+![](Dataflow/composite-3.png)
+
+
+
+So what _exactly_ are we seeing here? The grey rectangles are instances of 
+previously defined blocks; the symbols are defined with the block, see the
+set of predefined blicks above. The lines represent the data flow. In this
+example, the data flows from the inputs (`a`, `b` ) to the two inputs of the
+instances inside this composite block. So, as the name suggests, this block
+computes the sum and difference of the two inputs. Let's verify the behavior 
+via a few tests:
+
+![](Dataflow/TestComposite.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F6598033146029115916)
+
+Let's make this a little bit more complicated: both the sum and the difference
+can now be offset by an offset value each. 
+
+![](Dataflow/composite-4.png)  
  
+Let's write tests: 
+
+![](Dataflow/TestComposite2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F6598033146029128213)
+
+To return to the discussion about instantiation: this composite block
+contains several instances of other blocks: 3 of the block `+`, two of 
+the block `constNum`, and one of the block `-`. The composite block 
+can of course also be instantiated:
+
+![](Dataflow/composite-5.png)  
+
+Here we have instantiated the composite block from above into a new
+composite block. Of course, once we do this, we have to specify the two
+parameter values (`offsetPlus`, `offsetMinus`). To compute one single
+result, we multiple the sum and the difference. Tests:
 
 
+![](Dataflow/TestComposite3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440003171)
 
- 
+So what is good and bad about this? What is good is that this approach
+supports nice modularization -- by packaging functionality into reusable
+blocks, we can reuse -- reinstantiate -- those blocks in different context.
+Modularization is generally good, and we will discuss it much more in the
+next chapter. 
+
+What about the graphical notation? Generally, people tend to like graphical
+notations: "a picture says more than 1000 words". However, let's be realistic:
+it also takes up a lot of space, and visually following a network of black
+lines is not necessarily simpler than working with names (if we were to use
+functions instead of blocks). So how would this same behavior look like if 
+we were to use plain functions? Here is the code if we retain the nesting 
+structure, i.e., each block becomes a function, each instance becomes a 
+function call, and each line becomes a use of a parameter:
+
+![](Dataflow/TestComposite4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440065710)
+
+Admittedly, this does not look much better, in fact, you could justifiable
+argue that it is less readable. In practice it would be a bit different, since
+the basic blocks and their functions (for plus, minus, etc.) would be predefined
+somewhere, so we can mentally remove them. What remains isn't that bad anymore:
+
+![](Dataflow/TestComposite6.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440130633)
+
+However, once we inline everything, i.e.,
+we get rid of the extra functions and reduce everything to the bare operators,
+things look different:
+
+![](Dataflow/TestComposite5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440115281)
+
+This is really simple now! So what does this tell us? For fine-grained, basic
+arithmetics, a graphical notation really isn't worth it. Once things become
+more involved, and we maybe even have recursion in the computations (shown
+as cyclic lines in the diagrams), a graphical notation becomes more interesting.
 
 
-
-
-
-
-
-  
-
-
-  
 
 ### Function Values
 
