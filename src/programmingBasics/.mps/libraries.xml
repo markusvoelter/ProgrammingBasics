@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="iets3.core">
+          <value>
+            <Library>
+              <option name="name" value="iets3.core" />
+              <option name="path" value="${iets3.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="iets3.os">
+          <value>
+            <Library>
+              <option name="name" value="iets3.os" />
+              <option name="path" value="${iets3.github.opensource.home}/code" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="iets3.os.scripts-all">
+          <value>
+            <Library>
+              <option name="name" value="iets3.os.scripts-all" />
+              <option name="path" value="${iets3.github.opensource.home}/code" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.plattform">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.plattform" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.sl-all">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.sl-all" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mps.ext">
+          <value>
+            <Library>
+              <option name="name" value="mps.ext" />
+              <option name="path" value="${extensions.home}/code" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
