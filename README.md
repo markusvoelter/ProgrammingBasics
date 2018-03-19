@@ -13,17 +13,17 @@ languages.
 
 **Part 1: The Basics**
 
-1. [Values and Expressions](src/chapter01_values/index.md)
-2. [Testing Programs](src/chapter02_testing/index.md)
-3. [Types](src/chapter03_types/index.md)
-4. [Functions](src/chapter04_functions/index.md)
+1. [Values and Expressions](doc/chapter01_values/index.md)
+2. [Testing Programs](doc/chapter02_testing/index.md)
+3. [Types](doc/chapter03_types/index.md)
+4. [Functions](doc/chapter04_functions/index.md)
 
 **Part 2: Making Programming Useful**
 
-5. [Structured Values](src/chapter05_structured/index.md)
-6. [Collections](src/chapter06_collections/index.md)
-7. [Decisions and Calculations](src/chapter07_decAndCalc/index.md)
-8. [Instantiation](src/chapter08_instantiation/index.md)
+5. [Structured Values](doc/chapter05_structured/index.md)
+6. [Collections](doc/chapter06_collections/index.md)
+7. [Decisions and Calculations](doc/chapter07_decAndCalc/index.md)
+8. [Instantiation](doc/chapter08_instantiation/index.md)
 
 **Part 3: Advanced Topics**
 
@@ -90,7 +90,7 @@ our tutorial on the basis of spreadsheets, since I assume that everybody
 knows Excel and its brethren. If not, doesn't matter, you'll learn 
 something about those along the way :-)
 
-I suggest you start out with [Values and Expressions](src/chapter01_values/index.md).
+I suggest you start out with [Values and Expressions](doc/chapter01_values/index.md).
 
 ## Where can I run the examples?
 
