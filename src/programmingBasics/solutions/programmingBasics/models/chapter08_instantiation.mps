@@ -115,7 +115,7 @@
         <child id="1665826838186398926" name="contents" index="3$tU1w" />
       </concept>
       <concept id="1665826838186423585" name="org.iets3.core.expr.doc.structure.ScreenshotPathSpec" flags="ng" index="3$tW6f">
-        <property id="1665826838186423628" name="path" index="3$tW7y" />
+        <child id="2014366269320980352" name="pp" index="h$T3N" />
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
@@ -259,6 +259,14 @@
       <concept id="4139771920860714356" name="org.iets3.core.expr.repl.structure.TopLevelSheet" flags="ng" index="3junBk">
         <property id="3922243018844812809" name="template" index="2jrEOR" />
         <child id="4139771920860714362" name="sheet" index="3junBq" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -415,7 +423,11 @@
     <property role="TrG5h" value="Recap" />
     <property role="1XBH2A" value="true" />
     <node concept="3$tW6f" id="2DnmbxUd5OA" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkA" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="2DnmbxUd5OB" role="_iOnB" />
     <node concept="3$huGK" id="2DnmbxUKLTl" role="_iOnB">
@@ -877,7 +889,11 @@
     <property role="TrG5h" value="Dataflow" />
     <property role="1XBH2A" value="true" />
     <node concept="3$tW6f" id="2DnmbxUKM4p" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkI" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="2DnmbxUKM4q" role="_iOnB" />
     <node concept="_ixoA" id="2DnmbxUKM4y" role="_iOnB" />
@@ -4239,7 +4255,11 @@
     <property role="TrG5h" value="Sheets" />
     <property role="1XBH2A" value="true" />
     <node concept="3$tW6f" id="2DnmbxUKS25" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkG" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="2DnmbxUKS26" role="_iOnB" />
     <node concept="3$huGK" id="56SqGtkR0Jo" role="_iOnB">
@@ -4842,7 +4862,11 @@
     <property role="TrG5h" value="Lambdas" />
     <property role="1XBH2A" value="true" />
     <node concept="3$tW6f" id="C_BpXjDZ8K" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkJ" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="C_BpXjDZ8L" role="_iOnB" />
     <node concept="_ixoA" id="C_BpXjDZOo" role="_iOnB" />

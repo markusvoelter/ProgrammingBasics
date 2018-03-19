@@ -144,7 +144,7 @@
         <child id="1665826838186398926" name="contents" index="3$tU1w" />
       </concept>
       <concept id="1665826838186423585" name="org.iets3.core.expr.doc.structure.ScreenshotPathSpec" flags="ng" index="3$tW6f">
-        <property id="1665826838186423628" name="path" index="3$tW7y" />
+        <child id="2014366269320980352" name="pp" index="h$T3N" />
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
@@ -273,6 +273,14 @@
         <child id="5733544478071884829" name="record" index="1KWixe" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -322,7 +330,11 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="Collections" />
     <node concept="3$tW6f" id="NE1gl4xxjg" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkL" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="NE1gl4xxjh" role="_iOnB" />
     <node concept="3$huGK" id="NE1gl4xxji" role="_iOnB">
@@ -1480,7 +1492,11 @@
   <node concept="_iOnU" id="NE1gl4N6EE">
     <property role="TrG5h" value="AddingToLists" />
     <node concept="3$tW6f" id="NE1gl4N6EF" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkO" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="NE1gl4N6EG" role="_iOnB" />
     <node concept="3$huGK" id="NE1gl4OB55" role="_iOnB">
@@ -1595,7 +1611,11 @@
   <node concept="_iOnU" id="NE1gl52$h2">
     <property role="TrG5h" value="TaxExample" />
     <node concept="3$tW6f" id="NE1gl52$h3" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkK" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="NE1gl52$h4" role="_iOnB" />
     <node concept="1WbbD7" id="NE1gl52OP6" role="_iOnB">
@@ -1787,7 +1807,11 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="Sets" />
     <node concept="3$tW6f" id="NE1gl52VMP" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkH" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="NE1gl52VMQ" role="_iOnB" />
     <node concept="3$huGK" id="NE1gl53358" role="_iOnB">
@@ -2350,7 +2374,11 @@
     <property role="1XBH2A" value="true" />
     <property role="TrG5h" value="Maps" />
     <node concept="3$tW6f" id="NE1gl53U4N" role="_iOnB">
-      <property role="3$tW7y" value="/Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/doc" />
+      <node concept="9PVaO" id="1JOtRcaqqkS" role="h$T3N">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="../../../../doc" />
+      </node>
     </node>
     <node concept="_ixoA" id="NE1gl53U4O" role="_iOnB" />
     <node concept="3$huGK" id="NE1gl53Vgh" role="_iOnB">
