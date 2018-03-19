@@ -278,7 +278,7 @@ However, once we inline everything, i.e.,
 we get rid of the extra functions and reduce everything to the bare operators,
 things look different:
 
-![](Dataflow/TestComposite5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440115281)
+![](Dataflow/TestComposite5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ece	a-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440115281)
 
 This is really simple now! So what does this tell us? For fine-grained, basic
 arithmetics, a graphical notation really isn't worth it. Once things become
