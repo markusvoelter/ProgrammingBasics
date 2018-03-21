@@ -25,7 +25,14 @@ languages.
 7. [Decisions and Calculations](doc/chapter07_decAndCalc/index.md)
 8. [Instantiation](doc/chapter08_instantiation/index.md)
 
-**Part 3: Advanced Topics**
+**Part 3: Dealing with Mutable State**
+
+In this part I will discuss how to systematically deal with mutable state (everything so far was purely functional), and also introduce abstractions that are specifically built to deal with program behavior that is state-dependent, in particular, state machines.
+
+**Part 4: Scaling Up -- Building Systems**
+
+This final part of the tutorial will look at common ways how software engineering deals with larger-scale systems, and how this affects languages and programs. This includes modularization, information hiding, contracts, inheritance and specialization as well as separation of concerns. 
+
 
 
 
