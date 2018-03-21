@@ -59,6 +59,17 @@
         <child id="2014366269320980352" name="pp" index="h$T3N" />
       </concept>
     </language>
+    <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
+      <concept id="543569365052056273" name="org.iets3.core.expr.tests.structure.EqualsTestOp" flags="ng" index="_fku$" />
+      <concept id="543569365052056263" name="org.iets3.core.expr.tests.structure.TestCase" flags="ng" index="_fkuM">
+        <child id="543569365052056368" name="items" index="_fkp5" />
+      </concept>
+      <concept id="543569365052056266" name="org.iets3.core.expr.tests.structure.AssertTestItem" flags="ng" index="_fkuZ">
+        <child id="543569365052056302" name="op" index="_fkur" />
+        <child id="543569365052056269" name="expected" index="_fkuS" />
+        <child id="543569365052056267" name="actual" index="_fkuY" />
+      </concept>
+    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
@@ -134,7 +145,7 @@
     </node>
     <node concept="_ixoA" id="2c2AzQdaWQV" role="_iOnB" />
     <node concept="3$huGK" id="2c2AzQdaWR8" role="_iOnB">
-      <property role="TrG5h" value="SheetWigthValues" />
+      <property role="TrG5h" value="SheestatWigthValues" />
       <node concept="3$tU02" id="2c2AzQdaWRa" role="3$tUb0">
         <node concept="3junBk" id="2c2AzQdaWRj" role="3$tU1w">
           <property role="TrG5h" value="Values" />
@@ -1064,6 +1075,18 @@
       </node>
     </node>
     <node concept="_ixoA" id="2c2AzQdf_7w" role="_iOnB" />
+    <node concept="_fkuM" id="2ufoZQIRpXx" role="_iOnB">
+      <property role="TrG5h" value="TriggerEval" />
+      <node concept="_fkuZ" id="2ufoZQIRq0g" role="_fkp5">
+        <node concept="_fku$" id="2ufoZQIRq0h" role="_fkur" />
+        <node concept="_emDc" id="2ufoZQIRq0z" role="_fkuY">
+          <ref role="_emDf" node="2c2AzQdfG9G" resolve="speed" />
+        </node>
+        <node concept="30bXRB" id="2ufoZQIRq0P" role="_fkuS">
+          <property role="30bXRw" value="4.00000000" />
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="2c2AzQdf_7x" role="_iOnB" />
     <node concept="_ixoA" id="2c2AzQdf_7y" role="_iOnB" />
     <node concept="_ixoA" id="2c2AzQdf_7z" role="_iOnB" />

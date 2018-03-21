@@ -284,6 +284,133 @@ that resembles the Word notation as closely as possible. Notice how the
 `l` function calls itself with a different value for the variable `x`. 
 
 
+
+### Debugging and Tracing
+
+As decisions and calculations become more complex, there will be errors. To find those,
+you have to understand what is actually going on. In spreadsheets, this is relatively
+easy, because one of a spreadsheet's nice features is that cells can also _output_ values:
+if you switch a spreadsheet into the respective mode, cells contain the values to which
+the expressions in that cell evaluate. This makes a computation "visible". As usual, the
+example below shows the spreadsheet in its evaluated version on the right:
+
+![](Debugging/SheetExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F2850607030366197203)
+
+If we move outside spreadsheets, how can we understand a program's internal behavior?
+`val`s and functions and `if` expressions and the like are not spreadsheet cells, so
+how can we _see_ their value?
+
+**Tests**: We have already seen one way: we can write assertions in test cases. Consider
+the following test (testing our previously developed recursive `add` function):
+
+![](Debugging/usingTests.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F2850607030372765814)
+
+We can see the values which a particular expression (here: the call to `add`) evaluates to.
+If our expecation is not met, the system outputs the alternative actual value. This works,
+but it has two limitations. One, it's quite a lot of code we have to write just to see 
+the value of an expression. And second, we can only look at values that are somehow 
+addressible. For example, we can't use this approach for an expression _inside_
+a function, because we cannot address it from a test case; it is hidden inside the 
+function.
+
+**Value Inspectors:** Let's go back to one of our initial examples:
+
+![](Debugging/initialInspectorOhneVI.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F2850607030372787959)
+
+How can we understand better what the results are? Can we somehow peek into the values
+`spd1` and `spd2`? The easiest way to do this is to attach a _value inspector_ to the 
+expressions:
+
+![](Debugging/initialInspector.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551289465354)
+
+A value inspector can be attached to any expression, and, if through whatever means,
+this expression is evaluated, the inspector shows that value. In the example above, we
+have attached the inspector to the initialization expressions for the two `val`s.
+You can also look inside a function:
+
+![](Debugging/moreInspector.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551289469501)
+
+Note how here, the inspector shows _two_ values for the two expressions each (separated
+by a comma). Why is this? It is because the function `speed` was called twice, and the
+inspector records all the values, and outputs all of them. So, while this works for 
+simple cases, we ultimately need a more sophisticated way of tracing computations; we'll
+introduce one in the next subsection, but before we do this, I want to briefly close the
+loop with spreadsheets; you can use the inspector in those too, to peek inside parts
+of expressions inside spreadsheets, even hierarchically:
+
+![](Debugging/SheetExampleRevisited.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551289508332)
+ 
+ 
+
+**The Computation Trace:** The value inspectors shown above work nicely for simple
+cases. But they also have drawbacks: you have to attach the inspectors manually to all
+nodes whose value you want to inspect. And if the same program node is executed several
+times (as in the case in the function body of the `speed` function), the comma-separated
+list of values is not a very good solution in general. Enter the tracer.
+
+Let us recap how the execution of a functional program works. A functional computation is 
+essentially a tree: if you evaluate an expression, then, as part of the evaluation, all 
+expression on which the current one depends are evaluated first. So, if we evaluate `a + b`
+where `a` and `b` are references to `val`s, then the first step is to evaluate 
+`a` and `b` before we perform the actual addition. So, here's the idea: we can display any
+function computation as a tree. Let's check this out with a Hello World:
+
+![](Debugging/Tracer1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551295216157)
+
+Here is the computation tree:
+
+![](tracer-ui1.png)
+
+If you look at the tree, you can see that, for each of the program nodes, there is a tree node
+that shows
+
+* the program node's syntax (e.g., `val a`)
+* and the value (e.g., `=> 1`)
+* the type of the value (e.g., Java's `: BigInteger`)
+* as well as the language construct (e.g., `[NumberLiteral]`)
+
+By default, the tree is collapsed, as you can explore the computation by opening successive 
+tree nodes. Let's see what happens if the same program node is evaluated several times, a problem
+with the earlier value inspector mechanism. In this example, the `add` function is called three 
+times in total:
+
+![](Debugging/Tracer2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551295219385)
+
+If you look at the trace tree, you can see that the `add` function shows up three times, but
+each time evaluates to a different value. So, importantly, the tree has a node _for each 
+evaluation of a program node_, not just for each program node. The same program node (e.g., `add`)
+can show up several times in the trace tree (e.g., for each call to `add`). 
+
+![](tracer-ui2.png) 
+
+Now, seeing the execution as a tree that is separate from the program source can make it hard
+to relate that tree to the program. For this reason, you can double-click on any tree node and
+highlight the values of that node and all its children directly in the code:
+
+![](tracer-ui3.png)
+
+The tracer has many more features, such as marking a program node in the code and automatically
+highlighting it in the trace, jumping from one evaluation of a particular program node to the
+next evaluation of that same node, and various ways of filtering the level of detail of the tree.
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 <hr>
 
 Continue with [Instantiation](../chapter08_instantiation/index.md)

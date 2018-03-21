@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/programmingBasics.plugin/programmingBasics.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/programmingBasics/programmingBasics.msd" folder="" />
     </projectModules>
   </component>
