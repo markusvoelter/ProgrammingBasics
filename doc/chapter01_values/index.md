@@ -60,7 +60,7 @@ their evaluated form, use a grey background to indicate that you cannot
 change that value directly, because it is computed; instead, you have to
 change the underlying expression. 
 
-> ![](../mps.png)&nbsp; You can press `F2` to reveal that
+> ![](../mps.png) You can press `F2` to reveal that
 expression and then change it. You can see the background color change, and
 you can then modify the expression. Press `F2` again to show the value.
 
@@ -75,7 +75,7 @@ Conversely, if you know an expression didn't change, you can store the
 resulting value when it is evaluated first, and, when asked to evaluate
 again, you can return the previously computed value. 
 
-> **TECHNICAL** The process of storing values once they have been computed and then
+> ![](../plus.png) The process of storing values once they have been computed and then
 returning that stored value when asked (typically several times) is
 called caching. Caching generally makes systems faster, but it also
 requires more memory to store all those previously computed values. 
@@ -255,7 +255,7 @@ say that a functional program never really runs; the program _is_ the
 computation.
 
 
-> **TECHNICAL** If you have had some exposure to programming before, you have probably
+> ![](../plus.png) If you have had some exposure to programming before, you have probably
 heard the word "variable". Are cells variables? Not really.
 Similarly to cells, a variable is a name for a value. But more
 specifically, and more technically, it refers to a location in the

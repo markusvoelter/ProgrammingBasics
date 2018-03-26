@@ -99,6 +99,31 @@ something about those along the way :-)
 
 I suggest you start out with [Values and Expressions](doc/chapter01_values/index.md).
 
+
+## Notes on Style
+
+The tutorial intentionally a colloquial tone of voice. If necessary, it prioritizes
+understandability and intuition over technical or scientific precision. This is not
+a science paper! We rely on lots of examples which are embedded as images expoerted
+from our tool, Jetbrains MPS. A few paragraphs use special markers:
+
+&nbsp;
+
+> ![](doc/plus.png) Paragraphs marked this way contain advanced contents, targeted
+> at people who want to look behind the scenes, or who have had some previous experience
+> with programming. You can safely skip those paragraphs if you are not interested.
+
+&nbsp;
+
+> ![](doc/mps.png) Paragraphs marked with this icon contain specific guidance on how
+> to do something in MPS. For example, keyboard shortcuts or hints at menu items are
+> mentioned in paragraphs marked this way. These will become relevant once exercises
+> are available.
+
+
+
+
+
 ## Where can I run the examples?
 
 TBD
