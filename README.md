@@ -107,13 +107,11 @@ understandability and intuition over technical or scientific precision. This is 
 a science paper! We rely on lots of examples which are embedded as images expoerted
 from our tool, Jetbrains MPS. A few paragraphs use special markers:
 
-&nbsp;
 
 > ![](doc/plus.png) Paragraphs marked this way contain advanced contents, targeted
 > at people who want to look behind the scenes, or who have had some previous experience
 > with programming. You can safely skip those paragraphs if you are not interested.
 
-&nbsp;
 
 > ![](doc/mps.png) Paragraphs marked with this icon contain specific guidance on how
 > to do something in MPS. For example, keyboard shortcuts or hints at menu items are
