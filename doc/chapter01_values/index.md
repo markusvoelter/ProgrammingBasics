@@ -241,7 +241,7 @@ a collection of cells. A cell contains "code", i.e., an expression,
 and when evaluated, it represents a value. A cell, thus, _identifies_ a
 value: you identify it via its coordinates (e.g., `A0`, `B2`, etc.).
 
-If you have had some exposure to programming before, you have probably
+> :computer: If you have had some exposure to programming before, you have probably
 heard the word "variable". Are cells variables? Not really.
 Similarly to cells, a variable is a name for a value. But more
 specifically, and more technically, it refers to a location in the
@@ -255,8 +255,9 @@ program, cannot do this. Once a value is assigned to a cell during a
 particular program execution, it will _never_ change (this realization
 is what allowed us to cache the values in cells in our earlier
 discussion on execution strategies). There is no "update cell value" 
-command in spreadsheets. Instead, the value of a cell only changes
-as a consequence of a user's edits:
+command in spreadsheets. 
+
+The value of a cell only changes as a consequence of a user's edits:
 
 * Either the user changes a cell content directly (which triggers
   its own reevaluation), 
