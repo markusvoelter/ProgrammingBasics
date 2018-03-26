@@ -72,7 +72,7 @@ Conversely, if you know an expression didn't change, you can store the
 resulting value when it is evaluated first, and, when asked to evaluate
 again, you can return the previously computed value. 
 
-The process of storing values once they have been computed and then
+> **TECHNICAL** The process of storing values once they have been computed and then
 returning that stored value when asked (typically several times) is
 called caching. Caching generally makes systems faster, but it also
 requires more memory to store all those previously computed values. 
@@ -240,8 +240,19 @@ In spreadsheets, cells play a central role: a spreadsheet is simply
 a collection of cells. A cell contains "code", i.e., an expression, 
 and when evaluated, it represents a value. A cell, thus, _identifies_ a
 value: you identify it via its coordinates (e.g., `A0`, `B2`, etc.).
+The value of a cell only changes as a consequence of a user's edits:
+either the user changes a cell content directly (which triggers
+its own reevaluation), or the cell is reevaluated because it depends on 
+a cell that changed (for any of the two reasons given here).
+  
+One way of looking at this is that, whenever the user changes the
+contents of any cell, the functional (spreadsheet) program is
+reexecuted, updating all other cells. Another way of phrasing it is to
+say that a functional program never really runs; the program _is_ the
+computation.
 
-> :computer: If you have had some exposure to programming before, you have probably
+
+> **TECHNICAL** If you have had some exposure to programming before, you have probably
 heard the word "variable". Are cells variables? Not really.
 Similarly to cells, a variable is a name for a value. But more
 specifically, and more technically, it refers to a location in the
@@ -256,20 +267,6 @@ particular program execution, it will _never_ change (this realization
 is what allowed us to cache the values in cells in our earlier
 discussion on execution strategies). There is no "update cell value" 
 command in spreadsheets. 
-
-The value of a cell only changes as a consequence of a user's edits:
-
-* Either the user changes a cell content directly (which triggers
-  its own reevaluation), 
-
-* or the cell is reevaluated because it depends on a cell that changed
-  (for any of the two reasons given here).
-  
-One way of looking at this is that, whenever the user changes the
-contents of any cell, the functional (spreadsheet) program is
-reexecuted, updating all other cells. Another way of phrasing it is to
-say that a functional program never really runs; the program _is_ the
-computation.
   
 
 ### Naming Cells and Values
