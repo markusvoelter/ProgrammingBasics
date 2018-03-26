@@ -52,8 +52,8 @@ sheet.
 
 ![](BasicValues/ComputedValuesValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433355383)
 
-The third column contains the three primitive values `7` from the first
-example sheet. If a cell contains a primitive value (such as `7`), then
+The third column contains three primitive values `7` . If a cell 
+contains a primitive value (such as `7`), then
 the result is the value itself -- evaluating a primitive value, or
 _literal_, results in itself. Note how computed values, when shown in
 their evaluated form, use a grey background to indicate that you cannot
@@ -68,9 +68,21 @@ the same denomination are identical, this observation is meaningless.
 Thus, when you see an expression, you can _always_ evaluate it to get a
 value. If, for whatever reason, you evaluate it several times, this does
 not matter, you will just always get the same resulting value.
-Conversely, if you know an expression didn't change, you can cache the
-resulting value and, when asked to evaluate, you can return the cached
-value. 
+Conversely, if you know an expression didn't change, you can store the
+resulting value when it is evaluated first, and, when asked to evaluate
+again, you can return the previously computed value. 
+
+The process of storing values once they have been computed and then
+returning that stored value when asked (typically several times) is
+called caching. Caching generally makes systems faster, but it also
+requires more memory to store all those previously computed values. 
+This is the kind of trade-off programmers have to make all the time.
+However, note how this trade-off concerns the _engine_ that runs the
+programs you write; as a person who writes programs, i.e., as the
+reader of this tutorial, you don't care exactly _because_ from the
+perspective of _what_ the program does, it doesn't matter -- the
+semantics of what it means to evaluate an expression does not change.
+
 
 ### Basic Operators
 
@@ -98,8 +110,8 @@ row of the table above shows only pairs of numbers with an operator in
 between. They evaluate to a Boolean value, i.e., they "say yes or no" to
 your question whether one number is bigger/smaller/equal etc. to another
 one. The arithmetic and comparison operators can of course be combined,
-so you can write `3 + 5 > 7 * 2`, and this evaluates to `false. For this
-to make sense, the arithmetic operators must bind more tightly than the
+so you can write `3 + 5 > 7 * 2`, and this evaluates to `false`. For this
+to make sense, the arithmetic operators must have higher precedende than the
 comparison operators (the expression above must mean `8 > 14` and not 
 `3 + false * 2`; that would make no sense.  
 
@@ -252,7 +264,7 @@ as a consequence of a user's edits:
 * or the cell is reevaluated because it depends on a cell that changed
   (for any of the two reasons given here).
   
-One way of looking at this isthat, whenever the user changes the
+One way of looking at this is that, whenever the user changes the
 contents of any cell, the functional (spreadsheet) program is
 reexecuted, updating all other cells. Another way of phrasing it is to
 say that a functional program never really runs; the program _is_ the

@@ -34,7 +34,7 @@ dependencies_ to other cells, it is tied to its context -- the relative
 addressing of cells would not work correctly if we moved the expression
 to a central location in the sheet. Similarly with absolute references,
 we would have to use other absolute references for each case. We must
-somehowget rid of these references!
+somehow get rid of these references!
 
 
 ### From Cells with Dependencies to Parametrized Cells
@@ -42,12 +42,15 @@ somehowget rid of these references!
 In programming, whenever we want to get rid of (outgoing) dependencies, we use
 the same proven approach: we create a new "box", and then parametrize it:
 
-![](functions.png)
+![](functions.png) 
 
-A parameter is a named value, just like the `val`s shown earlier. But it
-is local to box, i.e., it is visible only inside that box. Inside the
-box you put the expression, but you write it in terms of only those
-parameters. So all dependencies in the expression are local to the box.
+As the picture above shows, the parameters sit at the boundary between the 
+newly created box and its context, i.e., the rest of the program. A parameter 
+is a named value, just like the `val`s shown earlier. But it
+is local to box, i.e., it can be used for computations only _inside_ 
+that box. Inside the
+box you put the expression, but you write it in terms _of only those
+parameters_. So all dependencies in the expression are local to the box.
 The box now has no dependencies on its environment, there are no outgoing
 dependencies.
 
@@ -56,6 +59,9 @@ the original expression was copied before), you map values from the using contex
 to the parameters, you "bind" the box to a context. The crucial point is that in
 your program, you can have several such bindings, thereby using the box in
 different contexts. 
+
+![](multipleCalls.png) 
+
 
 So let us look at an example with cells. The blue cell labeled `riskFactor` at
 the very bottom is this box. It declares the parameters, and then the expression
@@ -129,7 +135,7 @@ function is identical to the function cells. In particular, they are called with
 exactly the same syntax. 		
 
 In many cases, functions will do relatively complicated things and thus
-use more than a a single, simple expression. Even the example above can
+use more than a single, simple expression. Even the example above can
 be refactored to be more readable:
 
 ![](ActualFunction/FunctionWithBody.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168374919)
@@ -219,5 +225,10 @@ If you really want to understand only the basic basics of programming,
 then this is the place to stop with this tutorial: values, expressions,
 types, functions and tests are the absolute essence without which you
 can't do anything useful. On the other hand, if you're comfortable so
-far, why not continue and learn more interesting things about
-programming.
+far, why not continue and learn [more interesting things about programming.](../chapter05_structured/index.md)
+
+
+<hr/>
+
+Continue with [Structured Values](../chapter05_structured/index.md)
+

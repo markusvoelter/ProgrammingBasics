@@ -12,7 +12,7 @@ bit more complicated than the ones we saw so far:
 
 ![](TestingSheets/AnotherExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F2522748330434301191)
 
-The first two columns are constants. The third column sums up the first
+The first two columns are just values. The third column sums up the first
 and the second. It uses an alternative way of referencing cells: instead
 of using their absolute coordinates, we use relative navigation. `l`
 goes one cell to the left, `ll` two, and so on (there are similar

@@ -40,8 +40,9 @@ also `number[100|100]`. Why is this? Because by default, the type of a
 `val` is inferred to be the type of the value's expression. The type for 
 `time` is then `number[20|20]`, not a big surprise. 
 
+
 It gets more interesting for `twoDistances`. Its type is `number[200|200]`,
-so the type system actually updates the ranges based on the arithmetic
+so the types are automatically computed to reflexr ranges based on the arithmetic
 operator `*`. For `maybeDistanes` it is even more interesting, because,
 depending on whether `someBoolean` is true or not, the resulting value is
 either 100 or 200; so the type of the `if` is `number[100|200]` to make sure
@@ -49,14 +50,33 @@ it can represent both outcomes.
 
 Finally, what is the type of `speed`? It is reported to be `number[5.0000|5.000]{inf}`.
 That looks strange, it is the type of all numbers between `5.000` and `5.000`,
-with an infinite number of decimal points. The reason is that this particular
-type system reports a type with infinite precision (i.e., a real number) whenever
-a division is involved. 
+with an infinite number of decimal points. The reason is in this language, 
+a division always leads to a type with infinite precision (i.e., a real number).
 
-So what have we done here? Our program never explicitly mentioned anything about
+
+
+Before we move on, we should probably define the term
+_type system_: it refers to the set of rules that govern type correctness of
+a program. For example, the fact that any division results in an infinite-precision
+number is a rule that is part of the type system of this particular language.
+Similarly, the fact that numbers "adjust" their ranges according to the
+operator used, is part of the type system. The type system is also 
+responsible for reporting errors if users do things that is not allowed
+by these rules, for example, trying to add a number and a Boolean (we will 
+cover this in the next paragraph). The type system is also responsible for 
+_inferring_ types, which means that the type of a program node is computed 
+from the type of one or more other program nodes automatically. For example,
+the type of the `val` is inferred from the type of the expression on the 
+right side of the `=` in the `val`.
+
+
+In the example so far, we have _only_ used type inference: 
+our program never explicitly mentioned anything about
 types, but the underlying analyser has computed types for us, and we can
-use those types to help us understand the program. More useful, however, 
-is to use types as constraints.
+use those types to help us understand the program. Let's move on now
+to using types as constraints.
+
+
 
 
 ### Types as Constraints
@@ -76,7 +96,7 @@ is constrained to be a positive number with infinite digits (again,
 every division always gives infinite decimals in the result). How is this 
 useful?
 
-Well, if you tried to tried to use a value greater than 1000 for the distance,
+Well, if you tried to use a value greater than 1000 for the distance,
 or a negative value for the time, you would get an error. Importantly, you
 would not get the error when the program runs; instead, you get the error
 already _when you write the program_. So the analyser that runs as part of
