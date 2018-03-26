@@ -60,7 +60,7 @@ their evaluated form, use a grey background to indicate that you cannot
 change that value directly, because it is computed; instead, you have to
 change the underlying expression. 
 
-![](../mps.png)&nbsp; You can press `F2` to reveal that
+> ![](../mps.png)&nbsp; You can press `F2` to reveal that
 expression and then change it. You can see the background color change, and
 you can then modify the expression. Press `F2` again to show the value.
 
