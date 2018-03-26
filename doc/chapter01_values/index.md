@@ -58,8 +58,11 @@ the result is the value itself -- evaluating a primitive value, or
 _literal_, results in itself. Note how computed values, when shown in
 their evaluated form, use a grey background to indicate that you cannot
 change that value directly, because it is computed; instead, you have to
-change the underlying expression. You can press `F2` to reveal that
-expression and then change it.
+change the underlying expression. 
+
+![](../mps.png)&nbsp; You can press `F2` to reveal that
+expression and then change it. You can see the background color change, and
+you can then modify the expression. Press `F2` again to show the value.
 
 You can evaluate an expression any number of times, the result will
 always be the same. You could argue that each evaluation computes a
