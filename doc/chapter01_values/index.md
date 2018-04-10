@@ -209,9 +209,7 @@ everything. However, there is a better strategy: because we know all the
 dependencies of all the cells, we can only reevaluate those that depend
 (directly or indirectly) on the one the user changed. So, based on our
 dependency graph above, changing `A1` will result in the reevaluation of
-`B1` and `B0` only. This is obviously a much cheaper operation than
-reevaluating everything, and the ratio becomes more favourable the
-bigger the spreadsheet gets. 
+`B1` and `B0` only (and, of course, of `A1` itself). This is obviously a much cheaper operation than reevaluating everything, and the ratio becomes more favourable the bigger the spreadsheet gets. 
 
 
 So, what do we learn? Understanding the dependencies in a program allows
