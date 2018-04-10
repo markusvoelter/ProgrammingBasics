@@ -26,12 +26,11 @@ hand, we say that it "has a" type or "is of" type.
 
 So what can we use types for? Consider this example:
 
-![](Types/DerivedTypes.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166667827)
+![](Types/InitialTypeExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F8844044561165463023)
 
 This program does not explicitly say anything about types; no type
 is mentioned anywhere. However, we
-can query every expression for its type (by pressing `Ctrl-Shift-T` when a
-particular expression is selected). If we do this on the `100`
+can query every expression for its type. If we do this on the `100`
 expression, the type will be reported as `number[100|100]`, i.e., the
 type of numbers between `100` and `100`. The range is only one element
 because of course we know the specific number, so the type can be very
@@ -40,20 +39,34 @@ also `number[100|100]`. Why is this? Because by default, the type of a
 `val` is inferred to be the type of the value's expression. The type for 
 `time` is then `number[20|20]`, not a big surprise. 
 
+> ![](../mps.png) You press `Ctrl-Shift-T` on a program node to
+> query the IDE for the type of that node.
 
-It gets more interesting for `twoDistances`. Its type is `number[200|200]`,
+Let us add some more code:
+
+![](Types/DerivedTypes.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166694488)
+
+
+The type of `twoDistances` is more interesting. Its type is `number[200|200]`,
 so the types are automatically computed to reflexr ranges based on the arithmetic
 operator `*`. For `maybeDistanes` it is even more interesting, because,
 depending on whether `someBoolean` is true or not, the resulting value is
 either 100 or 200; so the type of the `if` is `number[100|200]` to make sure
-it can represent both outcomes. 
+it can represent both outcomes.
+
+> ![](../plus.png) Actually, we could be more precise: the type is either 
+`number[100|100]` or `number[200|200]`, because no value other than 100
+or 200 is possible. However, in this particular language, a number type
+can have _only one value range_. This means that `number[100|200]` is
+the best way of approximating that the value is either 100 or 200. The type systems of other programming languages could potentially be more precise here.
+ 
 
 Finally, what is the type of `speed`? It is reported to be `number[5.0000|5.000]{inf}`.
 That looks strange, it is the type of all numbers between `5.000` and `5.000`,
 with an infinite number of decimal points. The reason is in this language, 
 a division always leads to a type with infinite precision (i.e., a real number).
 
-
+ 
 
 Before we move on, we should probably define the term
 _type system_: it refers to the set of rules that govern type correctness of
@@ -74,7 +87,7 @@ In the example so far, we have _only_ used type inference:
 our program never explicitly mentioned anything about
 types, but the underlying analyser has computed types for us, and we can
 use those types to help us understand the program. Let's move on now
-to using types as constraints.
+to explicitly mentioning types in programs.
 
 
 
@@ -96,19 +109,22 @@ is constrained to be a positive number with infinite digits (again,
 every division always gives infinite decimals in the result). How is this 
 useful?
 
-Well, if you tried to use a value greater than 1000 for the distance,
+Well, if you tried to use a value greater than 1,000 for the distance,
 or a negative value for the time, you would get an error. Importantly, you
 would not get the error when the program runs; instead, you get the error
-already _when you write the program_. So the analyser that runs as part of
+already _when you write the program_. So the analyser that is part of
 your programming environment performs certain checks and reports them to 
-you as early as possible. In some sense, the program tests itself, directly
-as you write it.
+you as early as possible. 
 
-Take a look at the following example from a medical system, and you can see
-how types have the potential to avoid errors:
+Note that this is kinda similar to testing. In testing, we said that you specify the same thing twice, and then check one against the other. Here, too, you specify something twice: the set of allowed values (the type)
+as well as a particular value. If the set does not include that value,
+you get an error, In some sense, the programming environment tests the program for you, based on your specification of types.
+
+Take a look at the following example from a medical system, and you can see how types have the potential to avoid errors:
 
 ![](Types/MoreExplicitTypes.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A480e3b8e-0509-43e8-9493-4fac219a375e%28chapter03_types%29%2F6455317040166684137)
  
+> ![](../fix.png) Explain better. Where is the error?
 
 ### Type Compatibility
 
@@ -135,7 +151,7 @@ The type of the `5` is `number[5|5]`, so is this compatible with `number[0|100]`
 It is easy to see that it is if we go back to the notion of types as sets: if the
 set of values represented by `U` is a subset of (i.e., is contained in) the
 set of values represented by `T`, then `U` is compatible with `T`. We also say that
-`U` is a subtype of `T`.
+`U` is a subtype of `T`. The notion of subtyping, or more generally, specialization, will become important later in this tutorial.
 
 
 ### Wait, but ...	
@@ -143,8 +159,8 @@ set of values represented by `T`, then `U` is compatible with `T`. We also say t
 ... why do I need to specify the type for something if, as in `val`s, I also
 always have to give a value and that value can never change? Well, dear reader,
 you have a point here. Explicitly given types are much more useful if something
-can have _several_ values as the program executes. In the next chapter we will
-encounter a situation where this is the case: functions. 
+can have _several_ values as the program executes. In such a case explicitly
+given types are necessary to make the program meaningful. In the next chapter we will encounter a situation where this is the case: functions. 
 
 
 

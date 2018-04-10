@@ -140,6 +140,35 @@
       <node concept="2vmpnb" id="5AlTalNYON6" role="2zPyp_" />
     </node>
     <node concept="_ixoA" id="5AlTalNYOF2" role="_iOnB" />
+    <node concept="3$huGK" id="7EWmUIHZyRJ" role="_iOnB">
+      <property role="TrG5h" value="InitialTypeExample" />
+      <node concept="3$tU02" id="7EWmUIHZyRL" role="3$tUb0">
+        <node concept="2zPypq" id="7EWmUIHZz34" role="3$tU1w">
+          <property role="TrG5h" value="distance" />
+          <node concept="30bXRB" id="7EWmUIHZz3j" role="2zPyp_">
+            <property role="30bXRw" value="100" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="7EWmUIHZz44" role="3$tU1w">
+          <property role="TrG5h" value="time" />
+          <node concept="30bXRB" id="7EWmUIHZz4L" role="2zPyp_">
+            <property role="30bXRw" value="20" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="7EWmUIHZz5Y" role="3$tU1w">
+          <property role="TrG5h" value="speed" />
+          <node concept="30dvO6" id="7EWmUIHZz7M" role="2zPyp_">
+            <node concept="_emDc" id="7EWmUIHZz8G" role="30dEs_">
+              <ref role="_emDf" node="7EWmUIHZz44" resolve="time" />
+            </node>
+            <node concept="_emDc" id="7EWmUIHZz7a" role="30dEsF">
+              <ref role="_emDf" node="7EWmUIHZz34" resolve="distance" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="7EWmUIHZyGu" role="_iOnB" />
     <node concept="3$huGK" id="5AlTalNEmTo" role="_iOnB">
       <property role="TrG5h" value="DerivedTypes" />
       <node concept="3$tU02" id="5AlTalNEmT$" role="3$tUb0">
@@ -190,15 +219,6 @@
             </node>
             <node concept="_emDc" id="5AlTalNEmU7" role="30dEs_">
               <ref role="_emDf" node="5AlTalNEmTG" resolve="time" />
-            </node>
-          </node>
-          <node concept="mLuIC" id="5AlTalNEmTT" role="2zM23F">
-            <node concept="2gteSW" id="5AlTalNEmU8" role="2gteSx">
-              <property role="2gteSQ" value="5.0000000000" />
-              <property role="2gteSD" value="5.0000000000" />
-            </node>
-            <node concept="2gteS_" id="5AlTalNEmU9" role="2gteVg">
-              <property role="2gteVv" value="inf" />
             </node>
           </node>
         </node>
