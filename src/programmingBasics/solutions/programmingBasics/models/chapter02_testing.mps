@@ -40,6 +40,14 @@
         <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
       <concept id="1665826838185500574" name="org.iets3.core.expr.doc.structure.Frame" flags="ng" index="3$huGK">
         <child id="1665826838186399342" name="content" index="3$tUb0" />
@@ -73,6 +81,14 @@
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
     </language>
     <language id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl">
       <concept id="3922243018845679935" name="org.iets3.core.expr.repl.structure.NamedSheetFinder" flags="ng" index="2joYC1">
@@ -123,6 +139,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -698,7 +717,7 @@
               </node>
             </node>
             <node concept="30bXRB" id="2c2AzQdi3w9" role="_fkuS">
-              <property role="30bXRw" value="54" />
+              <property role="30bXRw" value="55" />
             </node>
           </node>
         </node>
@@ -963,6 +982,15 @@
               <node concept="33c$z$" id="2c2AzQdivO2" role="33dGG4" />
               <node concept="33c$z$" id="2c2AzQdivO3" role="33dGG4" />
               <node concept="33c$z$" id="2c2AzQdivO4" role="33dGG4" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="7EWmUIGPHcF" role="lGtFl">
+            <node concept="OjmMv" id="7EWmUIGPHcG" role="1w35rA">
+              <node concept="19SGf9" id="7EWmUIGPHcH" role="OjmMu">
+                <node concept="19SUe$" id="7EWmUIGPHcI" role="19SJt6">
+                  <property role="19SUeA" value="Bottom-right cell fails intentionally" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
