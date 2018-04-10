@@ -106,8 +106,9 @@ their precedence (`*` has higher precedence than `+`, for example).
 ![](BasicValues/Operators.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433368810)
 
 
-From school we also know the comparison operators: `>`, `>=`, `<`, `<=`,
-`==` and `!=`. They are defined on numbers, and in contrast to
+From school we also know the comparison operators: `>` greater, `>=` greater or equal, `<` less, `<=` less or equal,
+`==` equal and `!=` not equal (in school you probably used `=` for equality; in computing, the double `==` is widespread, so we stick to this convention).
+These operators are defined on numbers, and in contrast to
 arithmetic operators, they cannot be chained; which is why the second
 row of the table above shows only pairs of numbers with an operator in
 between. They evaluate to a Boolean value, i.e., they "say yes or no" to
