@@ -12,7 +12,7 @@ spontaneously become an `8`. An `8` is a different value. In the
 following spreadsheet, all the `7`s are indistinguishable: the value
 appears in three cells, but none of them is different than any other
 one. They are exchangeable. Consider money: even though the various 10
-EUR bills are different "objects" (as exemplified by their unique serial
+EUR bills are different "objects" (indentified by their unique serial
 numbers), to you, they are all the same. 10 EUR are 10 EUR.
 
 ![](BasicValues/SheetWithValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433039816)
@@ -30,11 +30,13 @@ for now. They are available in all programming languages (sometimes
 with other names), and most other, more complex values will be composed
 from those.
 
+> ![](../plus.png) The value `"42"` is also a string value, it represents the text that consists of the two digits `4` and `2`. It doesn't matter that the text could also be interpreted as a number; as long as it is enclosed in quotation marks, it is a string. Later in this tutorial we will learn how (and why) we would convert the text `"42"` into the number `42`.
+
 
 ### Computed Values and Expressions
 
 Values can be computed. In the sheet below, all cells, when their value is
-calculated, will contain the value `7`. 
+computed, will contain the value `7`. 
 
 ![](BasicValues/ComputedValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433277340)
 
@@ -50,12 +52,14 @@ the expressions in the cells; see the sheet below. The first two columns
 are the evaluated versions of the first two columns of the previous
 sheet. 
 
+> ![](../fix.png) Explain how to switch notation
+
 ![](BasicValues/ComputedValuesValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330433355383)
 
 The third column contains three primitive values `7` . If a cell 
 contains a primitive value (such as `7`), then
-the result is the value itself -- evaluating a primitive value, or
-_literal_, results in itself. Note how computed values, when shown in
+the result of the evaluation is the value itself -- evaluating a primitive value, or
+_literal_, results in itself. Note how, in the spreadsheetm computed values, when shown in
 their evaluated form, use a grey background to indicate that you cannot
 change that value directly, because it is computed; instead, you have to
 change the underlying expression. 
@@ -95,7 +99,7 @@ later, because it is not obvious what should happen if we divide
 something that does not result in an integer number (such as `7 / 2`):
 should the result be a real number (`3.5`), or do we expect to get an
 integer and the remainder (`3` remainder `1`). Also, the special case of
-division-by-zero, which, as we know from math, is illegal, has to be
+division-by-zero, which, we remember, is illegal, has to be
 dealt with. But we ignore all of these details for now. 
 
 The first row in the sheet below shows a few arithmetic operators, and
@@ -107,7 +111,7 @@ their precedence (`*` has higher precedence than `+`, for example).
 
 
 From school we also know the comparison operators: `>` greater, `>=` greater or equal, `<` less, `<=` less or equal,
-`==` equal and `!=` not equal (in school you probably used `=` for equality; in computing, the double `==` is widespread, so we stick to this convention).
+`==` equal and `!=` not equal (in school you probably used `=` for equality; in computing, the double `==` is common, so we stick to this convention).
 These operators are defined on numbers, and in contrast to
 arithmetic operators, they cannot be chained; which is why the second
 row of the table above shows only pairs of numbers with an operator in
@@ -117,7 +121,9 @@ one. The arithmetic and comparison operators can of course be combined,
 so you can write `3 + 5 > 7 * 2`, and this evaluates to `false`. For this
 to make sense, the arithmetic operators must have higher precedende than the
 comparison operators (the expression above must mean `8 > 14` and not 
-`3 + false * 2`; that would make no sense.  
+`3 + false * 2`; that would make no sense. 
+
+> ![](../plus.png) "Makes no sense" is handwaving for a type mismatch: you can only perform arithmetic operations on numbers, and `false` is not a number. We will return to types in [Chapter 3](../chapter03_types/index.md).
 
 
 While there might be many more operators in any particular language, I
@@ -128,12 +134,12 @@ The first one must be a Boolean value; if it evaluates `true`, the overall
 `if` evaluates to the expression given in the `then` part; otherwise it 
 evaluates to the one given in the `else` part. Again, this one binds even
 less tightly than the comparison operators, so you can write complex expressions
-like the one given in the `$C2` cell.
+like the one given in the `C2` cell. We will return to more sophisticated means of making (conditional) decisions in  will return to types in [Chapter 7](../chapter07_decAndCalc/index.md).
 
 
 ### References and Dependencies
 
-Let us go back to spreadsheets, and take a look at the following one:
+Let us go back to spreadsheets and take a look at the following one:
 
 ![](BasicValues/SimpleRefs.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A30b901aa-108c-498c-8b66-53a1d073f208%28chapter01_values%29%2F2522748330434130263)
 
@@ -146,7 +152,7 @@ to calculate the value for the current cell. So, when we evaluate cell
 `B0`, then the evaluator sees the `$A0` reference which prompts it to
 retrieve the expression in cell `A0` and evaluate it, resulting in `1`.
 Since `B0` has no further content, this `1` becomes the value of `B0`.
-Similarly for the `B1` cell; it gets the value of two other cells, and
+Similarly for the `B1` cell: it gets the value of two referenced cells, and
 _then_ adds those two values, producing `3` as the value of `B1`. And so
 on with `B2`. 
 
@@ -154,8 +160,8 @@ This is a good place to introduce the notion of a dependency: a cell `X`
 that contains a reference to another cell `Y` is said to _depend_ on `Y`.
 You cannot compute the value of cell `X` without first having calculated
 the value for cell `Y`. Dependencies are widespread in programming, and
-often they are undesirable. We will see several ways of avoiding such
-dependencies as we progress through this tutorial.
+they are often undesired because they "chain" parts of program together. 
+We will leaern several ways of avoiding such dependencies as we progress through this tutorial.
 
 ### Evaluation Order 
 
@@ -177,11 +183,11 @@ dependency, a possible evaluation order is
     A0, B0, A0, A1, B1, A2, B2
     
 Notice how in the evaluation of this cell we evaluate `A0` twice!
-However, we know that evaluating the same expression multiple times
-results in the same value. So this allows us to cache the value
-calculated in the first evaluation and return it, without any new
-calculation, when we evaluate `A0` for the second time. If the
-calculation of `A0` is expensive (i.e., requires lots of computational
+We know that evaluating the same expression multiple times
+results in the same value. So this allows us to remember (cache) the value
+calculated during the first evaluation and return it, without any new
+computation, when we evaluate `A0` for the second time. If the
+computation of `A0` is expensive (i.e., requires lots of computational
 work itself), avoiding multiple recomputations can make a significant
 difference in performance. And yes, in the intro I told you that I don't
 want to teach you performance optimization, but I think it is still
@@ -189,10 +195,9 @@ useful to get some glimpse into how programmers go about making software
 fast.
     
 So, let us think about how we would evaluate the whole spreadsheet. The
-first alternative is to linearly step through all cells and evaluating
+first alternative is to linearly step through all cells and evaluate
 each in turn. This means that, by the time we arrive at `B2`, all other
-cells will already have a value, and we can use the cached values to
-perform the computation in `B2`. In the end, this means that our
+cells will already have a value, and we can use those previously computed values to perform the computation in `B2`. In the end, this means that our
 dependencies effectively become
  
     B2 -> B0 [cached]
@@ -227,8 +232,9 @@ strategies for doing this, but updating the cell values is all there is.
 In addition, all the data the program works with is readily visible in
 the spreadsheet, it is simply the content of all cells. This very simple
 execution mechanism and the transparency regarding a program's internal
-data makes spreadsheets so attractive and explains their widespread use
-(together with their nice formatting options). However, as we will see,
+data (it's all in the cells!) makes spreadsheets so attractive and explains their widespread use (together with their nice formatting options). 
+
+However, as we will see,
 spreadsheets are just one member of a whole family of programming
 languages called "functional", for which the same properties hold
 regarding the execution model and the the transparency regarding
@@ -258,7 +264,7 @@ computation.
 heard the word "variable". Are cells variables? Not really.
 Similarly to cells, a variable is a name for a value. But more
 specifically, and more technically, it refers to a location in the
-memory of a computer. What is stored inside that location can _change
+memory of a computer. What is stored inside that location _can change
 during the execution of a program_. So, for example, during the first
 half of a program's execution, the value of a particular variable might
 be 0, and during the second half of the execution it might be 1.
