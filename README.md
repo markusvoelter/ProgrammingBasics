@@ -118,11 +118,65 @@ from our tool, Jetbrains MPS. A few paragraphs use special markers:
 > mentioned in paragraphs marked this way. These will become relevant once exercises
 > are available.
 
-
+> ![](doc/fix.png) These are bugs or other issues that need to be fixed. There shouldn't be too many of those in the tutorial when you read it :-)
 
 
 
 ## Where can I run the examples?
 
-TBD
+Currently, it involves several steps to get the examples to run. We are working
+on a much simpler (one-click) solution, but for now you have to work through the
+following steps:
+
+1. Download and install [Jetbrains MPS, Version 2017.3.x](https://www.jetbrains.com/mps/download/previous.html) in the variant specific to your operating system. MPS is implemented in Java, but it brings along its own JDK.
+
+2. Install the mbeddr.platform. This is a whole set of extensions to MPS that
+have been used in the implementation of this tutorial. 
+    - Download the [mbeddr.platform](https://build.mbeddr.com/repository/downloadAll/Mbeddr2_Mbeddr_Gradle_platform/.lastSuccessful/artifacts.zip); when prompted to log into the build server, use the `Log in as Guest` link.
+    - Unzip the ZIP file; this leads to a whole set of 50 or so folders, each 
+      representing MPS plugins. Check out [this picture](unzipOnMac.png) if 
+      you are unsure which folders exactly to copy.
+    - Take this set of folders and copy them into the `plugins` (note the "s")
+      folder of your MPS installation
+
+3. Install the iets3.opensource. This contains the KernelF language on which this
+   tutorial is based. 
+    - Download [iets3.opensource](https://build.mbeddr.com/repository/downloadAll/Iets3_BuildOrgIets3core/.lastSuccessful/artifacts.zip)
+    - Follow the same unzip/copy routine as with the mbeddr.platform above.
+
+4. Download the sources from this repository, eiter by cloning the 
+   repository or by downloading (and then unzipping) the source ZIP file.
+   
+5. Run MPS. Open the project that contains the examples. In MPS, projects
+   are folders with a `.mps` subfolder in it. The `src/programmingBasics`
+   is the project that contains the example code.   
+
+
+## About KernelF
+
+(You don't need to know or care when you want to learn programming with this
+tutorial, but just in case you are interested ...)
+
+KernelF is a functional programming language that was built at [itemis](http://itemis.de) based on [Jetbrains MPS](http://jetbrains.com/mps). It is intended to
+be used (and it is actually used) as the core of domain-specific languages. These
+languages address domains such as finance, insurance or healthcare and are thus
+used by non-programmers. Hence the focus of this tutorial in the first place.
+
+If you don't want to learn programming per se, but understand KernelF as a 
+programming language and how we use it for DSLs, please check out the
+language reference at [http://voelter.de/data/pub/kernelf-reference.pdf](http://voelter.de/data/pub/kernelf-reference.pdf)
+
+
+## Are there Exercises
+
+We are working on those :-)
+
+
+
+## Who is behind this tutorial?
+
+* [Markus Voelter](http://voelter.de), independent consultant and [itemis](http://itemis.de)
+* Ana-Maria Sutii
+
+
 
