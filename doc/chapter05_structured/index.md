@@ -43,16 +43,16 @@ this down as a first-class declaration:
 
 A `record` is literally like a row in a database, the members of the
 record are typed names, just like the parameters of functions. So, not
-much new here.
+much fundamtenally new here.
 
 However, conceptually we have done something important: we have created
 our own _abstraction_, the abstraction of a person in the context of our
 system. You might say: well, it's not really a person if it doesn't have
-a name and a birth date. However, what is a person in the context of a
+a name and a date of birth. However, what is a person in the context of a
 particular system, i.e., how we abstract the real-world concept into
 software, is our decision. If we are interested in age, weight, and the
-blood pressure, then it is perfectly ok to define a person to have those
-specific fields. Other people, for other uses, might define a person
+blood pressure, then it is perfectly ok to define a person as having those
+specific fields. Other programmers, for other uses, might define a person
 differently. You can, of course, argue that we should not call it a
 `Person`, but rather a `Patient`. Or `PatientData`. Or
 `DataForRiskFactorCalculation`. All are valid. It depends on what you
@@ -61,11 +61,11 @@ course don't care about names, as long as they are unique).
 
 
 
-### Records are Types ###
+### Records as Types ###
 
-Record declarations like the one above are types, similar to `number`,
+Record declarations like the one above can play the role of a type, similar to `number`,
 `boolean` or `string`. In contrast to those, however, they are not built
-into the language, they are defined by you, the user. With the `Person`
+into the language, they are defined by you, the programmer. With the `Person`
 declaration above, you have created a type that you can use like any
 other type. In particular, we can rewrite the `riskFactor` function that
 we have seen before:
@@ -73,11 +73,19 @@ we have seen before:
 ![](Records/riskFactorForperson.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172094667)
 
 The function now takes a whole `Person` as its only argument. Inside the
-function we can access the members of that person `p` through the dot
+function we can access the members of that person `p` using the dot
 notation. Remember that we had introduced it earlier as an alternative
 means of calling functions; now we use it to access members. This is why
 the dot operation is often also called the _member access operation_. 
- 
+
+> ![](../plus.png) Remember our argument why the dot operation is useful
+> to access things that _belong to_ something else (like the members belonging
+> to the record)? It is because you first write down the thing itself, and then,
+> after the dot, the tool will only propose, through code completion, the things
+> that belong to the thing on the left of the dot. The user experience, in terms
+> of the tool's ability to provide specific help, is improved. There is no 
+> fundamental technical reason why one can't access the age of a person by writing 
+> `age(p)` (where `p` is a `Person`) but it is much less convenient.
 
 ### Creating Record Instances ###
 
@@ -88,7 +96,20 @@ proper way of saying this is that each row is an _instance_ of a record
 type, where that record type defines the fields that all of the
 instances (rows) have. So the record defines the structure, the record
 _instances_ defines specific rows, where each row provides a value for
-each field/member of the record. So how can we create instances of
+each field/member of the record. 
+
+> ![](../plus.png) We have come across the notion of an instance before,
+> even though we did not make this explicit: `7` is an instance of the
+> type `number`, `true` is an instance of the type `boolean` and `Hello`
+> is an instance of the type `string`. So if `T` is the type of `<expr>`,
+> then `<expr>` is an instance of `T`. _instanceof_ is the opposite of
+> _has type_. We wil discuss instances much 
+> more in [Chapter 8](../chapter08_instantiation/index.md).
+
+
+
+
+So how can we create instances of
 user-defined records, such as the `Person` above? Here is how:
 
 ![](Records/PersonInstances.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172188049)
@@ -102,23 +123,28 @@ write tests):
 
 ![](Records/CallingTheFUnction.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172258024)
 
+> ![](../fix.png) Change this to regular function call syntax.
+
+> ![](../mps.png) After you enter `#`, the tool directly gives you an empty
+> template of the form `#<type>{}`. You can enter `Person` in the `<type>`
+> slot and then proceed to enter the member values between the curlies.
 
 ### Using the dot Notation for the Risk Factor ###
 
 Going back to the sheet above, the `E` column contained the call to the
 `riskFactor` function. In some sense, the function was _part of_ the
-record. Calling a function on a person, as in `riskFactor(p1)` is kind
+record. Calling a function on a person, as in `riskFactor(p1)` is kind of
 ugly. It would be much nicer to be able to write `p1.riskFactor()`. The
 reasons why this is nice are
 
 * it is syntactically similar to accessing members, creating a more homogeneous 
   feel for the overall program,
  
-* and it allows for better tool support, because, after we have typed `p1.`, the
+* and, as mentioned before, it allows for better tool support, because, after we have typed `p1.`, the
   tool will propose to us only members and the functions.
   
 To make this possible, we have to make the `riskFactor` an _extension_
-function. Extension functions are identical to regular function, except
+function. Extension functions are identical to regular functions, except
 that they "extend" a type in the sense that you can call them with the
 first argument before the dot:
 
@@ -143,17 +169,20 @@ important distinction:
 
 The regular use of a record type (in a member) represents _composition_.
 This means, that the respective 'BloodPressure' instance is _owned_ by
-the referencing `PatientData` record. A particular instance can only be
-owned by _one_ other instance, and if the owner is deleted, the
+the referencing `PatientData` instance. A particular instance can only be
+owned by _one_ other instance, and if that owning instance is deleted, the
 composed/owned instance is deleted as well. Essentially, composition
 creates a tree.
-
+ 
 The relationship between `PatientData` and `Person` is different, it is
 a (non-composition) reference. Here, the target instance has stands on
 its own, it is _not_ owned by the referencing instance, and the
 lifecycles are not connected: if the instance of `PatientData` is
 deleted, the `Person` that was referenced by that particular
-`PersonData` continues to exist.
+`PersonData` continues to exist. The same instance can be referenced
+by several other instances.
+
+![](containment.png)
 
 Technically, the `PatientData` stores a reference to the `Person` by
 storing the `Person`'s identifying member. That identifying member is
@@ -215,7 +244,7 @@ perform a new measurement. Let's say, it is currently
 `#BloodPressure{120, 90}`. How do you do this?
 
 The first thing we have to remember, from the very beginning of this
-tutorial, is that _values never change_. If we add `8 + 5` nothething
+tutorial, is that _values never change_. If we add `8 + 5` nothing
 ever happens to those two values; instead we produce a _new_ value `13`.
 In fact, the definition of what a value is relies on the fact that it
 never changes. And at least for now, we will stay with this definition.
@@ -226,7 +255,7 @@ new instance of the record with the changed diastolic pressure. So:
 
 The `with` operation allows you to create a copy of the current record
 value, with one or more of the members changed. The original value, the
-one on which you called `with` remains unchanged, as the test shows.
+one on which you called `with`, remains unchanged, as the test shows.
 Here is another example that changes a nested instance. You can see how
 we use the `old` keyword to refer to the value that is in the orignal
 value, the one on which we called `with`.
@@ -247,12 +276,12 @@ Here is another reason. Imagine one part of the program, let's say part
 `S`, hands a value to another part of the program `R` for it to do
 something with. Now, while `R`  performs its work, that other part `S`
 of the program continues to run and modifies the value. This would mean
-that from the perspective of the receiver `R`,  the value changes by its
+that from the perspective of the receiver `R`,  the value changes on its
 own, spontaneously. This is really really bad for correctness of
-programs. If values cannot change, a whole class of errors that can
+programs. If values can never change, this whole class of errors that can
 occur if parts of programs can run _concurrently_ are just impossible. 
 
-For now, we don't have concurrency in our progams. And it's quite
+For now, we don't have concurrency in our progams. And it is quite
 possible that you will neer explicitly deal with concurrency in the code
 you write. But it is _very_ likely that the code you write, for example,
 using a DSL for tax calculation, is actually executed in a concurrent

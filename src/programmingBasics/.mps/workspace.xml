@@ -17,9 +17,7 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter03_types.mps" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter03_types.mps" />
-    </list>
+    <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -302,11 +300,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="95" />
-                    <property name="caretXRelative" value="32" />
+                    <property name="caretX" value="207" />
+                    <property name="caretXRelative" value="144" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name">
-                      <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
+                      <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -347,22 +345,13 @@
                 <restoreAlways>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_6y7w4f_a">
-                      <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
+                      <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" />
                     </cellIdElement>
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" saveSessionState="false" viewPositionX="0" viewPositionY="10">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-143" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+              <inspectorMemento currentlyEditedNode="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
@@ -397,10 +386,10 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="width" value="1920" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -712,28 +701,28 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="08522cbc-82c9-40dc-be87-1adbdb9cbb64" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="08522cbc-82c9-40dc-be87-1adbdb9cbb64" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/chapter03_types.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="08522cbc-82c9-40dc-be87-1adbdb9cbb64" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -758,9 +747,6 @@
         </subPane>
       </pane>
       <pane id="CustomProjectView_org.iets3.core.plugin.plugin.SpecExplorer">
-        <subPane />
-      </pane>
-      <pane id="CustomProjectView_org.iets3.core.expr.doc.plugin.plugin.BookmarkExplorer">
         <subPane />
       </pane>
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
@@ -849,7 +835,8 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1172" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -867,7 +854,7 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25777203" sideWeight="0.51216024" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18580766" sideWeight="0.5111821" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Context Actions 2" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -876,7 +863,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25932837" sideWeight="0.48720682" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25777203" sideWeight="0.48783976" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18580766" sideWeight="0.4888179" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Lifted Results" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -889,7 +876,7 @@
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18097281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13471779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Raw Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27705225" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
@@ -5050,11 +5037,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="95" />
-                <property name="caretXRelative" value="32" />
+                <property name="caretX" value="207" />
+                <property name="caretXRelative" value="144" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name">
-                  <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
+                  <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5095,22 +5082,13 @@
             <restoreAlways>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
+                  <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" saveSessionState="false" viewPositionX="0" viewPositionY="10">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/6455317040166694488" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+          <inspectorMemento currentlyEditedNode="r:480e3b8e-0509-43e8-9493-4fac219a375e(chapter03_types)/8844044561165463023" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
