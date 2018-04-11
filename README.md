@@ -144,8 +144,9 @@ have been used in the implementation of this tutorial.
     - Download [iets3.opensource](https://build.mbeddr.com/repository/downloadAll/Iets3_BuildOrgIets3core/.lastSuccessful/artifacts.zip)
     - Follow the same unzip/copy routine as with the mbeddr.platform above.
 
-4. Download the sources from this repository, eiter by cloning the 
+4. Download the sources [from this repository](https://github.com/markusvoelter/ProgrammingBasics), eiter by cloning the 
    repository or by downloading (and then unzipping) the source ZIP file.
+   There's a bright green button on the [linked page](https://github.com/markusvoelter/ProgrammingBasics).
    
 5. Run MPS. Open the project that contains the examples. In MPS, projects
    are folders with a `.mps` subfolder in it. The `src/programmingBasics`
