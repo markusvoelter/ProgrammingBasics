@@ -33,7 +33,7 @@ Let us go back to records:
 ![](Recap/Instantation103.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923638078)
 
 This example captures the notion of a train connection (guess where I 
-am writing this :-)). We can create values of this type, i.e., instances
+am writing this :-)). We can create values of this type, i.e., record instances
 by writing
 
 ![](Recap/Instantiation104.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923638553)
@@ -47,32 +47,31 @@ have for the "holes".
 
 The type defines which values are valid for instances. Let's look at this
 statement a little bit more closely by looking at the following examples:
-
+ 
 ![](Recap/numberConstraints.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923641974)
 
 The first one defines a number without any further constraint (although
 we know that if we don't specify a precision, no decimal digits are allowed,
-so this is a kind of constraint). The `aNumberWithRange` is more picky, 
+so this is a kind of implicit constraint). The `aNumberWithRange` is more picky, 
 because the range specified on the type is of course a constraint on the
 set of allowed values. The next example defines a new type based on the
 `string` type. That new type, `TrainType`, has a constraint that expresses
 that valid values have to begin with the string `ICE` or `RE` (two kinds
-of trains in Germany, Intercity Express and Regional Express). Finally,
+of trains in Germany, InterCity Express and Regional Express). Finally,
 the new version of the `TrainConnection` defines a constraint that 
 expresses that the train cannot arrive in the same city from which it
 leaves. We get errors when we try to create instances that do not 
-conform to these rules:
+conform to these rules, which is why all the following tests fail.
 
 ![](Recap/TestFails.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923643837)
 
-As a side note, we can also write this test to _expect_ a constraint
-failure, and thus not fail if, as in these examples, the constraint 
-failure actually occurs. After all, we want tests to be green :-)
+Failing tests are bad. Always. So, can we write a test that _expects_
+the constraints to fail (and then becomes green)? Yes, we can:
 
 ![](Recap/TestFails2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923648723)
 
 Constraints expressed this way are checked at runtime, we have to 
-actually run the tests. Checking them in the type system is too complicarted.
+actually run the tests. Checking them in the type system is too complicated.
 The only exception is the number ranges; here, the IDE actually reports
 an error as soon as you write the program.				
 
@@ -123,7 +122,8 @@ leave holes, let instances fill values for the holes, and check the
 hole-values provided by the instances against the constraints specified
 by the type. That's it!
   
-On a technical note: usually an instance retains a reference to its type.
+
+> ![](../plus.png) Usually an instance retains a reference to its type.
 In records, notice how an instance `#Person{"Markus", "Voelter"}` references
 the record `Person`. Similarly, the spreadsheet instances shown above also
 refer to the template spreadsheet in between the angle brackets. This is so
@@ -135,14 +135,13 @@ If you are a "business person" you probably find the spreadsheet-based
 examples intuitive because of your experience with Excel. If you are an
 engineer, you probably want to see block diagrams. But even if you're not
 an engineer, you will learn quite a bit from this example as well.
-
 Take a look at the following code:
  
 ![](Dataflow/HelloBlock.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter07_decAndCalc%29%2F3051004821921841814)      
  
 A block is a new abstraction, you can see it as a function that has 
 more than one result. The `plusMinus` block takes two numbers, and 
-returs two resultss: the `plus` result where `a` and `b` are added, 
+returs two results: the `plus` result where `a` and `b` are added, 
 as well as the `minus` result that subtracts the two. Two two results 
 are computed separately, just as if it were a function with two bodies. 
 So nothing really new here. In fact, if you think about it, it's really
@@ -187,14 +186,16 @@ So, as a brief recap, here's a comparion between records, lists and tuples:
 
 So, returning to our blocks, the expression `plusMinus(5, 2)` in the test case
 calls a block, and receives the two results as a tuple. We express the expected
-result as a tuple as well.
+result as a tuple as well. Here is this initial example again:
+
+![](Dataflow/HelloBlock.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter07_decAndCalc%29%2F3051004821921841814)  
 
 Let us define a few more blocks:
 
 ![](Dataflow/basicBlocks.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923635556)
 
 As you can see, these blocks essentially wrap the basic arithmetic and comparison
-operators we have seen before. Most of them have exactly one output, except the 
+operators we have used before. Most of them have exactly one output, except the 
 `div` block, which also outputs if a division by zero would have occured because
 the second argument was zero.
 
@@ -218,8 +219,8 @@ and the connections, are done graphically. You drag and drop blocks from the pal
 
 So what _exactly_ are we seeing here? The grey rectangles are instances of 
 previously defined blocks; the symbols are defined with the block, see the
-set of predefined blicks above. The lines represent the data flow. In this
-example, the data flows from the inputs (`a`, `b` ) to the two inputs of the
+set of predefined blocks above. The lines represent the data flow. In this
+example, the data flows from the inputs (`a`, `b`) to the two inputs of the
 instances inside this composite block. So, as the name suggests, this block
 computes the sum and difference of the two inputs. Let's verify the behavior 
 via a few tests:
@@ -227,7 +228,7 @@ via a few tests:
 ![](Dataflow/TestComposite.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F6598033146029115916)
 
 Let's make this a little bit more complicated: both the sum and the difference
-can now be offset by an offset value each. 
+can now be offset by an constant value each. 
 
 ![](Dataflow/composite-4.png)  
  
@@ -253,8 +254,8 @@ result, we multiple the sum and the difference. Tests:
 So what is good and bad about this? What is good is that this approach
 supports nice modularization -- by packaging functionality into reusable
 blocks, we can reuse -- reinstantiate -- those blocks in different context.
-Modularization is generally good, and we will discuss it much more in the
-next chapter. 
+Modularization is generally good, and we will discuss it much more in later 
+chapters. 
 
 What about the graphical notation? Generally, people tend to like graphical
 notations: "a picture says more than 1000 words". However, let's be realistic:
@@ -284,6 +285,15 @@ This is really simple now! So what does this tell us? For fine-grained, basic
 arithmetics, a graphical notation really isn't worth it. Once things become
 more involved, and we maybe even have recursion in the computations (shown
 as cyclic lines in the diagrams), a graphical notation becomes more interesting.
+And we also learn that dataflow programming is just another form of functional
+programming as we have seen it before. No big deal!
+
+> ![](../plus.png) This style of programming is often used for control systems.
+> There, the semantics of the blocks is a little bit different from the pure functional
+> semantics used here. They might have state, and the system as a whole is
+> also concerned with timing and timed execution of blocks. Again, in such a
+> case, the approach is a little bit more defensible than here. However, even there,
+> the usefulness of the graphical notation is often doubtful.
 
 
 
@@ -296,14 +306,16 @@ So, what about functions? Can we instantiate functions? Look at this code:
 You could say that the function call "instantiates a function". After all, the 
 function defines "holes", i.e., the parameters, and the call provides values.
 The problem is that the function call executes right away, evaluates to the
-result value (15 and 5 in the example above), and the assigns that value to the `val`.
-Can function calls themselves be values? Let's see. 
+result value (15 and 5 in the example above), and the assigns that value to the `val`. So the "function instance" created by the call (kind of) has an
+infinitesimal lifetime, it never really exists. So, can function calls 
+themselves (not the thing they evaluate to) be values? Let's see. 
  
 ![](Lambdas/functionsAsValues.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822146454259)
 
-In this code we create three values, and each of them stores a value `:add`.
+In this code we create two `val`s, and they represent a value `:plus` and
+a value `:minus`, respectively. 
 The colon operator here creates a _reference to a function_. That reference
-is a value, that value can be passed around and mofified, like any other value.
+is a value, that value can be passed around and modified, like any other value.
 What is the type of that value? Let's ask the tool to automatically annotate
 the types:
 
@@ -340,7 +352,7 @@ to 5) and adds 5 to that argument. We store this new function value
 in the `val` named `thisAddsFive`. The type, as we see in
 `thisAddsFiveWithType` is now a function that takes _one_ number and produces 
 another one. As the tests show, we can now use this value as a function with one
-argument.
+argument, a function that adds 5 to whatever we pass in.
 
 So, if these things are values, we should be able not just to store them in `val`s,
 but also to pass them around, right? Absolutely:
@@ -349,7 +361,7 @@ but also to pass them around, right? Absolutely:
 
 Check out the function `doWithList`. It takes two arguments. The first one
 is a regular list of numbers. The second is a function that takes a number
-and produces a number. The idea of `doWithList` is that is produces a new 
+and produces a number (like the `thisAddsFive` we just created). The idea of `doWithList` is that is produces a new 
 list, where the function we pass as the second argument is applied to all
 elements of the list we pass as the first argument. We implement this 
 function using the `map` operator on the list which we have seen before.
@@ -359,16 +371,17 @@ of `map`! We can rename the function and make it an extension function, the
 we can literally use them in identical ways:
 
 ![](Lambdas/doWithLists2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822148721273)
-
+ 
 Well, not _quite_ identical. In the native case we explicitly execute the 
 `thisAddsFive` function value with the `it` that represents the list's
-element we currently iterate over. Can we simplify this?
+element we currently iterate over. In the case that uses our own `map`
+extension function we just pass a function value. Can we simplify this?
 
 ![](Lambdas/doWithLists3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822148834265)
 
 Indeed we can. So what do these higher-order functions, natively built in
-(like `map`, `where`, etc.) or built by us? They expect function types, i.e.,
-functions that take and produce particularly-typed values. So going back to
+(like `map`, `where`, etc.) or built by us exactly do? How do they work? They expect function values, i.e., values of type function type, 
+as arguments. So going back to
 our own higher-order function ...
 
 ![](Lambdas/doWithListsRepeated.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822149617043)
@@ -414,7 +427,11 @@ The following code is identical to the previous one:
 Here, the argument is automatically named `it`, and it is automatically typed
 with the element type of the collection on which `map` or `where` is called.  
  
+## Wrap up 
  
+So this brings us full circle: we have just explained higher-order functions
+and the lambda expressions we have used before via instantiation. This finishes
+the second part of the tutorial. Part three, once written, will deal with stateful programs and the passage of time.
 
 
 <hr>

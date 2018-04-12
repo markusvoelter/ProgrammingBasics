@@ -18,33 +18,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/AddingToLists/AddAndRemove.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/AddingToLists/AddAndRemove.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame2.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame3.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame3.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame4.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/AgeListFrame4.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/ComplexSheet.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/ComplexSheet.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/HigherOrderListStuff1.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/HigherOrderListStuff1.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/HigherOrderListStuff2.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/HigherOrderListStuff2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/SheetList.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/SheetList.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket2.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket3.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket3.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket4.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Collections/TrainTicket4.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/Record.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/Record.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/addingToMap.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/addingToMap.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/biggestCities.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/biggestCities.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/cityDataMapFrame.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/cityDataMapFrame.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/findPop.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/findPop.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/lookup.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Maps/lookup.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/SetsAndListsExample.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/SetsAndListsExample.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/addingToLists.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/addingToLists.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/toSetToList.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/Sets/toSetToList.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/TaxExample/ExampleSystem.png" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/TaxExample/ExampleSystem.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter06_collections/index.md" afterPath="$PROJECT_DIR$/../../doc/chapter06_collections/index.md" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter07_decAndCalc/index.md" afterPath="$PROJECT_DIR$/../../doc/chapter07_decAndCalc/index.md" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/HelloBlock.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/HelloBlock.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite2.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite3.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite3.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite4.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite4.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite5.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite5.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite6.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite6.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/Tuples.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/Tuples.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda5.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda5.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda6.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda6.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/LambdaAdding.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/LambdaAdding.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/MoreLambda.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/MoreLambda.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists2.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists3.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists3.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithListsRepeated.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithListsRepeated.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails2.png" />
+      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/index.md" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/index.md" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter07_decAndCalc.mps" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter07_decAndCalc.mps" />
+      <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter08_instantiation.mps" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter08_instantiation.mps" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -378,14 +372,14 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -434,14 +428,14 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -565,14 +559,14 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -656,14 +650,14 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -742,14 +736,14 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -809,14 +803,14 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -833,7 +827,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decisions" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Decisions" pinned="false" current-in-tab="false">
         <entry file="mps://node://programmingBasics/chapter07_decAndCalc/Decisions">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1021,14 +1015,575 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dataflow" pinned="false" current-in-tab="false">
+        <entry file="mps://node://programmingBasics/chapter08_instantiation/Dataflow">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="228" />
+                    <property name="caretXRelative" value="55" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635480" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="refNodeList_alternatives">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635619" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="refNodeList_alternatives">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635595" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="refNodeList_alternatives">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635703" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115381" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065712" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003173" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128215" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029116935" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142628276" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635506" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_hjwjb7_b0">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029727360" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_hjwjb7_b0">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150180691" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_hjwjb7_b0">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142641501" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115281" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440130633" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065710" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003171" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128213" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029115916" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635556" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635526" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635491" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-143" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="JComponent_6y7w4f_b5a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lambdas" pinned="false" current-in-tab="true">
+        <entry file="mps://node://programmingBasics/chapter08_instantiation/Lambdas">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="835">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="103" />
+                    <property name="caretXRelative" value="40" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3487973603071072267" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3487973603071063776" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964108" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149786771" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040695" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149991864" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149758380" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149696425" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617065" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834301" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148766974" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148681305" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148663522" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148635219" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040686" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149979862" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964105" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149782496" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149753494" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149730059" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617043" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834265" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148615391" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148617106" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148618748" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148410629" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146454259" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146453013" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-143" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="JComponent_6y7w4f_b5a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recap" pinned="false" current-in-tab="false">
+        <entry file="mps://node://programmingBasics/chapter08_instantiation/Recap">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="217" />
+                    <property name="caretXRelative" value="44" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821914279205" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648736" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648728" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923645066" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_61uzgz_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923644013" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648725" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_g8b7hx_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643934" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314936" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314370" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648723" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643837" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923641974" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638553" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638078" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923637953" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923634773" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-143" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="JComponent_6y7w4f_b5a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sheets" pinned="false" current-in-tab="false">
+        <entry file="mps://node://programmingBasics/chapter08_instantiation/Sheets">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="143" />
+                    <property name="caretXRelative" value="80" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_1fw85i_b1a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142624542" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_1fw85i_b1a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141670672" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_1fw85i_b1a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142622455" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_1fw85i_b1a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923664469" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142623501" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142617703" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6y7w4f_a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-143" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="JComponent_6y7w4f_b5a">
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1056,14 +1611,14 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
                     <property name="caretXRelative" value="-143" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="JComponent_6y7w4f_b5a">
-                      <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                      <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1466,11 +2021,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/chapter07_decAndCalc.mps}" />
+              <option name="myItemId" value="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/chapter08_instantiation.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3051004821910491975" />
+              <option name="myItemId" value="731163822146449967" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1568,8 +2123,7 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1584,7 +2138,7 @@
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18621974" sideWeight="0.51492536" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25839794" sideWeight="0.5157593" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions 2" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1592,7 +2146,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18621974" sideWeight="0.48507464" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25839794" sideWeight="0.48424068" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25710595" sideWeight="0.48567334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
@@ -1605,7 +2159,7 @@
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18266475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24498567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27705225" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Visualisation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3272,221 +3826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://programmingBasics/chapter08_instantiation/Sheets">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_8osaqv_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141669033" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_1fw85i_b1a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142624542" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_1fw85i_b1a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141670672" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_1fw85i_b1a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142622455" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_1fw85i_b1a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923664469" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142623501" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142617703" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141669033" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://programmingBasics/chapter08_instantiation/Dataflow">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2229">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="195" />
-                <property name="caretXRelative" value="22" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635480" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635619" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635595" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635703" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115381" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065712" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003173" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128215" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029116935" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142628276" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635506" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_hjwjb7_b0">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029727360" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_hjwjb7_b0">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150180691" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_hjwjb7_b0">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142641501" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115281" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440130633" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065710" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003171" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128213" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029115916" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635556" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635526" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635491" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635480" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://programmingBasics/chapter05_structured/Records">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -4427,286 +4766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://programmingBasics/chapter08_instantiation/Recap">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="837">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="184" />
-                <property name="caretXRelative" value="11" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821914279205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648736" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648728" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923645066" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923644013" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648725" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643934" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_a5oslz_b0a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314936" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_a5oslz_b0a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314370" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648723" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643837" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923641974" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638553" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638078" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923637953" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923634773" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821914279205" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://programmingBasics/chapter08_instantiation/Lambdas">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1656">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="206" />
-                <property name="caretXRelative" value="33" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146449967" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964108" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149786771" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040695" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149991864" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149758380" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149696425" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617065" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834301" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148766974" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148681305" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148663522" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148635219" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040686" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149979862" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964105" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149782496" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149753494" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149730059" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617043" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834265" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148615391" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148617106" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148618748" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148410629" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146454259" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146453013" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146449967" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://programmingBasics/chapter07_decAndCalc/MathNotation">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -5230,14 +5289,14 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5284,14 +5343,14 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5413,14 +5472,14 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5502,14 +5561,14 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5586,14 +5645,14 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5651,14 +5710,14 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5684,14 +5743,14 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5895,14 +5954,567 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
                 <property name="caretXRelative" value="-143" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/chapter08_instantiation/Dataflow">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="228" />
+                <property name="caretXRelative" value="55" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635480" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="refNodeList_alternatives">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635619" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="refNodeList_alternatives">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635595" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="refNodeList_alternatives">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635703" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115381" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065712" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128215" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029116935" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142628276" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635506" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_hjwjb7_b0">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029727360" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_hjwjb7_b0">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150180691" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_hjwjb7_b0">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142641501" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440115281" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440130633" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440065710" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3778825259440003171" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029128213" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/6598033146029115916" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635556" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635526" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923635491" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-143" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_6y7w4f_b5a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/chapter08_instantiation/Recap">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="217" />
+                <property name="caretXRelative" value="44" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821914279205" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648736" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648728" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923645066" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923644013" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648725" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643934" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314936" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5227231181401314370" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923648723" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923643837" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923641974" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638553" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923638078" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923637953" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923634773" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-143" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_6y7w4f_b5a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/chapter08_instantiation/Sheets">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="143" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142624542" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141670672" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142622455" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3051004821923664469" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142623501" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917142617703" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/5888573917141666776" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-143" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_6y7w4f_b5a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/chapter08_instantiation/Lambdas">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="835">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="103" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3487973603071072267" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/3487973603071063776" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964108" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_61uzgz_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149786771" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040695" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149991864" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149758380" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149696425" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617065" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834301" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148766974" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148681305" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148663522" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148635219" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822150040686" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149979862" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149964105" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149782496" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149753494" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149730059" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822149617043" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148834265" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148615391" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148617106" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148618748" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148410629" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146454259" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822146453013" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6y7w4f_a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" saveSessionState="false" viewPositionX="0" viewPositionY="9">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-143" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_6y7w4f_b5a">
+                  <node node_reference="r:3a1c0b08-ecea-441c-a1ee-79d5b39fbb64(chapter08_instantiation)/731163822148721273" />
                 </cellInfo>
               </stackElement>
             </selectionStack>

@@ -4441,10 +4441,10 @@
                 <property role="3mSvU8" value="false" />
                 <property role="3gEyWN" value="false" />
                 <property role="yKB1$" value="false" />
-                <node concept="3g_Wav" id="7EWmUIHZpmp" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpmq" role="3g_Wbw" />
+                <node concept="3g_Wav" id="31BLoccZeQT" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeQU" role="3g_Wbw" />
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpmr" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeQV" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -4452,16 +4452,16 @@
                 <property role="3mSvU8" value="false" />
                 <property role="3gEyWN" value="false" />
                 <property role="yKB1$" value="false" />
-                <node concept="3g_Wav" id="7EWmUIHZpms" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpmt" role="3g_Wbw" />
-                  <node concept="30cPrR" id="7EWmUIHZpmu" role="3g_Wby">
-                    <node concept="30bXRB" id="7EWmUIHZpmv" role="30dEs_">
+                <node concept="3g_Wav" id="31BLoccZeQW" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeQX" role="3g_Wbw" />
+                  <node concept="30cPrR" id="31BLoccZeQY" role="3g_Wby">
+                    <node concept="30bXRB" id="31BLoccZeQZ" role="30dEs_">
                       <property role="30bXRw" value="0" />
                     </node>
-                    <node concept="3g_UGA" id="7EWmUIHZpmw" role="30dEsF" />
+                    <node concept="3g_UGA" id="31BLoccZeR0" role="30dEsF" />
                   </node>
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpmx" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeR1" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -4592,10 +4592,10 @@
                 <node concept="30bXRB" id="56SqGtkUCe0" role="33cOLO">
                   <property role="30bXRw" value="5" />
                 </node>
-                <node concept="3g_Wav" id="7EWmUIHZpn2" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpn3" role="3g_Wbw" />
+                <node concept="3g_Wav" id="31BLoccZeRy" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeRz" role="3g_Wbw" />
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpn4" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeR$" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -4606,16 +4606,16 @@
                 <node concept="30bXRB" id="56SqGtkUCgN" role="33cOLO">
                   <property role="30bXRw" value="5" />
                 </node>
-                <node concept="3g_Wav" id="7EWmUIHZpn5" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpn6" role="3g_Wbw" />
-                  <node concept="30cPrR" id="7EWmUIHZpn7" role="3g_Wby">
-                    <node concept="30bXRB" id="7EWmUIHZpn8" role="30dEs_">
+                <node concept="3g_Wav" id="31BLoccZeR_" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeRA" role="3g_Wbw" />
+                  <node concept="30cPrR" id="31BLoccZeRB" role="3g_Wby">
+                    <node concept="30bXRB" id="31BLoccZeRC" role="30dEs_">
                       <property role="30bXRw" value="0" />
                     </node>
-                    <node concept="3g_UGA" id="7EWmUIHZpn9" role="30dEsF" />
+                    <node concept="3g_UGA" id="31BLoccZeRD" role="30dEsF" />
                   </node>
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpna" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeRE" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -4740,10 +4740,10 @@
                 <node concept="30bXRB" id="56SqGtkUE$D" role="33cOLO">
                   <property role="30bXRw" value="7" />
                 </node>
-                <node concept="3g_Wav" id="7EWmUIHZpnF" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpnG" role="3g_Wbw" />
+                <node concept="3g_Wav" id="31BLoccZeSb" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeSc" role="3g_Wbw" />
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpnH" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeSd" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -4754,16 +4754,16 @@
                 <node concept="30bXRB" id="56SqGtkUE$I" role="33cOLO">
                   <property role="30bXRw" value="12" />
                 </node>
-                <node concept="3g_Wav" id="7EWmUIHZpnI" role="3g_T$e">
-                  <node concept="mLuIC" id="7EWmUIHZpnJ" role="3g_Wbw" />
-                  <node concept="30cPrR" id="7EWmUIHZpnK" role="3g_Wby">
-                    <node concept="30bXRB" id="7EWmUIHZpnL" role="30dEs_">
+                <node concept="3g_Wav" id="31BLoccZeSe" role="3g_T$e">
+                  <node concept="mLuIC" id="31BLoccZeSf" role="3g_Wbw" />
+                  <node concept="30cPrR" id="31BLoccZeSg" role="3g_Wby">
+                    <node concept="30bXRB" id="31BLoccZeSh" role="30dEs_">
                       <property role="30bXRw" value="0" />
                     </node>
-                    <node concept="3g_UGA" id="7EWmUIHZpnM" role="30dEsF" />
+                    <node concept="3g_UGA" id="31BLoccZeSi" role="30dEsF" />
                   </node>
                 </node>
-                <node concept="ThHu4" id="7EWmUIHZpnN" role="ThHu5">
+                <node concept="ThHu4" id="31BLoccZeSj" role="ThHu5">
                   <property role="ThHvf" value="3" />
                 </node>
               </node>
@@ -5226,6 +5226,15 @@
               </node>
             </node>
           </node>
+          <node concept="1z9TsT" id="31BLoccZnrw" role="lGtFl">
+            <node concept="OjmMv" id="31BLoccZnrx" role="1w35rA">
+              <node concept="19SGf9" id="31BLoccZnry" role="OjmMu">
+                <node concept="19SUe$" id="31BLoccZnrz" role="19SJt6">
+                  <property role="19SUeA" value="This uses the map extension function we just created" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2zPypq" id="C_BpXjMTp_" role="3$tU1w">
           <property role="TrG5h" value="list678UsingNativeMap" />
@@ -5252,7 +5261,17 @@
               </node>
             </node>
           </node>
+          <node concept="1z9TsT" id="31BLoccZpwb" role="lGtFl">
+            <node concept="OjmMv" id="31BLoccZpwc" role="1w35rA">
+              <node concept="19SGf9" id="31BLoccZpwd" role="OjmMu">
+                <node concept="19SUe$" id="31BLoccZpwe" role="19SJt6">
+                  <property role="19SUeA" value="This uses the built-in map operator" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
+        <node concept="_ixoA" id="31BLoccZq2n" role="3$tU1w" />
         <node concept="_fkuM" id="C_BpXjMONY" role="3$tU1w">
           <property role="TrG5h" value="testAddingAgain" />
           <node concept="_fkuZ" id="C_BpXjMONZ" role="_fkp5">
