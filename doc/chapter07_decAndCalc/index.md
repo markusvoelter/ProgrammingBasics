@@ -10,10 +10,9 @@ often interleaved. To be able to make these, we need data structures (as we
 have explained in the previous two chapters) and ways of expressing behavior
 (expressions and functions, as introduced even earlier). Once the decisions
 and calculations become more complicated, it becomes important how we 
-represent them to keep them understandable to ourselves and other people
-who might want to read and understand them them. A really important ingredient
-for making this work is modularity, which we explain in the next chapter.
-But it is also about choose appropriate abstractions in the first place. I 
+represent these decisions to keep them understandable to ourselves and other people
+who might want to read and understand them. A really important ingredient
+is to choose appropriate abstractions. I 
 will provide some ideas in this chapter.
 
 ### Mathematical Notations
@@ -30,8 +29,8 @@ intermediate values and names, for example, like this:
 
 ![](MathNotation/midnight2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387779123)	
 
-But you still have to work on recognizing it. A much better version would
-be this one:
+But you still have to work on recognizing it. A much better representation
+of the formula is this:
 
 ![](MathNotation/midnight3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387760470))
 
@@ -45,8 +44,7 @@ So why am I showing this? Because it demonstrates how important it is to
 select the right _notation_. All three representations of the formula do 
 exactly the same thing. Moreover, they use exactly the same abstractions:
 multiplication, subtraction, division, and so on. The only difference is
-the way these abstractions are represented in terms of the symbology used
-here. 
+the way these abstractions are represented in terms of the symbology used. 
 
 There's of course one detail that has been missing (did you notice?): the
 midnight equation has two results, the plus in the numerator can also be
@@ -65,7 +63,16 @@ makes things much easier to read and understand. So, if you are involved
 with designing a DSL, make sure you properly motivate the language designers
 to use nice notations. It's not just "cosmetics"!
  
- 
+ > ![](../plus.png) You might ask: what's the big deal? Of course it is a good
+> idea to use the native mathematical notation to represent mathematical things.
+> And yes, this is true. But mainstream programming languages (those not optimized
+> for math, like [Mathematica](https://www.wolfram.com/mathematica/)) can only
+> use sequential text as part of their syntax. So the version that uses root
+> symbols and fractions bars is simply not possible. KernelF, the language
+> we use in this tutorial, relies on MPS, which supports essentially
+> [arbitrary notations](http://voelter.de/data/pub/gemoc2014-voelterLisson-MPSNotations.pdf),
+> including the math symbols shown here, but also including all the other
+> non-textual stuff shown in this and the next chapter.
  
   
  
@@ -83,18 +90,24 @@ Another way of writing the same decision is by using the `alt` expression:
 
 ![](Decisions/alt1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821910492143)
 
-However, the `alt` expression can be used to have more than two alternatives.
+However, the `alt` expression can be used to decide between more than two alternatives.
 Below is an example that returns a risk factor based on somebody's body 
-mass index:
+mass index: 
 
 ![](Decisions/bmiRiskFactor.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821910499206)
 
 As you can see, we use several alternatives that cover the range of values
-of the body mass index, and depending on the amount of over and under-weight
+of the body mass index, and depending on the amount of over- and under-weight
 we assign a risk factor (this is not a real medical example, I made this
 up based on other risk classifications I know from medical projects!).
-There are several things we can see here. First, it is really a bit hard
-to read, because of all the repetition of numbers. There are several ways
+If we were to write this with `if`s, we could do this by nesting; here is the corresponding
+code:
+
+![](Decisions/bmiRiskFactorWithIf.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F3487973603065884706)
+
+However, it's really hard to read. The `alt` syntax is much better. 
+But there are more improvments possible. For example, the repetition of numbers is a problem. 
+There are several ways
 to make this more readable. First, we can use the `inRange` operation:
 
 ![](Decisions/bmiRiskFactor2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821910536913)
@@ -110,22 +123,23 @@ age of the person:
 
 It's very obvious that this will get out of hand quickly, and we will get 
 back to this case later; for now, let us look at another way of splitting
-a range: 
+a single range, such as the BMI: 
 
 ![](Decisions/bmiRiskFactor4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821910672135)
 
-The `split` expression is explicitly designed to break down _one_ value
+Note how we use `split` instead of `alt`. The `split` expression is explicitly 
+designed to break down _one_ value
 into subranges; this is why the value, `bmi`, is pulled before the various
-cases. This is why it does not have to be mentioned in each case. As a flip
-side, you cannot add a second value, such as the `age` in the example above.
-It is a nice example how it is useful that a special-purpose expression can be
-used to handle a (presumably) common problem in a way that is much more readable
+cases and does not have to be mentioned in each case. On the flip
+side, you cannot add a second value, such as the `age` from the example above.
+It is a nice example how it is useful to have a special-purpose expression
+to handle a (presumably) common problem in a way that is much more readable
 than using a more general-purpose concept like `alt`.
 
 
-**Two Dimensions:** Often you have to make a decision based on two criteria. For example,
-it is quite plausible (again: no real medical relevance here!) that the risk factor involved
-in somebody's weight depends on their age. Here is a two-dimensional decision table that
+**Two Dimensions:** As we have seen above in the example with `bmi` and `age`, you often 
+have to make a decision based on two criteria; the risk factor involved
+in somebody's weight depends also on their age. Here is a two-dimensional decision table that
 represents such as decision:
 
 ![](Decisions/bmiRiskFactor5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821911985789)
@@ -135,20 +149,21 @@ and row headers evaluate to true:
 
 ![](Decisions/bmiRiskFactor5Tests.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821912032681)
 
-A note on the notation: even though it uses a tabular notation like the spreadsheets we have seen before. the semantics, i.e., the meaning, is different: it's not just a collection of "cells with values". Instead, the row and column headers are required to be Boolean expressions, and the result of the evaluation of the overall table is a single value.
+A note on the notation: even though it uses a tabular notation like the spreadsheets we have seen before, the semantics, i.e., the meaning, is different: it's not just a collection of "cells with values". Instead, the row and column headers are required to be Boolean expressions, and the result of the evaluation of the overall table is a single value.
 
 Instead of using this tabular notation, one could represent this decision 
 as nested `alt` expressions. However,
 because the two dimensions are independent and (potentially) every 
-combination has a different risk, this becomes very hard to read quickly.
+combination has a different risk, this becomes very hard to read quickly. It is the same
+argument that we also made when justifying the `alt` expression relative to nested `if`s.
 
 
 **More Dimensions:** Sometimes decisions depend on more than two independent dimensions. Since
 we cannot sensibly represent a 5-dimensional table, we need a different mechanism. So let's introduce
-our multi-decision tables. They work as follows: first, they are evaluated in row order. Rows
+our multi-decision tables. They work as follows: first, they are evaluated in row order, top-down. Rows
 that are mentioned earlier are matched first. Each of the colums is matched by `==`, 
-the columns in each row are anded together. If a cell contains comma-separated
-values, these count as an or. As an example, we use a fictional computation of a train fare;
+the columns in each row are `and`'ed together. If a cell contains comma-separated
+values, these count as an `or`. As an example, we use a fictional computation of a train fare;
 these are notoriously complicated.
 
 ![](Decisions/FareCalculation.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821912537523)
@@ -180,7 +195,7 @@ While the tables are better than a whole bunch of nested `if`s or `alt`s, it mig
 to get them correct. For example, in the `bodyMassIndexRiskFactorWithAge` above, there is a bug:
 in the last line, it should say `age >= 50` and not just `>`. The current table does not handle
 the case where `age == 50`: we say the table is incomplete. How can we find such errors? Of course
-we can test. But if we don't happen to test for age 50, we won't find it. Is there a better way?
+we can test. But if we don't happen to test for age 50, we won't find the problem (remember the discussion on coverage in the context of testing?). Is there a better way?
 Yes, there is. Because we have expressed it as a decision table, and because, by definition, 
 decision tables have to be complete, we can use a so-called solver to check this completeness.
 
@@ -190,7 +205,7 @@ If we apply the solver to that table, it reports:
 
 A solver tries to proof that for all possible values, the tables has a result. If it finds an 
 example for which this is not the case, it reports this example. It reports such an example
-to the user; `age = 50` is such an example. 
+to the user as an error; `age = 50` is such an example. 
 
 Here's another one with a bug. See it?
 
@@ -201,7 +216,7 @@ The solver marks lines three and four and reports:
     Error: Overlapping Rows: These rows all match in the following case: age = 35
     
 Here we have a non-uniqueness: an age of 35 matches two lines, so the table cannot uniquely decide.
-So overlap-freedom is another thing that the solver can automatically check. One more:
+So overlap-freedom is another aspect of correctness that the solver can automatically check. One more:
 
 ![](Decisions/SolverChecking2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821912859977)
 
@@ -216,8 +231,14 @@ errors.
 
 We use the solver also to verify the multi-decision tables (the fare example). Here, we
 check that a line does not shadow lines further down, because then those would never ever
-apply. We also check for completeness and consistency in `alt` expressions. Generally, 
+be selected. We also check for completeness and consistency in `alt` expressions. Generally, 
 solvers can find many non-trivial bugs.
+
+> ![](../plus.png) Solvers are sophisticated tools not typically used in programming
+> languages to find errors. One reason for not using them is that many languages lack 
+> the languages features based on which solvers can be applied in a way that lead to
+> meaningful error messages. Also, integrating a solver completely with a language is
+> a lot of work, as we are currently experiencing :-) 
 
 
 
@@ -227,13 +248,12 @@ solvers can find many non-trivial bugs.
 Let's say you're a little child. You want to add two numbers. But the only thing you can do,
 in terms of your math expertise, is to add one to a number or substract one. Now let's also 
 imagine you are a little child who can write code :-) How would you implement adding two numbers 
-when you can only know how to add or subtract one? Here is what we have initially:
+when you only know how to add or subtract one? Here is what we have initially; the tests fail, 
+or course, since we just return zero from our `add` function.
 
 ![](Recursion/addingByRecursion.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821913096173)
 
-The `inc` function is your low level mechanism to add one to a number. The add function
-should now be implemented by only using `inc`. For now, we implement it to just return zero,
-which is why all the tests fail. Here is how you would write this:
+The `plus1` function is your low level mechanism to add one to a number, `minus1` is the low-level subtraction. The `add` function should now be implemented by only using `plus1`. So let's look at an implementation that actually works:
 
 
 ![](Recursion/addingByRecursion2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821913097989)
@@ -262,26 +282,30 @@ calculation, we get
     6
     
     
-A function calling itself with 
+A function that calls itself with 
 other arguments is called _recursive_. A recursive function must at some
-point stop calling itself; in our case, when we call add with the second
+point stop calling itself, otherwise the program will run forever.
+In our case, when we call `add` with the second
 argument as zero, we know that there's no more work to do and we can
-just return the first argument. This is why we use the `alt` expression
+just return the first argument, without calling `add` again. This is why 
+we use the `alt` expression
 in the function to distinguish the recursive case from the base case.
 
-Recursion is not so easy to understand. Many programmers, including myself,
+Recursion is not so 
+easy to understand. Many programmers, including myself,
 have problems understanding it once its use becomes more involved than in
-this example. I would expect that you will likely not use it much. But it
-is useful to know about it. But it is used, even by people who are not 
+this example. I would think that you will likely not use it much. But it
+is useful to know about. Sometimes it is indeed used even by people who are not 
 necessarily programmers. Take a look at the following code:
                  
 ![](recuriveInsuranceMath.png) 
 
+Notice how the 
+`l` function calls itself with a different value for the variable `x`. 
 And yes, this is code! It looks like a Word document, which is intended:
 these recursive formulas were found in a Word document that defines recursive,
 numerical functions in actuarial math in insurances. We have built a language
-that resembles the Word notation as closely as possible. Notice how the 
-`l` function calls itself with a different value for the variable `x`. 
+that resembles the Word notation as closely as possible. 
 
 
 
@@ -323,6 +347,10 @@ expressions:
 
 ![](Debugging/initialInspector.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F7098765551289465354)
 
+> ![](../mps.png) You attach a value inspector using an intention on any expression, i.e., 
+> by opening the intentions menu via `Ctrl-Alt-Enter` and then selecting the `Attach 
+> Value Inspector` intention.
+
 A value inspector can be attached to any expression, and, if through whatever means,
 this expression is evaluated, the inspector shows that value. In the example above, we
 have attached the inspector to the initialization expressions for the two `val`s.
@@ -332,7 +360,10 @@ You can also look inside a function:
 
 Note how here, the inspector shows _two_ values for the two expressions each (separated
 by a comma). Why is this? It is because the function `speed` was called twice, and the
-inspector records all the values, and outputs all of them. So, while this works for 
+inspector records all the values, and outputs all of them. 
+
+
+So, while this works for 
 simple cases, we ultimately need a more sophisticated way of tracing computations; we'll
 introduce one in the next subsection, but before we do this, I want to briefly close the
 loop with spreadsheets; you can use the inspector in those too, to peek inside parts
@@ -369,7 +400,7 @@ that shows
 * the type of the value (e.g., Java's `: BigInteger`)
 * as well as the language construct (e.g., `[NumberLiteral]`)
 
-By default, the tree is collapsed, as you can explore the computation by opening successive 
+By default, the tree is collapsed, and you can explore the computation by opening successive 
 tree nodes. Let's see what happens if the same program node is evaluated several times, a problem
 with the earlier value inspector mechanism. In this example, the `add` function is called three 
 times in total:

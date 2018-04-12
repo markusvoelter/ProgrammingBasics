@@ -7,34 +7,34 @@ Go back to [Types](../chapter05_structured/index.md)
 
 ### Motivation
 
-In the previous chapters, we have discussed records. A record combines several 
+In the previous chapter we have discussed records. A record combines several 
 values into a new abstraction. For example, values `name: string`, `first: string`
 and `birthdate: Date` are combined into a record `Person`. Collections are also
 abstractions that combine several values, but they are different from records in
 the following ways:
 
-* Records group values of _different_ types (`string` + `string` + `Date`) in
-  the example above, whereas collections group values of the same type.
+* Records group values of _different_ types (`string` + `string` + `Date` in
+  the example above), whereas collections group values of the same type.
 
-* In Records, each value is identified by a name, the values are anonymous,
+* In Records, each value is identified by a name, whereas in collections, 
+  the values are anonymous,
   possibly identified by their position ("the 3rd element in a list")
   
 * In a record, there is a fixed set of values (`name`, `first`, `birthdate`),
-  whereas in collections the number is (usually) not predefined.
+  whereas in collections the number is (usually) not limited.
   
-* Finally, a records are specific declarations; we defined the `Person` record
+* Finally, records are specific declarations; we defined the `Person` record
   to suit our particular needs. Collections are generic, i.e., they are predefined
   and we just use them.
   
 The reason for having collections is rather obvious: if we look at the `PatientData` example from the previous chapter, it's rather strange to
 only have _one_ blood pressure value. More realistically, you would probably
-want to collect several blood pressure measurements over time. Similarly, 
-in the introductory example from the last chapter ...
+want to collect several blood pressure measurements to represent how a person's blood pressure evolves over time. Similarly, the introductory example from the last chapter ...
 
 ![](Collections/ComplexSheet.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793188041938)
 
 ... can of course also be seen as a list of five records. We want
-to have an abstraction that allows us to work us with such as list.
+to have an abstraction that allows us to work us with collections such as lists, sets or maps.
 
 ### Introduction to Lists
 
@@ -50,7 +50,7 @@ automatically infers:
 ![](Collections/AgeListFrame2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793189824832)
 
 Wow, that is a rather complex type! Let's see. It is a list. Inside the
-`<...>` it specifies the type of the elements. In this case, all
+`<...>` it specifies the type of the elements of that list. In this case, all
 elements are (integer) numbers, and as we can see by analyzing the
 values, the number is between 12 and 87, the smallest and the largest of
 the values in the list. In the square brackets behind the angle
@@ -61,15 +61,23 @@ if we generalize the type:
 
 ![](Collections/AgeListFrame3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793189827434)
 
-Here, we have _manually_ specified the type to just be a list of
-numbers; no number range, and no list length. This is still valid.
+Here, we have _manually_ specified the type (i.e., we have changed 
+the program by editing it) to just be a list of
+numbers; no number range, and no list length. This is still a valid program
+in terms of types.
 Remember that earlier we said that for a `val` declaration, the type of
 the value (`list(45, 33, 12, 87, 56)`) must be the same or a subtype of
 the specified type (if one is specified). This is intuitively the case
-here: numbers between 12 and 87 are clerly a subtype of numbers in
+here: numbers between 12 and 87 are clearly a subtype of numbers in
 general, and a list with five elements is a subtype of a list with an
-arbitrary length. There is an additional detail about something called
-covariance which we skip here :-)
+arbitrary length. 
+
+> ![](../plus.png) The fact that a `list<U>` is a subtype of `list<T>`
+> if `U` is a subtype of `T` is a feature called covariance. So, in
+> our language here, lists are covariant. They don't have to be, the
+> language (and its type system) could have been defined differently;
+> however, covariance for collections is rather widespread and also
+> makes intuitive sence.
 
 So in the code above, we see the word "list" twice. Behind the colon it
 is used as a type, similar to `number` or `Person`. What is special
@@ -89,7 +97,7 @@ cannot derive it from the elements). Here is an empty list of strings:
 There are of course other ways of creating lists. Below we will see how
 to create new lists by adding or removing elements from an existing
 list. However, we can also construct completely new lists in other ways
-that with the `list` expression. Here is a way to construct a list from
+than with the `list` expression. Here is a way to construct a list from
 a linear range of cells in spreadsheet:
 
 ![](Collections/SheetList.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793189834321)
@@ -97,7 +105,8 @@ a linear range of cells in spreadsheet:
 Each row in the sheet, in row `D`, creates a `Person` value instance
 using the `makeRecord` we have seen before. We then declare a value
 `all` that is a `list<Person>`; it uses `makeList` to grab the persons
-in column `D` of the spreadsheet.
+in column `D` of the spreadsheet. The tests also demonstrate how we
+can process lists; we will discuss this next.
 
 
 
@@ -113,20 +122,39 @@ and assert that it is "Smith". Using `at(pos)` we can retrieve the
 element at position `pos`. Note that these positions are 0-based, like
 all indices in computing. The last assertions demonstrates this.
 
+> ![](../plus.png) The fact that positional indices use 0 for the first
+> element can only be understood historically. In the early days, lists
+> were stored simply as successive entries in the computer's memory. So, 
+> for example, the list `45, 33, 12` was stored, in binary encoding,
+> one byte each, directly next to each other: `00101101|00100001|00001100`.
+> Since we know that each number takes one byte (8 bits, count the digits!)
+> for storage, we can access the n-th list entry by adding n bytes to the
+> address of the beginning of the list. So assuming the list was stored
+> at address `ABE0` (a hexadecimal address value), we can retrieve the
+> n-th entry from address `ABE0 + n`. This is a very efficient
+> way of retrieving data, because it requires no iteration. Anyway, it 
+> is clear from this discussion, that the first element of the list is
+> right at the beginning of that memory block, so we have to add 0 to the
+> base address. This is why we use zero-based position indices. Today, 
+> of course, in many languages data is stored differently, and the fact
+> that we use a zero-based index is pure convection. But we stick to it :-)
+
 The next set of examples introduce something fundamentally new: we will
 use expressions as arguments to function calls! So far, we have only
-ever passed values to functions, i.e., data. Now we are passing code to
+ever passed _values_ to functions, i.e., data. Now we are passing code to
 functions. Functions to which we can pass code are called _higher order_
 functions. This is a somewhat advanced concept if you try to understand
-how it works under the hood. I will (probably) explain this (much) later
-in the tutorial. For now, we will just use these new kind of function,
-and this is actually quite easy.
+how it works under the hood. I will explain this later
+in the tutorial, [Chapter 8](../chapter08_instantiation/index.md). For 
+now, we will just _use_ these new kind of function,
+and using them is actually quite easy and intuitive.
 
 **Mapping**: Let's say we want to create a new list from the existing
-example list above that contains only `name` of each person. So we will
+example list above that contains only the `name` of each person. So we will
 step through the `all` list, access the `Person` at each index, grab
 their name, and then package all of these into a new list. Here is how
 you do this:
+
 
 ![](Collections/HigherOrderListStuff1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793192211332)
 
@@ -139,28 +167,31 @@ runs through all the elements of the list on which we call it (here:
 `all`). For each element, it calls the code that we pass to `map`. That
 code is an expression, that creates a new value. These new values will
 be packaged into a new list, which is then the value returned by `map`.
-The code we pass (technically called a lambda), can use the special
+The code we pass, can use the special
 expression `ìt` to refer to the element from the original list for which
 we're currently calculating the new value. So because we map over a list
 of `Person`s, `it` is always of type `Person`. This is why we can call
-`.name` on `it`. So to be clear: the `it.name` is called five times in
+`.name` on `it`. The resulting list is now a `list<string>`. 
+So to be clear: the `it.name` is called five times in
 our example, once for each of the five persons in the `all` list. The
 iteration, and the calling, is handled internally to `map`.
+
+
 
 **Filtering**: We can also filter the contents of a list according to a criterion. Look at this code:
 
 ![](Collections/HigherOrderListStuff2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793192252813)
 
 We first define a function `age` that computes a person's age based on
-their birthdate and the current year. We then take `all` list and pick
+their `birthdate` and the current year. We then take the `all` list and pick
 from it only those elements where the age is older than 35. Like the
 `map` function, `where` does this by calling the expression we pass to
 it for each element in the list. But instead of creating a new list with
-the result of that expression, it uses the exact element from the old
-list, but _only_ if the expression we evaluates to true. So the
+the _result_ of that expression, it uses the element from the old
+list, but _only_ if the expression we pass as an argument evaluates to true. So the
 resulting list is still a `list<Person>`, but it might have fewer
 elements than the original, because those where the expression is false
-are not added. In our example, only the last element in the list, Jim
+are not included. In our example, only the last element in the list, Jim
 Joyner, is younger than 35. We can test this by using the `head`
 function on the two lists: `head(n)` returns the first `n` elements from
 a list; since only the last one is filtered out, the first four elements
@@ -169,8 +200,7 @@ in both lists are the same.
 
  **Checking**: Lets say we want to buy a train group ticket for the
  folks in the `all` list. We can get the _retired_ rebate if all of the
- people in the group are older than 60. How can we check for this?`
- 
+ people in the group are older than 60. How can we check for this?
  One way is to use `where`: we write essentially the same code as
  before, but use 60 as the age threshold. Then we check if the filtered
  list has the same length as the original one:
@@ -184,7 +214,7 @@ in both lists are the same.
 The `all` operation also takes a Boolean expression. And it evaluates to
 true if the expression is true for _all_ elements of the list. Otherwise
 it returns false. In terms of Boolean algebra, it joins all of the
-expression by `and`. You can see how this is cumbersome:
+expression by `and`. You can see how this is cumbersome if you wrote it manually:
 
 ![](Collections/TrainTicket3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793192530667)
 
@@ -193,6 +223,11 @@ together. Let's say we get the family group rebate as soon as there is
 one group member under 12 years of age: 
 
 ![](Collections/TrainTicket4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793192611276)
+
+> ![](../plus.png) For the math-minded people among you, `all` is the
+> universal quantifier (represented with the upside-down capital A) and
+> `any` is the existential quantifier (represented with the left/right-mirrored
+> capital E). 
 
 There are many more (higher-order) functions on lists that do all kinds
 of fancy things. Some are not so easy to understand, and we will ignore
@@ -211,12 +246,14 @@ Here is how:
 Using the `with` operation, we can create a new list that has the
 contents of the original one as well as the one passed as the argument
 of `with`. Because lists are values, _the original list remains
-unchanged_, as the test shows.
+unchanged_, as the test shows. So, above, we should not have said
+"how do we add a new element to a list", but rather, "how can we create
+a new list from an existing one that has one more element in it".
 
 
 ### Databases and the System Boundary
 
-Based on the observation above that we can not change the same list, but
+Based on the observation above that we can not change any particular list, but
 only create new ones with additional elements (or fewer, using
 `without`), how would we build a database? A database is a store of
 records where programs can add or remove records as the program
@@ -227,10 +264,11 @@ program a particular database has different contents. The database is a
 _variable_. 
 
 In this part of the turorial we do not (yet) look at language features
-that allow variables to change over time because it makes writing,
-understanding, and debugging programs much more complicated. It is
-beyond (at least a strict definition of) functional programming. So how
-can we use the skills we have obtained so far for something useful? How
+that support to change over time because it makes writing,
+understanding, and debugging programs much more complicated. 
+It is beyond (at least a strict definition of) functional programming. 
+So variables, and thus, databases, are out of the picture for now.
+So how can we use the skills we have obtained so far for something useful? How
 can we write a useful program if we cannot keep track of how stuff
 changes over time? Take a look at the following picture:
 
@@ -263,8 +301,10 @@ expert in tax calculation, and your organization decides to use a DSL to
 represent the core calculations. You, as a tax expert, read this
 tutorial here because you are now asked to "become a programmer" so you
 can use this DSL productively. If the system is built according to this
-architecture shown above, you can absolutely stay in your simpler,
-functional world. Many systems are in fact built exactly this way. We
+architecture shown above, you can absolutely stay in the simpler,
+functional world. All the complexity of handling values that change over
+time is "outsourced" into the generic driver part, which is written 
+by software engineers. Many systems are in fact built exactly this way. We
 will use this example later in this tutorial to illustrate many advanced
 ideas.
 
@@ -273,10 +313,10 @@ Here is how one could design the language part of such as system:
 ![](TaxExample/ExampleSystem.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196704837)
 
 In the left column you see a couple of records that represent the data
-based on which the tax calculation will be performend. The driver is
-reponsible to populate this data correctly by retrieving data from its
-database or talking to other systems. As the tax expert we mentioned
-before we don't really care how the driver does this. In the right
+that is used in the tax calculation. The driver is
+reponsible for populating these records correctly by retrieving data from its
+database or by interacting with other systems. As the tax expert we mentioned
+before, we don't really care how the driver does this. In the right
 column you primarily see function that is used as the interface between
 the driver and the calculation core: the function `calculate` takes the
 data that is assembled by the driver (here: an instance of `TaxCitizen`)
@@ -297,29 +337,32 @@ specifies that type (and optionally, a size) as part of its type
 definition. So a set of strings would be a `set<string>`. However, sets
 are different in two important ways. First, its contents are _not_
 ordered. So asking for `first`, `last` or `at(pos)` does not make sense.
-The higher order functions such as `map`, `where`, `all` or `any` do the
-same thing as with lists. The second difference is that every value can
+The second difference is that every value can
 only be in the set once. Consider these tests:
 
 ![](Sets/addingToLists.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196831048)
 
 In the value definitions, in case of the set, the second `World` is not
 added, because there is already a value `World` in the set. This is why
-resulting set only has two elements instead of three, as the list. The
-same is true when adding the string `42` (yes it is a string, not a
+resulting set only has two elements instead of three (the list has three). The
+same is true when adding the string `"42"` (yes it is a string, not a
 number, because of the quotation marks).
 
 Consider the following example:
 
 ![](Sets/SetsAndListsExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196860548)
  
-We create a list and set of unique numbers. No duplicates to be removed
+We create a list and a set of unique numbers. No duplicates to be removed
 when creating the set, so both have a size of 10, as the test confirmes.
 We then define a function `halved` that divides a number by two, and
-then truncates is back to no decimals. The sheet shows the results for
+then truncates is back to zero decimals. The sheet shows the results for
 the values 1 through 10. As you can see, this operation creates
-duplicates. So if we use `map` to apply `halved` to each of the elements
-of the list and the set, what will the result be? In particular, will a
+duplicates. 
+
+W now use `map` to apply `halved` to each of the elements
+of the list and the set (the higher order functions such 
+as `map`, `where`, `all` or `any` are all available on sets as well).
+What will the result be? In particular, will a
 `map` (and similarly, a `where`) on a set produce another set and reduce
 the duplicates? According to the tests, it does not. 
  
@@ -332,12 +375,12 @@ However, you can transform them:
 ![](Sets/toSetToList.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196964094)
 
 You can take any collection and transform it into a set using the
-`toSet` operation. Effectively, it removes duplicates. So if you do this
+`toSet` operation. Effectively, this is a way to remove duplicates. So if you do this
 with the `listHalved` or `setHalved` collections, you get a collection
-with 0, 1, 2, 3, 4, and 5. Its size size is 6, and the first three
+with 0, 1, 2, 3, 4, and 5. Its size is 6, and the first three
 elements are 0, 1 and 2, as the tests show. Of course you first have to
 transform the duplicate-free set back to a list to be able to access it
-in an ordered way. 
+by position.
 
 
 
@@ -365,17 +408,19 @@ list to find the `CityData` we are interested in, and then ask for its
 population size. The syntax is awkward, and from a performance
 perspective it also isn't that good because we have to _linearly_ scan
 through the list until we find something (that's what `findFirst` does
-internally). Again, you shouldn't be overly concerned with this, but I
-think it'd tell you :-)
+internally). Again, you shouldn't be overly concerned with performance, but I
+thought it'd tell you :-)
 
 In practice it is very common to associate one value (population size)
 with another one (city name), and all programming languages provide
-direct support for that using the `map` datatype.
+direct support for that using the `map` datatype (not to be confused
+with the `map` operation; even though, what the `map` operation does is
+also "associate" a new value with an existing one, by creatign that new collection).
 
 ![](Maps/cityDataMapFrame.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793198222198)
 
 A map is a collection of `key->value` pairs, where all keys and all
-values are of the same type (here: strings and numbers). The respective
+values are each of the same type (here: `string` and `number`). The respective
 type reflects this; here the type would be a `map<string, number{1}>`, a
 type with two type parameters (lists and sets have one). You can look up
 the value associated with a key using the bracket notation:
@@ -398,6 +443,10 @@ Here is how you add to maps:
 In the `modifiedMap` we have one more entry, the one for Heidenheim. The
 putting of Stuttgart overwrites the old value, because, as I said, there
 can only be one entry per key.
+
+<hr/>
+
+Continue with [Decisions and Calculations](../chapter07_decAndCalc/index.md)
   
 
 
