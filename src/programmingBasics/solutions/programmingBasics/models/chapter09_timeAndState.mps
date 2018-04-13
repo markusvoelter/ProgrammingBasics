@@ -34,8 +34,12 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
+      <concept id="7089558164908491660" name="org.iets3.core.expr.base.structure.EmptyExpression" flags="ng" index="2zH6wq" />
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
+      </concept>
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
@@ -48,6 +52,14 @@
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
         <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
@@ -79,6 +91,10 @@
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
         <child id="1330041117646892920" name="range" index="2gteSx" />
       </concept>
+      <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
+        <property id="5115872837157252555" name="value" index="30bdrQ" />
+      </concept>
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -91,13 +107,37 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+        <child id="602952467877562565" name="members" index="S5Trm" />
+      </concept>
+      <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
+        <reference id="8811147530084018371" name="record" index="2Ss9cX" />
+      </concept>
+      <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
+      <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="820361861852634100" name="org.iets3.core.expr.toplevel.structure.OldValueExpr" flags="ng" index="1ooT$K" />
+      <concept id="1249392911699110134" name="org.iets3.core.expr.toplevel.structure.NewValueSetter" flags="ng" index="3vStjd">
+        <reference id="1249392911699110135" name="member" index="3vStjc" />
+        <child id="1249392911699110137" name="newValue" index="3vStj2" />
+      </concept>
+      <concept id="1249392911699110107" name="org.iets3.core.expr.toplevel.structure.RecordChangeTarget" flags="ng" index="3vStjw">
+        <child id="1249392911699129399" name="setters" index="3vSgwc" />
+      </concept>
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
       </concept>
       <concept id="7740953487936184022" name="org.iets3.core.expr.toplevel.structure.TypedefType" flags="ng" index="1WbbFT">
         <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -109,11 +149,15 @@
       </concept>
     </language>
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
+      <concept id="3487973603071598058" name="org.iets3.core.expr.mutable.structure.UpdateCurrencyCheck" flags="ng" index="Xo_xD">
+        <child id="3487973603071598059" name="oldValue" index="Xo_xC" />
+      </concept>
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
       <concept id="4255172619709548950" name="org.iets3.core.expr.mutable.structure.BoxType" flags="ng" index="3sNe5_">
         <child id="4255172619709548951" name="baseType" index="3sNe5$" />
       </concept>
       <concept id="4255172619711277794" name="org.iets3.core.expr.mutable.structure.BoxUpdateTarget" flags="ng" index="3sPC8h">
+        <child id="3487973603071598053" name="currency" index="Xo_xA" />
         <child id="4255172619711277798" name="value" index="3sPC8l" />
       </concept>
       <concept id="4255172619710841704" name="org.iets3.core.expr.mutable.structure.BoxValueTarget" flags="ng" index="3sQ2Ir" />
@@ -130,6 +174,7 @@
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="5096753237482793708" name="org.iets3.core.expr.lambda.structure.ReadEffectTag" flags="ng" index="2lgajW" />
       <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
       <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
@@ -145,6 +190,7 @@
       </concept>
       <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
+        <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
       <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="3880322347437217307" name="effect" index="28QfE6" />
@@ -535,6 +581,326 @@
       </node>
     </node>
     <node concept="_ixoA" id="31BLoccZ$UN" role="_iOnB" />
+    <node concept="1WbbD7" id="31BLocd1PH7" role="_iOnB">
+      <property role="TrG5h" value="date" />
+      <node concept="30bdrU" id="31BLocd1POD" role="1WbbD4" />
+    </node>
+    <node concept="_ixoA" id="31BLocd1PCP" role="_iOnB" />
+    <node concept="2Ss9d8" id="31BLocd1Pvw" role="_iOnB">
+      <property role="TrG5h" value="Person" />
+      <node concept="2Ss9d7" id="31BLocd1PB1" role="S5Trm">
+        <property role="TrG5h" value="name" />
+        <node concept="30bdrU" id="31BLocd1PBl" role="2S399n" />
+      </node>
+      <node concept="2Ss9d7" id="31BLocd1PBE" role="S5Trm">
+        <property role="TrG5h" value="first" />
+        <node concept="30bdrU" id="31BLocd1PBX" role="2S399n" />
+      </node>
+      <node concept="2Ss9d7" id="31BLocd1PCq" role="S5Trm">
+        <property role="TrG5h" value="date" />
+        <node concept="1WbbFT" id="31BLocd1POK" role="2S399n">
+          <ref role="1WbbFS" node="31BLocd1PH7" resolve="date" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="31BLocd1OO6" role="_iOnB" />
+    <node concept="3$huGK" id="31BLocd1Pg4" role="_iOnB">
+      <property role="TrG5h" value="ConcurrencyIsolation1" />
+      <node concept="3$tU02" id="31BLocd1Pg6" role="3$tUb0">
+        <node concept="1aga60" id="31BLocd1Pn6" role="3$tU1w">
+          <property role="TrG5h" value="doSomethingWithABox" />
+          <node concept="1aduha" id="31BLocd1PPc" role="1ahQXP">
+            <node concept="1adJid" id="31BLocd1PPz" role="1aduh9">
+              <property role="TrG5h" value="original" />
+              <node concept="1QScDb" id="31BLocd1PQv" role="1adJii">
+                <node concept="3sQ2Ir" id="31BLocd1PRQ" role="1QScD9" />
+                <node concept="1afdae" id="31BLocd1PPV" role="30czhm">
+                  <ref role="1afue_" node="31BLocd1Pnr" resolve="box" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adJid" id="31BLocd1Qkv" role="1aduh9">
+              <property role="TrG5h" value="modified" />
+              <node concept="1QScDb" id="31BLocd1Qkw" role="1adJii">
+                <node concept="3vStjw" id="31BLocd1Qkx" role="1QScD9">
+                  <node concept="3vStjd" id="31BLocd1Qky" role="3vSgwc">
+                    <ref role="3vStjc" node="31BLocd1PB1" resolve="name" />
+                    <node concept="30dDZf" id="31BLocd1Qkz" role="3vStj2">
+                      <node concept="1ooT$K" id="31BLocd1Qk$" role="30dEs_" />
+                      <node concept="30bdrP" id="31BLocd1Qk_" role="30dEsF">
+                        <property role="30bdrQ" value="X" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3vStjd" id="31BLocd1QkA" role="3vSgwc">
+                    <ref role="3vStjc" node="31BLocd1PBE" resolve="first" />
+                    <node concept="30dDZf" id="31BLocd1QkB" role="3vStj2">
+                      <node concept="1ooT$K" id="31BLocd1QkC" role="30dEs_" />
+                      <node concept="30bdrP" id="31BLocd1QkD" role="30dEsF">
+                        <property role="30bdrQ" value="X" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1adzI2" id="31BLocd1QkE" role="30czhm">
+                  <ref role="1adwt6" node="31BLocd1PPz" resolve="original" />
+                </node>
+              </node>
+            </node>
+            <node concept="2zH6wq" id="31BLocd5dER" role="1aduh9">
+              <node concept="19S4P_" id="31BLocd5eMh" role="lGtFl">
+                <property role="19Sakm" value="do more stuff with modified" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="31BLocd1Qz1" role="1aduh9">
+              <node concept="3sPC8h" id="31BLocd1Q_q" role="1QScD9">
+                <node concept="1adzI2" id="31BLocd1QBl" role="3sPC8l">
+                  <ref role="1adwt6" node="31BLocd1Qkv" resolve="modified" />
+                </node>
+              </node>
+              <node concept="1afdae" id="31BLocd1QwY" role="30czhm">
+                <ref role="1afue_" node="31BLocd1Pnr" resolve="box" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ahQXy" id="31BLocd1Pnr" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd1PnJ" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd1POT" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="31BLocd1PTE" role="28QfE6" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="31BLocd660e" role="_iOnB" />
+    <node concept="3$huGK" id="31BLocd65N5" role="_iOnB">
+      <property role="TrG5h" value="ConcurrencyIsolation2" />
+      <node concept="3$tU02" id="31BLocd65N6" role="3$tUb0">
+        <node concept="1aga60" id="31BLocd65N7" role="3$tU1w">
+          <property role="TrG5h" value="doSomethingWithABox" />
+          <node concept="1aduha" id="31BLocd65N8" role="1ahQXP">
+            <node concept="1adJid" id="31BLocd65N9" role="1aduh9">
+              <property role="TrG5h" value="original" />
+              <node concept="1QScDb" id="31BLocd65Na" role="1adJii">
+                <node concept="3sQ2Ir" id="31BLocd65Nb" role="1QScD9" />
+                <node concept="1afdae" id="31BLocd65Nc" role="30czhm">
+                  <ref role="1afue_" node="31BLocd65Nv" resolve="box" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adJid" id="31BLocd65Nd" role="1aduh9">
+              <property role="TrG5h" value="modified" />
+              <node concept="1QScDb" id="31BLocd65Ne" role="1adJii">
+                <node concept="3vStjw" id="31BLocd65Nf" role="1QScD9">
+                  <node concept="3vStjd" id="31BLocd65Ng" role="3vSgwc">
+                    <ref role="3vStjc" node="31BLocd1PB1" resolve="name" />
+                    <node concept="30dDZf" id="31BLocd65Nh" role="3vStj2">
+                      <node concept="1ooT$K" id="31BLocd65Ni" role="30dEs_" />
+                      <node concept="30bdrP" id="31BLocd65Nj" role="30dEsF">
+                        <property role="30bdrQ" value="X" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3vStjd" id="31BLocd65Nk" role="3vSgwc">
+                    <ref role="3vStjc" node="31BLocd1PBE" resolve="first" />
+                    <node concept="30dDZf" id="31BLocd65Nl" role="3vStj2">
+                      <node concept="1ooT$K" id="31BLocd65Nm" role="30dEs_" />
+                      <node concept="30bdrP" id="31BLocd65Nn" role="30dEsF">
+                        <property role="30bdrQ" value="X" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1adzI2" id="31BLocd65No" role="30czhm">
+                  <ref role="1adwt6" node="31BLocd65N9" resolve="original" />
+                </node>
+              </node>
+            </node>
+            <node concept="2zH6wq" id="31BLocd65Np" role="1aduh9">
+              <node concept="19S4P_" id="31BLocd65Nq" role="lGtFl">
+                <property role="19Sakm" value="do more stuff with modified" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="31BLocd65Nr" role="1aduh9">
+              <node concept="3sPC8h" id="31BLocd65Ns" role="1QScD9">
+                <node concept="1adzI2" id="31BLocd65Nt" role="3sPC8l">
+                  <ref role="1adwt6" node="31BLocd65Nd" resolve="modified" />
+                </node>
+                <node concept="Xo_xD" id="31BLocd66G8" role="Xo_xA">
+                  <node concept="1adzI2" id="31BLocd66HF" role="Xo_xC">
+                    <ref role="1adwt6" node="31BLocd65N9" resolve="original" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1afdae" id="31BLocd65Nu" role="30czhm">
+                <ref role="1afue_" node="31BLocd65Nv" resolve="box" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ahQXy" id="31BLocd65Nv" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd65Nw" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd65Nx" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="31BLocd65Ny" role="28QfE6" />
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="31BLocd66XJ" role="_iOnB" />
+    <node concept="_ixoA" id="31BLocd67d8" role="_iOnB" />
+    <node concept="3$huGK" id="31BLocd66HM" role="_iOnB">
+      <property role="TrG5h" value="ConcurrencyIsolation3" />
+      <node concept="3$tU02" id="31BLocd66HN" role="3$tUb0">
+        <node concept="1aga60" id="31BLocd67xs" role="3$tU1w">
+          <property role="TrG5h" value="anUnknownFunction" />
+          <node concept="2vmvVl" id="31BLocd67xu" role="1ahQXP">
+            <node concept="19S4P_" id="31BLocd67Xs" role="lGtFl">
+              <property role="19Sakm" value="dunno what this does" />
+            </node>
+          </node>
+          <node concept="1ahQXy" id="31BLocd67L3" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd67Ln" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd67LG" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajW" id="31BLocd694f" role="28QfE6" />
+        </node>
+        <node concept="_ixoA" id="31BLocd692f" role="3$tU1w" />
+        <node concept="1aga60" id="31BLocd66HO" role="3$tU1w">
+          <property role="TrG5h" value="doSomethingWithABox" />
+          <node concept="1ahQXy" id="31BLocd66Ie" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd66If" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd66Ig" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="31BLocd66Ih" role="28QfE6" />
+          <node concept="1aduha" id="31BLocd6827" role="1ahQXP">
+            <node concept="1adJid" id="31BLocd682x" role="1aduh9">
+              <property role="TrG5h" value="original" />
+              <node concept="1QScDb" id="31BLocd682y" role="1adJii">
+                <node concept="3sQ2Ir" id="31BLocd682z" role="1QScD9" />
+                <node concept="1afdae" id="31BLocd682$" role="30czhm">
+                  <ref role="1afue_" node="31BLocd66Ie" resolve="box" />
+                </node>
+              </node>
+            </node>
+            <node concept="1af_rf" id="31BLocd684o" role="1aduh9">
+              <ref role="1afhQb" node="31BLocd67xs" resolve="anUnknownFunction" />
+              <node concept="1afdae" id="31BLocd685w" role="1afhQ5">
+                <ref role="1afue_" node="31BLocd66Ie" resolve="box" />
+              </node>
+              <node concept="1z9TsT" id="31BLocd68mF" role="lGtFl">
+                <node concept="OjmMv" id="31BLocd68mG" role="1w35rA">
+                  <node concept="19SGf9" id="31BLocd68mH" role="OjmMu">
+                    <node concept="19SUe$" id="31BLocd68mI" role="19SJt6">
+                      <property role="19SUeA" value="does this modify the box?" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2zH6wq" id="31BLocd682o" role="1aduh9">
+              <node concept="19S4P_" id="31BLocd68z9" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="31BLocd6pLU" role="_iOnB" />
+    <node concept="3$huGK" id="31BLocd6puM" role="_iOnB">
+      <property role="TrG5h" value="ConcurrencyIsolation4" />
+      <node concept="3$tU02" id="31BLocd6puN" role="3$tUb0">
+        <node concept="1aga60" id="31BLocd6puO" role="3$tU1w">
+          <property role="TrG5h" value="anUnknownFunction" />
+          <node concept="2vmvVl" id="31BLocd6puP" role="1ahQXP">
+            <node concept="19S4P_" id="31BLocd6puQ" role="lGtFl">
+              <property role="19Sakm" value="dunno what this does" />
+            </node>
+          </node>
+          <node concept="1ahQXy" id="31BLocd6puR" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd6puS" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd6puT" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="31BLocd6q3b" role="28QfE6" />
+        </node>
+        <node concept="_ixoA" id="31BLocd6puV" role="3$tU1w" />
+        <node concept="1aga60" id="31BLocd6puW" role="3$tU1w">
+          <property role="TrG5h" value="doSomethingWithABox" />
+          <node concept="1ahQXy" id="31BLocd6puX" role="1ahQWs">
+            <property role="TrG5h" value="box" />
+            <node concept="3sNe5_" id="31BLocd6puY" role="3ix9CU">
+              <node concept="2Ss9cW" id="31BLocd6puZ" role="3sNe5$">
+                <ref role="2Ss9cX" node="31BLocd1Pvw" resolve="Person" />
+              </node>
+            </node>
+          </node>
+          <node concept="2lgajY" id="31BLocd6pv0" role="28QfE6" />
+          <node concept="1aduha" id="31BLocd6pv1" role="1ahQXP">
+            <node concept="1adJid" id="31BLocd6pv2" role="1aduh9">
+              <property role="TrG5h" value="original" />
+              <node concept="1QScDb" id="31BLocd6pv3" role="1adJii">
+                <node concept="3sQ2Ir" id="31BLocd6pv4" role="1QScD9" />
+                <node concept="1afdae" id="31BLocd6pv5" role="30czhm">
+                  <ref role="1afue_" node="31BLocd6puX" resolve="box" />
+                </node>
+              </node>
+            </node>
+            <node concept="1af_rf" id="31BLocd6pv6" role="1aduh9">
+              <ref role="1afhQb" node="31BLocd6puO" resolve="anUnknownFunction" />
+              <node concept="1afdae" id="31BLocd6pv7" role="1afhQ5">
+                <ref role="1afue_" node="31BLocd6puX" resolve="box" />
+              </node>
+              <node concept="1z9TsT" id="31BLocd6pv8" role="lGtFl">
+                <node concept="OjmMv" id="31BLocd6pv9" role="1w35rA">
+                  <node concept="19SGf9" id="31BLocd6pva" role="OjmMu">
+                    <node concept="19SUe$" id="31BLocd6pvb" role="19SJt6">
+                      <property role="19SUeA" value="does this modify the box?" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2zH6wq" id="31BLocd6pvc" role="1aduh9">
+              <node concept="19S4P_" id="31BLocd6pvd" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="31BLocd6q4o" role="1aduh9">
+              <node concept="3sPC8h" id="31BLocd6q4p" role="1QScD9">
+                <node concept="1adzI2" id="31BLocd6q4q" role="3sPC8l">
+                  <ref role="1adwt6" node="31BLocd65Nd" resolve="modified" />
+                  <node concept="19S4P_" id="31BLocd6qj4" role="lGtFl" />
+                </node>
+                <node concept="Xo_xD" id="31BLocd6q4r" role="Xo_xA">
+                  <node concept="1adzI2" id="31BLocd6q4s" role="Xo_xC">
+                    <ref role="1adwt6" node="31BLocd6pv2" resolve="original" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1afdae" id="31BLocd6q4t" role="30czhm">
+                <ref role="1afue_" node="31BLocd6puX" resolve="box" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="31BLocd1P7t" role="_iOnB" />
+    <node concept="_ixoA" id="31BLocd1P97" role="_iOnB" />
     <node concept="_ixoA" id="31BLoccZ$Vp" role="_iOnB" />
   </node>
 </model>

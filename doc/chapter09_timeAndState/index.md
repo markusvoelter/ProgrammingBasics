@@ -169,11 +169,7 @@ same effects; which is why the system automatically attaches the `/RM`
 to the function call inside `someOtherFunction`. Of course, this now makes
 the `someOtherFunction` effectful and you have to attach the `/RM` there.
 
-Using this effect tracking, both the user and the execution engine are always aware
-about where effects occur; in particular, the execution engine can take this into
-account when making decisions about caching. Also, as long as the program does
-not use any box types, we know the program is guaranteed not to have effects and
-we can cache and reexecute as much as we like.
+
 
 
 
@@ -212,6 +208,62 @@ you take whatever you want.
 
 An explicitly specified effect flag -- or the lack thereof -- makes your expecation about
 effectfulness explicit. The tool will report an error if what you specify is not fulfilled.
+
+## Recap
+
+So, where does this leave us in terms of the original promises about values never
+changing, and the ability to cache and reexecute expressions to our liking?
+
+First of all: as long as the program does
+not use any box types, we know the program is guaranteed not to have effects and
+we can cache and reexecute as much as we like. Nothing changes then. That's good,
+because it means that the facilities for dealing with effects -- when we need them --
+does not impact at all those programs where we don't need them.
+
+If we in fact want to write code that deals with effects, then we are completely
+transparent about it, because we mark it through the effect flags. Both programmers
+and the tools are then aware of it and can react accordingly, for example in terms
+of caching and reexecution.
+
+How about this thing about being sure that nobody else modifies our values without
+our knowing? This is a little bit harder. If we have a box in our hands, and
+somebody alse has access to the same box, then we cannot be sure that the contents
+of the box don't change. Let's look at this a little bit more closely. Assume we
+get a `box<Person>` handed into a function as an argument and we want to somehow
+update the person in that box (read: replace it with an updated value). Like this:
+
+![](Effects/ConcurrencyIsolation1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F3487973603071710212)
+
+Then it is possible, of course, that, while we perform our computations, before
+the `update`, somebody else puts something into that box. If we then perform the
+`update`, that other content is gone -- we just overwrite it. How can we prevent
+this? Effectively, we are only allowed to update the contents of the box _if it
+still contains the same value that we took from it originally_. Here is how you
+express this:
+
+![](Effects/ConcurrencyIsolation2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F3487973603072826565)
+
+Notice the `from` part in the `update`: the update will only do something if the
+box still contains the `original`, i.e., nobody else has put anything into it in
+the meantime. If the box contains something else, the update fails. We will talk
+below about what "failing" means here. In any case, the new value is _not_ put
+into the box.
+
+Similarly if we call an unknown function. How can we know it doesn't modify the
+box we hand over to it? As in here:
+
+![](Effects/ConcurrencyIsolation3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F3487973603072830322)
+
+First, if the function call has no `/M` flag, we know that no modification is 
+going on. So it cannot have put something into the box we passed; see the example
+above. And even if is has the `/M` flag ...
+
+![](Effects/ConcurrencyIsolation4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F3487973603072907186)
+
+... we can use the `update from ...` syntax to ensure that, while it might
+have modified something else, the function did not change the contents of the
+box we care about.
+ 
 
 
 
