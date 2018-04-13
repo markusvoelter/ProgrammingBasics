@@ -168,7 +168,7 @@ programming language and how we use it for DSLs, please check out the
 language reference at [http://voelter.de/data/pub/kernelf-reference.pdf](http://voelter.de/data/pub/kernelf-reference.pdf)
 
 
-## Are there Exercises
+## Are there Exercises?
 
 We are working on those :-)
 
