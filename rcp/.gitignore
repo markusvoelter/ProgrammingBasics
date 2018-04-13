@@ -1,0 +1,23 @@
+.DS_Store
+.idea
+
+
+# -----------------------------------------------------------
+# MPS
+# -----------------------------------------------------------
+classes_gen
+source_gen
+source_gen.caches
+test_gen
+test_gen.caches
+*.iws
+build.properties
+.mps/libraries.xml
+build/**
+gradle.properties
+artifacts
+
+# -----------------------------------------------------------
+# GRADLE
+# -----------------------------------------------------------
+.gradle/
