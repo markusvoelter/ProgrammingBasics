@@ -17,29 +17,7 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/HelloBlock.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/HelloBlock.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite3.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite3.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite4.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite4.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite5.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite5.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite6.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/TestComposite6.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/Tuples.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Dataflow/Tuples.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda5.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda5.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda6.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/Lambda6.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/LambdaAdding.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/LambdaAdding.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/MoreLambda.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/MoreLambda.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists3.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithLists3.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithListsRepeated.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Lambdas/doWithListsRepeated.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails2.png" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/Recap/TestFails2.png" />
-      <change beforePath="$PROJECT_DIR$/../../doc/chapter08_instantiation/index.md" afterPath="$PROJECT_DIR$/../../doc/chapter08_instantiation/index.md" />
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter08_instantiation.mps" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/chapter08_instantiation.mps" />
-    </list>
+    <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="fixes" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

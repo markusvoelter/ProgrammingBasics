@@ -176,8 +176,8 @@ We are working on those :-)
 
 ## Who is behind this tutorial?
 
-* [Markus Voelter](http://voelter.de), independent consultant and [itemis](http://itemis.de)
-* Ana-Maria Sutii
+* [Markus Voelter](http://voelter.de), independent consultant and [itemis](http://itemis.de) (Idea, Writing)
+* Ana-Maria Sutii (Exercises)
 
 
 
