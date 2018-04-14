@@ -59,7 +59,7 @@ sheet.
 The third column contains three primitive values `7` . If a cell 
 contains a primitive value (such as `7`), then
 the result of the evaluation is the value itself -- evaluating a primitive value, or
-_literal_, results in itself. Note how, in the spreadsheetm computed values, when shown in
+_literal_, results in itself. Note how, in the spreadsheet computed values, when shown in
 their evaluated form, use a grey background to indicate that you cannot
 change that value directly, because it is computed; instead, you have to
 change the underlying expression. 
@@ -161,11 +161,11 @@ that contains a reference to another cell `Y` is said to _depend_ on `Y`.
 You cannot compute the value of cell `X` without first having calculated
 the value for cell `Y`. Dependencies are widespread in programming, and
 they are often undesired because they "chain" parts of program together. 
-We will leaern several ways of avoiding such dependencies as we progress through this tutorial.
+We will learn several ways of avoiding such dependencies as we progress through this tutorial.
 
 ### Evaluation Order 
 
-On thing dependencies do is to enforce an order in the evaluation of
+One thing dependencies do is to enforce an order in the evaluation of
 expressions (or cells, in our example here). So, looking at cell `B2` in
 the sheet above, the dependencies are as follows (the arrow should be
 read as "depends on"):
