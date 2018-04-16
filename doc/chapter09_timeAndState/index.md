@@ -209,7 +209,7 @@ you take whatever you want.
 An explicitly specified effect flag -- or the lack thereof -- makes your expecation about
 effectfulness explicit. The tool will report an error if what you specify is not fulfilled.
 
-## Recap
+## Recap (Intermediate)
 
 So, where does this leave us in terms of the original promises about values never
 changing, and the ability to cache and reexecute expressions to our liking?
@@ -264,6 +264,9 @@ above. And even if is has the `/M` flag ...
 have modified something else, the function did not change the contents of the
 box we care about.
  
+
+## Coordinating Multiple Updates
+
 
 
 
