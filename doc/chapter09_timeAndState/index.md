@@ -330,34 +330,37 @@ A more realistic version of this system would not maintain an actual balance
 value in the account, but maintain a list of bookings, which, when accumulated,
 leads to the current balance at the time of the booking. Notice how we
 have modeled the constraint that the balance must be positive as constraint
-on the `Account` record:
+on the `BookingLog` record. `newAccount` is a helper function that constructs
+the account data structure; it adds one initial booking to represent the initial balance:
 
-![](TransactionsList/DataStructures.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498698361)
+![](TransactionsWithList/DataStructures.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498799858)
 
-Our two example accounts are now set up with one or more initial booking each 
-to specify the initial balance:
+Our two example accounts are now set up this way:
 
-![](TransactionsList/ExampleAccounts.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498733016)
+![](TransactionsWithList/ExampleAccounts.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498799900)
 
-Here are the tests that verify the initial data:
+Here are the tests that verify the initial data. Note how the third assert
+expects a failure _already during account construction_ because the initial
+balance is negative.
 
-![](TransactionsList/TestInitial.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498778398)
+![](TransactionsWithList/TestInitial.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498799927)
 
-Here is the transfer function as well as its tests:
+Here is the transfer function; it relies on another helper function
+`addBooking` that constructs a new booking. Note how this function
+specifies the `intx` flag, which means that it must run inside an 
+_existing_ transaction. If you call it from outside a transaction,
+the function will fail.
 
-![](TransactionsList/TransferAndTest.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498784741)
+![](TransactionsWithList/TransferFunction.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498799944)
 
-Not surprisingly, we use a transaction again. And inside the transaction,
-we create a booking in both accounts; one with the negative value of the 
-to-be-transferred amount.
-
-> ![](../fix.png) explain the check thing or remove the need for it.
+The transfer function is quite simple now; it grabs the current time and
+then creates two bookings on the two accounts. The `from` account gets the
+amount deducted, hence the negativ amount. Not surprisingly, we use a transaction again. 
 
 
 
 <hr>
 
-How to write "safe" code.
 
 
 
