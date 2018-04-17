@@ -267,6 +267,91 @@ box we care about.
 
 ## Coordinating Multiple Updates
 
+When you pay a bill through money transfer, two accounts are involved:
+your account is involved because you pay the bill, and the account of 
+whoever's bill you pay is involved because they receive the money. For
+this to be a correct transaction, the amount by which your balance is
+reduced must be equal to the amount by which the balance of the receiver
+is increased. Also, if something goes wrong, for example because you
+don't have enough balance to pay, or because the IT infrastructure of the
+receiver is broken, no transaction should happen. Either the thing 
+happens correctly on both sides, or it does not happen at all. 
+
+In reality, ensuring this correctness is really not so simple, because
+two different IT systems (those from each bank) are involved; this introduces
+a lot of technical complexity. But even when we implement this in a 
+single program, the constraint that both accounts have to change or none,
+and with the same value, is relevant. So let us implement this example
+here; we start with a couple of types and functions that should not
+require any additional explanation:
+
+![](Transactions/BasicTypes.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295495389075)
+
+Please note that we have defined the balance with the `posNum` type;
+so whenever we set the balance to something negative, this would be 
+an invalid value. We verify this with the following tests; we expect a 
+constraint failure in the last one because the amount would go negative.
+
+![](Transactions/TestAccount.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295495395566)
+
+
+Next, we implement a function `transfer` that takes two accounts, as well
+an amount and performs the two changes as we would expect:
+
+![](Transactions/TransferNoTx.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295495406837)
+
+The function declares an effect because it actually changes the balances
+of each of the accounts. Look at the code: if this code runs, it might pay
+the amount to the receiver _and then fail to subtract it from the sender_.
+What we really want is that if anything goes wrong inside this function,
+none of the two accounts should change at all. We can achieve this by using
+a _transaction_ (this is now the technical term for the language feature 
+and not the colloquial term from banking). Here is how you do that:
+
+![](Transactions/TransferWithTx.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295495422332)
+
+The only difference here is that we annotate the block in the body of
+the function with `newTx`. This means that when this function is executed,
+it starts a new transaction. In KernelF, a transaction means the following:
+if inside the transaction any constraint is violated, then the transaction
+is rolled back; which means that none of the boxes affected in the transaction
+actually change their content. In our example, this means that both accounts
+retain their balance. Let's test this:
+
+![](Transactions/testWithTx.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295495456410)
+
+In the second `assert`, we try to transfer 2000 even though the sender's account
+only has an initial balance of 1000. This would lead to a negative balance
+after the transfer. Since this is invalid, that `update` insider the `payFrom`
+inside `transfer` throws a constraint failure. This failure rolls back the
+whole transaction, and none of the two balances change as the test code shows.
+
+A more realistic version of this system would not maintain an actual balance
+value in the account, but maintain a list of bookings, which, when accumulated,
+leads to the current balance at the time of the booking. Notice how we
+have modeled the constraint that the balance must be positive as constraint
+on the `Account` record:
+
+![](TransactionsList/DataStructures.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498698361)
+
+Our two example accounts are now set up with one or more initial booking each 
+to specify the initial balance:
+
+![](TransactionsList/ExampleAccounts.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498733016)
+
+Here are the tests that verify the initial data:
+
+![](TransactionsList/TestInitial.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498778398)
+
+Here is the transfer function as well as its tests:
+
+![](TransactionsList/TransferAndTest.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787%28chapter09_timeAndState%29%2F6711455295498784741)
+
+Not surprisingly, we use a transaction again. And inside the transaction,
+we create a booking in both accounts; one with the negative value of the 
+to-be-transferred amount.
+
+> ![](../fix.png) explain the check thing or remove the need for it.
 
 
 
