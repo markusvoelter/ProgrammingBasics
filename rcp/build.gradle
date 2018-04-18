@@ -1,0 +1,220 @@
+group 'de.itemis'
+description ="RCP with all needed plugins"
+
+//will import the gradle plugins fetched from nexus
+import de.itemis.mps.gradle.CreateDmg
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.RunAntScript
+import de.itemis.mps.gradle.BuildLanguages
+
+
+apply plugin: 'maven-publish'
+apply plugin: 'base'
+
+// Dependency versions
+ext.mpsVersion = '2017.3.5'
+ext.mbeddrVersion = '1.0.+'
+ext.iets3Version = '0.1.+'
+
+// Default repository credentials
+if (!project.hasProperty('nexusUsername')) {
+    ext.nexusUsername = ''
+    ext.nexusPassword = ''
+}
+logger.info 'Repository username: {}', project.nexusUsername
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+        'https://projects.itemis.de/nexus/content/repositories/iets3/',
+	    'https://projects.itemis.de/nexus/content/repositories/iets3_snapshots/'
+        ]
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.55+'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion '4.6'
+    distributionType 'all'
+}
+
+configurations {
+    mps
+    mbeddrPlatformArtifacts
+    jdk
+    ant_lib
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    mbeddrPlatformArtifacts "org.iets3:core:$iets3Version"
+    mbeddrPlatformArtifacts "org.iets3:allScripts:$iets3Version"
+    mbeddrPlatformArtifacts "org.iets3.analysis:z3:$iets3Version"
+    mbeddrPlatformArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
+    mbeddrPlatformArtifacts "com.mbeddr:platform:$mbeddrVersion"
+    jdk "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
+	jdk "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
+    ant_lib "org.apache.ant:ant-junit:1.10.1"
+}
+
+// ___________________ utilities ___________________
+File scriptFile(String relativePath) {
+    new File("$rootDir/build/$relativePath")
+}
+
+repositories {
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    mavenCentral()
+}
+
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+    }
+    ext.jdk_home = jdk_home
+}
+
+
+
+//define directories
+ext.artifactsDir = new File(rootDir, 'artifacts')
+ext.mpsDir = new File(artifactsDir, 'mps')
+ext.projectLibrariesDir = new File(buildDir, 'project-libraries')
+ext.jdkDir = new File(artifactsDir, 'jdk')
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into mpsDir
+    doFirst { delete mpsDir }
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    dependsOn configurations.mbeddrPlatformArtifacts
+    from {
+        configurations.mbeddrPlatformArtifacts.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
+}
+
+task resolveJDKDependencies(type: Copy) {
+   description "Resolves distribution dependencies, copies them to $jdkDir stripping version numbers"
+   dependsOn configurations.jdk
+   from { configurations.jdk.resolve() }
+   into jdkDir
+
+   rename { filename ->
+       def resolvedArtifact = configurations.jdk.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+       return resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+   }
+}
+
+task generateLibrariesXml(type: GenerateLibrariesXml) {
+    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
+    defaults rootProject.file('projectlibraries.properties')
+    overrides rootProject.file('projectlibraries.overrides.properties')
+    destination file('BuildRCP/.mps/libraries.xml')
+}
+
+task setup {
+    // We resolve MPS not for the users to use it but for the distribution packaging script to be able to refer to it.
+    dependsOn resolveMpsArtifacts
+    dependsOn generateLibrariesXml
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
+
+// ___________________ /utility tasks ___________________
+
+
+//define directories
+ext.rcp_home = '-Drcp.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+ext.mps_home =  '-Dmps.home=' + resolveMps.destinationDir.getAbsolutePath()
+ext.artifacts_dir = '-Dartifacts.root=' + new File(rootDir, 'artifacts')
+ext.buildDate = "-Dbuild.date=" + new Date().toString()
+ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+//NOT USED yet
+//ext.buildNumber = "-Dbuild.number=" + getApplicationBuild()
+
+// default arguments for ANT
+ext.defaultScriptArgs = [mps_home, rcp_home, build_dir, artifacts_dir, ext.buildDate, /*ext.buildNumber*/]
+ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({ true }) + project.files("$project.jdk_home/lib/tools.jar")
+
+//idea: run tasks for the generate .xml files directly
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]){
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('rcp.allScripts/build-allScripts.xml')
+}
+
+
+task build_branding(type: RunAntScript, dependsOn: build_allScripts) {
+    description "Creates branding.jar with icons and startup directory with .options and .bat/.sh scripts"
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.rcp/branding.xml')
+    targets 'clean', 'assemble'
+}
+
+
+task build_genericDistro(type: RunAntScript, dependsOn: build_branding) {
+    description "Creates generic directory layout for RCPs including: bin, languages, lib, plugins folder and build.number"
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.rcp/build-generic.xml')
+    targets 'clean', 'assemble'
+}
+
+task build_winDistro(type: RunAntScript, dependsOn: [build_genericDistro, resolveJDKDependencies]) {
+    description "Creates a win RCP"
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.rcp/distro-win.xml')
+    targets 'clean', 'assemble'
+}
+
+task build_macDistro(type: RunAntScript, dependsOn: [build_genericDistro]) {
+    scriptArgs = defaultScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script scriptFile('de.itemis.rcp/distro-mac.xml')
+    targets 'clean', 'assemble'
+}
+
+task build_dmg(type: CreateDmg, dependsOn: build_macDistro ) {
+    description "Main task to build macOS RCP"
+    rcpArtifact rootProject.file('artifacts/de.itemis.rcp/MPS_RCP-mac.zip')
+    jdkDependency "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
+   // backgroundImage rootProject.file('branding/ax.png')
+    dmgFile rootProject.file('artifacts/rcp-macos.dmg')
+}
+
+task buildAll (
+    dependsOn: [build_winDistro, build_dmg]) {
+          description "Creates RCPs for: MacOS, Windows"
+    }
+
+rootProject.defaultTasks 'buildAll'
