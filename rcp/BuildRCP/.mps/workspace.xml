@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e29ade88-48e4-4d88-8ccb-08b8cdbd6fc3" name="Default" comment="mps build: added buildscripts for mac/win">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../gradle.properties" />
-      <change beforePath="$PROJECT_DIR$/solutions/build.rcp/build.rcp.msd" afterPath="$PROJECT_DIR$/solutions/rcp.build/rcp.build.msd" />
-      <change beforePath="$PROJECT_DIR$/solutions/build.rcp/models/build.mps" afterPath="$PROJECT_DIR$/solutions/rcp.build/models/build.mps" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" afterPath="$PROJECT_DIR$/../build.gradle" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/solutions/rcp.allScript/models/buildAll.mps" afterPath="$PROJECT_DIR$/solutions/rcp.allScript/models/buildAll.mps" />
+      <change beforePath="$PROJECT_DIR$/solutions/rcp.allScript/rcp.allScript.msd" afterPath="$PROJECT_DIR$/solutions/rcp.allScript/rcp.allScript.msd" />
+      <change beforePath="$PROJECT_DIR$/solutions/rcp.build/models/build.mps" afterPath="$PROJECT_DIR$/solutions/rcp.build/models/build.mps" />
+      <change beforePath="$PROJECT_DIR$/solutions/rcp.build/rcp.build.msd" afterPath="$PROJECT_DIR$/solutions/rcp.build/rcp.build.msd" />
+      <change beforePath="$PROJECT_DIR$/../build/rcp.allScripts/build-allScripts.xml" afterPath="$PROJECT_DIR$/../build/rcp.allScripts/build-allScripts.xml" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" afterPath="$PROJECT_DIR$/../gradlew" />
+      <change beforePath="$PROJECT_DIR$/../../src/programmingBasics/.mps/workspace.xml" afterPath="$PROJECT_DIR$/../../src/programmingBasics/.mps/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +37,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="613dee05-a99a-48a8-9e59-4428ee348d8a/r:fa4ba406-5e2f-496b-ad27-13b538a19215(TempModule613dee05-a99a-48a8-9e59-4428ee348d8a/TempModel_77902459676538)">
+            <model ref="95f8e53a-fc5d-4323-a07e-bf4e8e11f6fc/r:b818780a-9759-4991-b24d-16f8d9904ef6(TempModule95f8e53a-fc5d-4323-a07e-bf4e8e11f6fc/TempModel_2454361967202)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -68,13 +71,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="3Aidk0suMmc">
-                <node concept="3balQm" id="3Aidk0suMmd" role="aymYE" />
-                <node concept="2Clz$F" id="3Aidk0suMme" role="aymYO">
+              <node concept="aymSD" id="31LybqKCyMd">
+                <node concept="3balQm" id="31LybqKCyMe" role="aymYE" />
+                <node concept="2Clz$F" id="31LybqKCyMf" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="3Aidk0suMmf" role="1PhJh3">
-                  <ref role="2_V_lI" node="3Aidk0suMme" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="31LybqKCyMg" role="1PhJh3">
+                  <ref role="2_V_lI" node="31LybqKCyMf" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -101,16 +104,16 @@
       <file leaf-file-name="rcp.allScripts.build" pinned="false" current-in-tab="true">
         <entry file="mps://node://rcp.allScript/rcp.allScript.buildAll/rcp.allScripts.build">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="401">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="559" />
-                    <property name="caretXRelative" value="104" />
+                    <property name="caretX" value="159" />
+                    <property name="caretXRelative" value="40" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_head">
-                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233807198" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -131,12 +134,208 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233807198" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
+              <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="295" />
+                    <property name="caretXRelative" value="152" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rcp.distro.win" pinned="false" current-in-tab="false">
+        <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.win">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="580">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="63" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4205637915494128142" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="295" />
+                    <property name="caretXRelative" value="152" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rcp.distro.mac" pinned="false" current-in-tab="false">
+        <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.mac">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="480">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="63" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4205637915494320642" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="295" />
+                    <property name="caretXRelative" value="152" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rcp.distro.generic" pinned="false" current-in-tab="false">
+        <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.generic">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="79" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_roxgcf_a2a">
+                      <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4148436756233675358" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="295" />
+                    <property name="caretXRelative" value="152" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_b0a">
+                      <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
                 <enabledHints>
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
@@ -175,11 +374,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="22" />
-    <option name="width" value="1936" />
-    <option name="height" value="1186" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -297,7 +495,25 @@
           <PluginState />
         </value>
       </option>
+      <option name="com.mbeddr.mpsutil.spreferences.demoplugin.plugin.Demoplugin_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="com.mbeddr.mpsutil.spreferences.demoplugin.plugin.Demoplugin_ProjectPlugin$2" />
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
       <option name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceExplorer_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="com.mbeddr.mpsutil.typesystem.trace.rt.plugin.Rt_ProjectPlugin">
         <value>
           <PluginState />
         </value>
@@ -412,20 +628,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b47a1c5d-e3de-4d12-8a26-300a9d2c3bf7" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rcp" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,7 +650,75 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll) in IdeaFile{file://E:/mvoelter/ProgrammingBasics/rcp/BuildRCP/solutions/rcp.allScript/models/buildAll.mps}" />
+              <option name="myItemId" value="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/rcp/BuildRCP/solutions/rcp.allScript/models/buildAll.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="555b0d91-3936-438a-a829-eeae24c0c4f6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcp" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="555b0d91-3936-438a-a829-eeae24c0c4f6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcp" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/rcp/BuildRCP/solutions/rcp.build/models/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="555b0d91-3936-438a-a829-eeae24c0c4f6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcp" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build) in IdeaFile{file:///Users/markusvoelter/Documents/mbeddr/ProgrammingBasics/rcp/BuildRCP/solutions/rcp.build/models/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distribution" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b47a1c5d-e3de-4d12-8a26-300a9d2c3bf7" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcp" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,12 +737,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="b47a1c5d-e3de-4d12-8a26-300a9d2c3bf7" />
               <option name="myItemType" value="" />
@@ -478,25 +747,10 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b47a1c5d-e3de-4d12-8a26-300a9d2c3bf7" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rcp" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll) in IdeaFile{file://E:/mvoelter/ProgrammingBasics/rcp/BuildRCP/solutions/rcp.allScript/models/buildAll.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3309119171030047573" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
       <pane id="Favorites" />
       <pane id="CustomProjectView_org.iets3.core.plugin.plugin.SpecExplorer">
         <subPane />
@@ -507,7 +761,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/solutions/build.rcp/build.rcp.msd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.MultilingualConceptProjectPlugin_CustomProjectPlugin.showTranslations" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -565,14 +819,15 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Rimer\AppData\Roaming\Subversion</configuration>
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1186" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Menu Trace" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,37 +836,38 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19484241" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Context Actions 2" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19379845" sideWeight="0.5050143" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Context Actions 2" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.49641833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Type System Performance Data" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19484241" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19379845" sideWeight="0.49498567" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961932" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2118863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Review" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Review" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1609808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16332377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Visualisation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Visualisation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Graph Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Graph Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -636,14 +892,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="mps build: standerlized the build directory" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro">
+    <entry file="mps://node://rcp.allScript/rcp.allScript.buildAll/rcp.allScripts.build">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="org.iets3.core" propertyCell="false" cellNumber="0">
+                <parent cellId="Collection_jumb3f_a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/1125034427845028653" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
-            <foldable />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_pilq2t_c0">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/3309119171030047640" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
             <restoreAlways />
           </memento>
           <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
@@ -656,6 +924,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro" />
     <entry file="mps://node://rcp.allScript/rcp.allScript.buildAll/rcp.allScripts.build">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -685,187 +954,11 @@
     </entry>
     <entry file="mps://node://build.rcp/build.rcp.build/RCP.branding" />
     <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.generic" />
-    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.generic">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_vny568_a">
-                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3036048682651833145" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3036048682650121894" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.generic">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_vny568_a">
-                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3036048682651833145" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3036048682650121894" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/350782212154134304" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/350782212154134304" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" />
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/350782212154134304" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/350782212154134304" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" />
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/350782212154134304" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/4906397742234074941" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.generic" />
+    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.generic" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
     <entry file="mps://node://jetbrains.mps.ide.build/jetbrains.mps.ide.build/mps">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -900,393 +993,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" />
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/4906397742234074954" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" />
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/4906397742234074954" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://de.slisson.mps.all.build/de.slisson.mps.all.build/de.itemis.mps.extensions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="8953">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="199" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_vc3gub_a0a0d0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/7113095731739737901" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/7063337332191002179" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3234426879052773245" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/7943214583600719632" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/7577123754907462647" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/4813947565936896126" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3410197114991219804" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/8436908933892219255" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/8034681417261651192" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/2475960130283269714" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3410197114991197088" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/8584963402264541582" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/1671983567912265702" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/5063083321524165995" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3480045216712471399" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3127003635838918192" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3127003635838407280" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/3410197114992333119" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)/7113095731739737901" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.iets3.core.build/org.iets3.core.build/org.iets3.core">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="7553">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_hdw7mg_a">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6354991446090808818" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/5045397904109631823" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/5045397904109629918" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/5045397904109627265" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/7388241978935158070" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6932198748379688361" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6809048132542495618" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/1830747335375722333" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/511539888740010016" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/7002150621630710460" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/8219602584754505548" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6354991446090838300" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/3841326941809030602" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/4846226824325282737" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/8841280988782829730" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6354991446090828714" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/8193537479923829636" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0">
-                  <node node_reference="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6099346776462222857" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)/6354991446090808818" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://de.slisson.mps.all.build/de.slisson.mps.all.build/de.itemis.mps.extensions" />
+    <entry file="mps://node://org.iets3.core.build/org.iets3.core.build/org.iets3.core" />
     <entry file="mps://node://org.iets3.opensource.build/org.iets3.opensource.build.build/org.iets3.opensource">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1725,17 +1437,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding">
+    <entry file="mps://node://gdl.build/gdl.build.build/gdl.branding" />
+    <entry file="mps://node://build.rcp/build.rcp.build/RCP-Startup" />
+    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro" />
+    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.win" />
+    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.mac" />
+    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro.generic" />
+    <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.win">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="580">
             <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_cnoc6t_a">
-                  <node node_reference="r:205f133f-d2f8-447d-9e01-1106437c954c(gdl.build.build)/1080479509192479360" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4205637915494128142" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1744,12 +1463,34 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/4148436756233675358" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="295" />
+                <property name="caretXRelative" value="152" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <transactionalProperties />
-            <foldable />
-            <restoreAlways />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
@@ -1758,20 +1499,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/RCP-Startup">
+    <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.mac">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="480">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4205637915494320642" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="295" />
+                <property name="caretXRelative" value="152" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://rcp.build/rcp.build.build/rcp.distro.generic">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="10" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="167" />
-                <property name="selectionEnd" value="13" />
-                <property name="caretXRelative" value="104" />
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_startupClass">
-                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3373348169542766984" />
+                <cellInfo cellId="Constant_roxgcf_a2a">
+                  <node node_reference="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(rcp.build.build)/4148436756233675358" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1780,108 +1575,34 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:307e553c-5de0-43bd-bb8b-5c3ad31e2cf0(build.rcp.build)/3373348169542766984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="295" />
+                <property name="caretXRelative" value="152" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/3008937229056437609" saveSessionState="false" viewPositionX="0" viewPositionY="17">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.win">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="17">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/gdl.distro.mac">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="17">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://build.rcp/build.rcp.build/rcp.distro.generic">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="635">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="17">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
@@ -1892,16 +1613,16 @@
     </entry>
     <entry file="mps://node://rcp.allScript/rcp.allScript.buildAll/rcp.allScripts.build">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="401">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="559" />
-                <property name="caretXRelative" value="104" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="40" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head">
-                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233807198" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1922,12 +1643,34 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233807198" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <inspectorMemento currentlyEditedNode="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="295" />
+                <property name="caretXRelative" value="152" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/4148436756233784172" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <transactionalProperties />
-            <foldable />
-            <restoreAlways />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_ju7sd7_b0a">
+                  <node node_reference="r:a0b86693-8bd1-40d6-b89a-d7c9d0ac4fe6(rcp.allScript.buildAll)/6338475295235964560" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />

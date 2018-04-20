@@ -10,8 +10,6 @@
     <dependency reexport="false">3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">31dfb853-8304-435d-b27c-e29ef9a627cf(org.iets3.opensource.build)</dependency>
-    <dependency reexport="false">bf6914ec-737d-4231-8e8d-94477f17fdcf(org.iets3.core.build)</dependency>
-    <dependency reexport="false">3da7eb9f-8dcb-4f5f-9b48-0209463416c3(org.iets3.tools.z3.build)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />

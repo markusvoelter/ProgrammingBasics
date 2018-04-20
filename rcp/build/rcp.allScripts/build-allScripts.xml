@@ -7,11 +7,11 @@
   <property name="rcp.home" location="${basedir}/../.." />
   <property name="artifacts.root" location="${rcp.home}/artifacts" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.org.iets3.core" location="${artifacts.root}/org.iets3.core" />
   <property name="artifacts.com.mbeddr.platform" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="artifacts.org.iets3.opensource" location="${artifacts.root}/org.iets3.opensource" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
-  <property file="${artifacts.org.iets3.core}/build.properties" prefix="import.org.iets3.core" />
+  <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
+  <property file="${artifacts.org.iets3.opensource}/build.properties" prefix="import.org.iets3.opensource" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
@@ -19,19 +19,15 @@
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
   <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
-  <property name="org.iets3.core.minor" value="${import.org.iets3.core.org.iets3.core.minor}" />
-  <property name="org.iets3.core.major" value="${import.org.iets3.core.org.iets3.core.major}" />
-  <property name="org.iets3.core.build" value="${import.org.iets3.core.org.iets3.core.build}" />
-  <property name="org.iets3.core.version" value="${import.org.iets3.core.org.iets3.core.version}" />
-  <property name="com.mbeddr.platform.major.version" value="${import.org.iets3.core.com.mbeddr.platform.major.version}" />
-  <property name="com.mbeddr.platform.minor.version" value="${import.org.iets3.core.com.mbeddr.platform.minor.version}" />
-  <property name="com.mbeddr.platform.build" value="${import.org.iets3.core.com.mbeddr.platform.build}" />
-  <property name="com.mbeddr.platform.mbeddr.version" value="${import.org.iets3.core.com.mbeddr.platform.mbeddr.version}" />
-  <property name="de.itemis.mps.extensions.versionNumber" value="${import.org.iets3.core.de.itemis.mps.extensions.versionNumber}" />
-  <property name="org.iets3.opensource.minor" value="${import.org.iets3.core.org.iets3.opensource.minor}" />
-  <property name="org.iets3.opensource.major" value="${import.org.iets3.core.org.iets3.opensource.major}" />
-  <property name="org.iets3.opensource.build" value="${import.org.iets3.core.org.iets3.opensource.build}" />
-  <property name="org.iets3.opensource.version" value="${import.org.iets3.core.org.iets3.opensource.version}" />
+  <property name="com.mbeddr.platform.major.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.major.version}" />
+  <property name="com.mbeddr.platform.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.minor.version}" />
+  <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
+  <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
+  <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
+  <property name="org.iets3.opensource.minor" value="${import.org.iets3.opensource.org.iets3.opensource.minor}" />
+  <property name="org.iets3.opensource.major" value="${import.org.iets3.opensource.org.iets3.opensource.major}" />
+  <property name="org.iets3.opensource.build" value="${import.org.iets3.opensource.org.iets3.opensource.build}" />
+  <property name="org.iets3.opensource.version" value="${import.org.iets3.opensource.org.iets3.opensource.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -77,7 +73,7 @@
     <zip destfile="${build.layout}/rcp.allScripts.zip">
       <fileset dir="${build.tmp}/default/rcp.allScripts.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}org.iets3.core.minor=${org.iets3.core.minor}${line.separator}org.iets3.core.major=${org.iets3.core.major}${line.separator}org.iets3.core.build=${org.iets3.core.build}${line.separator}org.iets3.core.version=${org.iets3.core.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}org.iets3.opensource.minor=${org.iets3.opensource.minor}${line.separator}org.iets3.opensource.major=${org.iets3.opensource.major}${line.separator}org.iets3.opensource.build=${org.iets3.opensource.build}${line.separator}org.iets3.opensource.version=${org.iets3.opensource.version}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}org.iets3.opensource.minor=${org.iets3.opensource.minor}${line.separator}org.iets3.opensource.major=${org.iets3.opensource.major}${line.separator}org.iets3.opensource.build=${org.iets3.opensource.build}${line.separator}org.iets3.opensource.version=${org.iets3.opensource.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -172,8 +168,6 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
-      <library file="${artifacts.org.iets3.core}/org.iets3.build/languages/iets3.build/org.iets3.core.build.jar" />
-      <library file="${artifacts.org.iets3.core}/org.iets3.build/languages/iets3.build/org.iets3.tools.z3.build.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.build.os/languages/iets3.build/org.iets3.opensource.build.jar" />
       <chunk>
         <module file="${rcp.home}/BuildRCP/solutions/rcp.build/rcp.build.msd" />
@@ -204,9 +198,7 @@
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
-        <fileset file="${artifacts.org.iets3.core}/org.iets3.build/languages/iets3.build/org.iets3.core.build.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.build.os/languages/iets3.build/org.iets3.opensource.build.jar" />
-        <fileset file="${artifacts.org.iets3.core}/org.iets3.build/languages/iets3.build/org.iets3.tools.z3.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/rcp.build">

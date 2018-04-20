@@ -8,7 +8,6 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="ow72" ref="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
@@ -200,12 +199,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3Aidk0svgHz" role="3bR37C">
-          <node concept="3bR9La" id="3Aidk0svgH$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ow72:7C6tnXfWu6n" resolve="org.iets3.core.build" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3Aidk0svgH_" role="3bR37C">
           <node concept="3bR9La" id="3Aidk0svgHA" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -230,12 +223,6 @@
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3ybTdbg5rBM" role="3bR37C">
-          <node concept="3bR9La" id="3ybTdbg5rBN" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ow72:7C6tnXfWwS$" resolve="org.iets3.tools.z3.build" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="55IIr" id="2RGm_E4F_Hm" role="auvoZ" />
@@ -257,15 +244,6 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2RGm_E4FAgm" role="2JcizS">
         <ref role="398BVh" node="2RGm_E4FAcc" resolve="mps.home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="YsVdBRMqGH" role="1l3spa">
-      <ref role="1l3spb" to="ow72:5wLtKNeSRPl" resolve="org.iets3.core" />
-      <node concept="398BVA" id="YsVdBRMqGZ" role="2JcizS">
-        <ref role="398BVh" node="2RGm_E4FG_f" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="YsVdBRMqHb" role="iGT6I">
-          <property role="2Ry0Am" value="org.iets3.core" />
-        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="2RGm_E4GiaK" role="1l3spa">

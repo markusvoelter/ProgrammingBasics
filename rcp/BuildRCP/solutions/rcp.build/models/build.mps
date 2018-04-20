@@ -11,8 +11,6 @@
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
-    <import index="ow72" ref="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)" />
-    <import index="nusn" ref="r:6522741e-06ff-4c82-9d95-14896189d5b2(org.iets3.tools.z3.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -708,30 +706,12 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="3Aidk0suQ7z" role="1l3spd">
-      <property role="TrG5h" value="iets3.artifacts.core" />
-      <node concept="398BVA" id="3Aidk0suQ7$" role="398pKh">
-        <ref role="398BVh" node="4BctXOpfSs4" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="3Aidk0suQ7_" role="iGT6I">
-          <property role="2Ry0Am" value="org.iets3.core" />
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="4BctXOpgYm1" role="1l3spd">
       <property role="TrG5h" value="artifacts.branding" />
       <node concept="398BVA" id="4BctXOpgYn2" role="398pKh">
         <ref role="398BVh" node="4BctXOpfSs4" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="3DtrmrmVvsx" role="iGT6I">
           <property role="2Ry0Am" value="rcp.branding" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="6T5$sUAy06$" role="1l3spd">
-      <property role="TrG5h" value="iets3.artifacts.z3Lib" />
-      <node concept="398BVA" id="6T5$sUAy06_" role="398pKh">
-        <ref role="398BVh" node="4BctXOpfSs4" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6T5$sUAy06A" role="iGT6I">
-          <property role="2Ry0Am" value="org.iets3.analysis.z3" />
         </node>
       </node>
     </node>
@@ -961,14 +941,8 @@
           <node concept="28u9K_" id="3DtrmrmVw0Z" role="39821P">
             <property role="28hIV_" value="all mbeddr and iets3 dependencies" />
           </node>
-          <node concept="3ygNvl" id="40rsKAdGFRX" role="39821P">
-            <ref role="3ygNvj" to="nusn:44RyrhrBRYY" resolve="plugins" />
-          </node>
           <node concept="3ygNvl" id="3Aidk0suQ9u" role="39821P">
             <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
-          </node>
-          <node concept="3ygNvl" id="3Aidk0suQa2" role="39821P">
-            <ref role="3ygNvj" to="ow72:5wLtKNeSRRM" />
           </node>
           <node concept="3ygNvl" id="3Aidk0suQbM" role="39821P">
             <ref role="3ygNvj" to="ip48:5wLtKNeSRRM" />
@@ -1059,12 +1033,6 @@
         <ref role="398BVh" node="3DtrmrmVvYY" resolve="artifacts.mbeddr.plattform" />
       </node>
     </node>
-    <node concept="2sgV4H" id="3Aidk0suQ7j" role="1l3spa">
-      <ref role="1l3spb" to="ow72:5wLtKNeSRPl" resolve="org.iets3.core" />
-      <node concept="398BVA" id="3Aidk0suQ8o" role="2JcizS">
-        <ref role="398BVh" node="3Aidk0suQ7z" resolve="iets3.artifacts.core" />
-      </node>
-    </node>
     <node concept="2sgV4H" id="3DtrmrmWXFD" role="1l3spa">
       <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
       <node concept="398BVA" id="3DtrmrmWXHw" role="2JcizS">
@@ -1075,12 +1043,6 @@
       <ref role="1l3spb" node="2Cydz3M9NqA" resolve="rcp.branding" />
       <node concept="398BVA" id="3DtrmrmVvYh" role="2JcizS">
         <ref role="398BVh" node="4BctXOpgYm1" resolve="artifacts.branding" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6T5$sUAy07Y" role="1l3spa">
-      <ref role="1l3spb" to="nusn:68yEy44fHKd" resolve="org.iets3.analysis.z3" />
-      <node concept="398BVA" id="6T5$sUAy07Z" role="2JcizS">
-        <ref role="398BVh" node="6T5$sUAy06$" resolve="iets3.artifacts.z3Lib" />
       </node>
     </node>
     <node concept="2sgV4H" id="6T5$sUAy080" role="1l3spa">

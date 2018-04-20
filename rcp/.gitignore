@@ -16,6 +16,8 @@ build.properties
 build/**
 gradle.properties
 artifacts
+tmp/
+.mps/workspace.xml
 
 # -----------------------------------------------------------
 # GRADLE
