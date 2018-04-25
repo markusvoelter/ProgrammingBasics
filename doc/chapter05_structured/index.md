@@ -19,7 +19,7 @@ diastolic (`C`) and systolic (`D`) blood pressures.
 We identified two problems before: first, the columns don't have useful
 names, so it is hard to remember -- as I demonstrated above -- what
 these stand for. Second, there is the problem of the expression in
-column `E` that is repeated five times. I the [previous
+column `E` that is repeated five times. In the [previous
 chapter](../chapter04_functions/index.md) we solved the latter issue
 through function cells and functions. In this chapter, we will solve the
 first issue.
@@ -282,7 +282,7 @@ programs. If values can never change, this whole class of errors that can
 occur if parts of programs can run _concurrently_ are just impossible. 
 
 For now, we don't have concurrency in our progams. And it is quite
-possible that you will neer explicitly deal with concurrency in the code
+possible that you will never explicitly deal with concurrency in the code
 you write. But it is _very_ likely that the code you write, for example,
 using a DSL for tax calculation, is actually executed in a concurrent
 context. And that context explicitly relies on your data being immutable.

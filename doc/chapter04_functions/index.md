@@ -242,7 +242,7 @@ Here is an example that wraps up everything we have learned so far:
 
 ![](WhereAreWe/ComplexExample.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A16d89834-7a42-43f5-ba48-4acec0e1fb39%28chapter04_functions%29%2F6455317040168536890)
 
-The only new language construct introduced in this example is the `precision` expression. It can be
+The only new language construct introduced in this example is the `precision` expression used at the end of the `bodyMassIndex` function. It can be
 used to change the number of decimal digits on `number` values. Remember that a
 division always returns results in a `number` with infinite decimal digits.
 Here we `truncate` it to two. Instead of truncating, `round up` and

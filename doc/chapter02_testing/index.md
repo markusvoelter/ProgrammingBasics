@@ -4,6 +4,11 @@ Go back to [Values and Expressions](../chapter01_values/index.md)
 
 # Chapter 2: Testing
 
+Testing is usually not discussed this early in tutorials like this. However,
+I want to make it a habit in you to _always_ test the code you write. And I 
+will also use tests to demonstrate what code does in the remainder of this
+tutorial. This is why we introduce it early. Enjoy :-) 
+
 ### Trying out Programs
 
 So far, we have assessed the correctness of a program by "looking" at it. 
@@ -69,6 +74,11 @@ and red background color; it also shows the `actual` value if the two
 disagree. A test case succeeds if _all_ assertions in the test case
 succeed. 
 
+> ![](../mps.png) Test cases can be evaluated by either pressing 
+> `Ctrl-Alt-Enter`. You can use this key combination on a single assert, 
+> on a complete test case as well as on the overall test suite. In the
+> latter two, all asserts under that particular node are executed.
+
 Notice how, in the example test case above we use cell
 references that are qualified with the name of the sheet to peek into
 that sheet to access cell contents.
@@ -108,17 +118,24 @@ locally, investigate the problem, and fix it.
 
 ### The problem of coverage
 
-Let us look at the following sheet (which is used in a test case, which is why the Boolean cells are colored):
+Let us look at the following sheet (which is used in a test case, which is why the Boolean cells are colored green/red depending on whether the condition is
+true or false):
 
-![](TestingSheets/DivisionTest.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F2522748330435210357)
+![](TestingSheets/DivisionTest1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F6799458113889931227)
 
 All our divisions in column `C` work correctly, so everything is fine, 
 right? Of course
 if only we had thought of testing the division by 0, then we would have
-noticed that our program fails in this case. Or if we had tried to 
-divide `10 / 3`
-we would have noticed a problem with the number of decimal digits in
-the result.
+noticed that our program fails in this case; the cell becomes yellow to mark
+the internal error. 
+
+![](TestingSheets/DivisionTest2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F6799458113889964432)
+
+
+Or if we had tried to divide `10 / 3` we would have noticed a problem with the number of decimal digits in the result:
+
+![](TestingSheets/DivisionTest3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A070f5d99-4e80-4529-a7cc-03acd3a7433d%28chapter02_testing%29%2F6799458113891452222)
+
 
 So what does this tell us? Testing has a coverage problem. We have to
 test _all relevant cases_ to build complete trust in our program. It is
