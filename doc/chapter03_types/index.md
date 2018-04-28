@@ -48,8 +48,8 @@ Let us add some more code:
 
 
 The type of `twoDistances` is more interesting. Its type is `number[200|200]`,
-so the types are automatically computed to reflexr ranges based on the arithmetic
-operator `*`. For `maybeDistanes` it is even more interesting, because,
+so the types are automatically computed to reflect ranges based on the arithmetic
+operator `*`. For `maybeDistances` it is even more interesting, because,
 depending on whether `someBoolean` is true or not, the resulting value is
 either 100 or 200; so the type of the `if` is `number[100|200]` to make sure
 it can represent both outcomes.
@@ -74,7 +74,7 @@ a program. For example, the fact that any division results in an infinite-precis
 number is a rule that is part of the type system of this particular language.
 Similarly, the fact that numbers "adjust" their ranges according to the
 operator used, is part of the type system. The type system is also 
-responsible for reporting errors if users do things that is not allowed
+responsible for reporting errors if users do things that are not allowed
 by these rules, for example, trying to add a number and a Boolean (we will 
 cover this in the next paragraph). The type system is also responsible for 
 _inferring_ types, which means that the type of a program node is computed 
