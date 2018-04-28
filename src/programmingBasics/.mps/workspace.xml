@@ -18,8 +18,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5474529e-c961-46f1-bc63-0693056b6dfc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/exercises01.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/exercises01.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/programmingBasics/models/exercises02.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/programmingBasics/models/exercises02.mps" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -295,532 +295,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StandalonePluginDescriptor" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics.plugin/programmingBasics.plugin.plugin/StandalonePluginDescriptor">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProgrammingBasicsProfile" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics.plugin/programmingBasics.plugin.plugin/ProgrammingBasicsProfile">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="179">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="13">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="12">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="11">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="10">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="9">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="8">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="7">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="6">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="5">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="4">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="3">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="2">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="1">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellNumber="1">
-                      <parent cellNumber="0">
-                        <parent cellId="Custom_5j4zgw_l0">
-                          <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
-                        </parent>
-                      </parent>
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise01_01" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="23" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_g8b7hx_d0">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise01_02" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics/exercises01/Exercise01_02">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="115" />
-                    <property name="caretXRelative" value="96" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_f6r4ms_a0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionStart" value="0" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretX" value="115" />
-                    <property name="selectionEnd" value="17" />
-                    <property name="caretXRelative" value="96" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_f6r4ms_a0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-15" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_f6r4ms_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494884301" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494882995" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494883432" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise01_03" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics/exercises01/Exercise01_03">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="139" />
-                    <property name="caretXRelative" value="120" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_f6r4ms_a0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionStart" value="0" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretX" value="139" />
-                    <property name="selectionEnd" value="17" />
-                    <property name="caretXRelative" value="120" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_f6r4ms_a0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-15" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_f6r4ms_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494924927" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494920064" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494918967" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494918512" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise01_04" pinned="false" current-in-tab="true">
-        <entry file="mps://node://programmingBasics/exercises01/Exercise01_04">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="743" />
-                    <property name="caretXRelative" value="16" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_cell">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_1ltshm_a">
-                    <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292107226" />
-                  </errorMarker>
-                </errorMarkers>
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494934500" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133649" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494933728" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494933693" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133649" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise02_01" pinned="false" current-in-tab="false">
-        <entry file="mps://node://programmingBasics/exercises02/Exercise02_01">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="38">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="173" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494840251" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494939083" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494889658" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_a5oslz_b0a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494871897" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494939081" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise02_02" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Exercise02_02" pinned="false" current-in-tab="true">
         <entry file="mps://node://programmingBasics/exercises02/Exercise02_02">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="173" />
-                    <property name="caretXRelative" value="0" />
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-203" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494942736" />
+                    <cellInfo cellId="property_show">
+                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292133648" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -829,7 +315,7 @@
                 <foldable>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_1fw85i_b1a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494947568" />
+                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292184035" />
                     </cellIdElement>
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
@@ -844,13 +330,13 @@
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_g8b7hx_a">
-                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494947566" />
+                      <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292184452" />
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292133648" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -1234,6 +720,20 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="08522cbc-82c9-40dc-be87-1adbdb9cbb64" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02) in IdeaFile[file:///Users/farcasia/ING/progBasics/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/exercises02.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
@@ -1245,11 +745,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:429e087a-41c4-428e-9688-020500a2a761(exercises01) in IdeaFile[file:///Users/farcasia/ING/progBasics/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/exercises01.mps]" />
+              <option name="myItemId" value="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02) in IdeaFile[file:///Users/farcasia/ING/progBasics/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/exercises02.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6711455295494933691" />
+              <option name="myItemId" value="6711455295494942736" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -4668,588 +4168,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="example solution demo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://programmingBasics/chapter09_timeAndState/Effects">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1205">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="151" />
-                <property name="caretXRelative" value="88" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495544684" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495445748" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495279124" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495260909" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495150254" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495148046" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495139157" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495422342" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495254993" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495445717" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495260905" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495128520" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495544684" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495456410" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495422332" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495406837" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495395566" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495389075" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295495544684" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499611107" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="588aee8b-cfa6-40c3-8a80-16267596ae29" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://programmingBasics/chapter07_decAndCalc/Decisions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2552">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="207" />
-                <property name="caretXRelative" value="144" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910499482" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910496558" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910643487" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_alternatives">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910536921" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910499526" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6kxgu4_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912859988" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6kxgu4_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912836868" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6kxgu4_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821911991613" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821911977769" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912859987" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912836867" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912174750" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821911985796" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910672144" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910643486" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910536920" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884715" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910492154" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912560754" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912054760" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912859977" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912836857" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912555231" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912537523" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821912032681" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821911985789" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910672135" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910643479" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910536913" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910499206" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3051004821910492143" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:bcea85e8-fe12-403e-9e6f-8cc27ca73729(chapter07_decAndCalc)/3487973603065884706" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://programmingBasics/chapter09_timeAndState/TransactionsList" />
-    <entry file="mps://node://programmingBasics/chapter09_timeAndState/TransactionsList" />
-    <entry file="mps://node://programmingBasics/chapter09_timeAndState/TransactionsList" />
-    <entry file="mps://node://programmingBasics/chapter09_timeAndState/TransactionsWithList">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="984">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="143" />
-                <property name="caretXRelative" value="80" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799944" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499233830" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499233813" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799948" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499348711" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499189576" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499233810" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799929" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295499233760" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799944" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799927" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799900" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799858" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6y7w4f_a">
-                  <node node_reference="r:1fd4f7c3-a5ff-4200-9ea0-4fb5c9a87787(chapter09_timeAndState)/6711455295498799944" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.iets3.core.expr.doc/org.iets3.core.expr.doc.structure/Frame">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a">
-                  <node node_reference="r:04cb519f-2059-4c60-9414-918c7823fd79(org.iets3.core.expr.doc.structure)/1665826838185500574" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:04cb519f-2059-4c60-9414-918c7823fd79(org.iets3.core.expr.doc.structure)/1665826838185500574" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.iets3.core.expr.base/org.iets3.core.expr.base.structure/ModExpression">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a">
-                  <node node_reference="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)/6044555027808714586" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)/6044555027808714586" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.iets3.core.expr.toplevel/org.iets3.core.expr.toplevel.structure/EmptyToplevelContent">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a">
-                  <node node_reference="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/543569365052765011" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-143" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_6y7w4f_b5a">
-                  <node node_reference="r:070f5d99-4e80-4529-a7cc-03acd3a7433d(chapter02_testing)/6799458113889964432" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/543569365052765011" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://programmingBasics/exercises01/&lt;no name&gt;[TestSuite]" />
     <entry file="mps://node://org.iets3.core.expr.simpleTypes.interpreter/org.iets3.core.expr.simpleTypes.interpreter.plugin/ExprSimpleTypesInterpeter">
       <provider selected="true" editor-type-id="MPSFileEditor">
@@ -7993,75 +6911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://programmingBasics/exercises01/Exercise01_02">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="115" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_f6r4ms_a0a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="115" />
-                <property name="selectionEnd" value="17" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_f6r4ms_a0a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_f6r4ms_a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_1fw85i_b1a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494884301" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_a5oslz_b0a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494882995" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494883432" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -8302,36 +7151,288 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://programmingBasics/exercises01/Exercise01_03">
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="139" />
-                <property name="caretXRelative" value="120" />
+                <property name="caretX" value="23" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_f6r4ms_a0a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
+                <cellInfo cellId="Constant_g8b7hx_d0">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
                 </cellInfo>
               </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="139" />
-                <property name="selectionEnd" value="17" />
-                <property name="caretXRelative" value="120" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_f6r4ms_a0a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
-                </cellInfo>
-              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                 <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
+                <property name="caretXRelative" value="-203" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_f6r4ms_a">
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499491281" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499491281" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499491281" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="295">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499491281" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_02">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292041959" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494884301" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494882995" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494883432" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_03">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
                   <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292122654" />
                 </cellInfo>
               </stackElement>
@@ -8362,7 +7463,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -8378,16 +7479,35 @@
     </entry>
     <entry file="mps://node://programmingBasics/exercises01/Exercise01_04">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="743" />
-                <property name="caretXRelative" value="16" />
+                <property name="caretX" value="163" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_cell">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" />
+                <cellInfo cellId="Constant_f6r4ms_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133648" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="selectionStart" value="0" />
+                <property name="hasNonTrivialSelection" value="true" />
+                <property name="caretX" value="163" />
+                <property name="selectionEnd" value="4" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_f6r4ms_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133648" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_f6r4ms_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133648" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -8404,11 +7524,6 @@
                 </cellIdElement>
               </collapsedElement>
               <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133649" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_a5oslz_b0a">
                   <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494933728" />
                 </cellIdElement>
@@ -8419,15 +7534,353 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises02/Exercise02_01">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="114" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_escapedValue_word2">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494889661" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494884301" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_g8b7hx_a">
-                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292133649" />
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494883432" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494889658" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/2589396728292139691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises02/Exercise02_02">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292133648" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292184035" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494942807" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/6711455295494942738" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292184452" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292133648" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics.plugin/programmingBasics.plugin.plugin/StandalonePluginDescriptor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics.plugin/programmingBasics.plugin.plugin/ProgrammingBasicsProfile">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="179">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="13">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="12">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="11">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="10">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="9">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="8">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="7">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="6">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="5">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="4">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="3">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="2">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="1">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellNumber="1">
+                  <parent cellNumber="0">
+                    <parent cellId="Custom_5j4zgw_l0">
+                      <node node_reference="r:a20d865a-17b8-4903-9449-725ecfb7b5f0(programmingBasics.plugin.plugin)/990208870214907578" />
+                    </parent>
+                  </parent>
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://programmingBasics/exercises01/Exercise01_01">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="295">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-203" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_show">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295499491281" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_1fw85i_b1a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494841173" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494889658" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494871897" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_g8b7hx_a">
+                  <node node_reference="r:429e087a-41c4-428e-9688-020500a2a761(exercises01)/6711455295494840252" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:17c498e1-0c10-4e62-a384-a5ef569266cc(exercises02)/2589396728292231973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

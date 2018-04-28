@@ -2701,7 +2701,7 @@
         <node concept="OjmMv" id="5OzSgxdSWMY" role="1w35rA">
           <node concept="19SGf9" id="5OzSgxdSWMZ" role="OjmMu">
             <node concept="19SUe$" id="5OzSgxdSWN0" role="19SJt6">
-              <property role="19SUeA" value="In this exercise, we focus on named cells and named values. To this end, we use the famous Pythagorean&#10;Theorem that says that the square of the hypotenuse of a triangle is equal to the sum of the squares&#10;of its legs. This theorem is used heavily in pinpoiting the relative location for GPS navigation. You&#10;can find tips on how to get through this exercise in the Tips section.&#10;&#10;This exercise is made of the folling steps:&#10;- Label cell $A0 with text &quot;a&quot; (one leg of the triangle)&#10;- Label cell $A1 with text &quot;b&quot; (second leg of the triangle)&#10;- In cell $B0, write the square root of the sum of the squares of &quot;a&quot; and &quot;b&quot;&#10;- Label cell $B0 with text &quot;c&quot; (hypotenuse of the triangle)&#10;- Write the same expression for &quot;val c&quot;, outside of the spreadsheet&#10;&#10;Since the right solution is in the testcase, we have written the testcase inside the example-solution." />
+              <property role="19SUeA" value="In this exercise, we focus on named cells and named values. To this end, we use the famous Pythagorean&#10;Theorem that says that the square of the hypotenuse of a triangle is equal to the sum of the squares&#10;of its legs. This theorem is used heavily in pinpoiting the relative location for GPS navigation. You&#10;can find tips on how to get through this exercise in the commentaries below.&#10;&#10;This exercise is made of the folling steps:&#10;- Label cell $A0 with text &quot;a&quot; (one leg of the triangle)&#10;- Label cell $A1 with text &quot;b&quot; (second leg of the triangle)&#10;- In cell $B0, write the square root of the sum of the squares of &quot;a&quot; and &quot;b&quot;&#10;- Label cell $B0 with text &quot;c&quot; (hypotenuse of the triangle)&#10;- Write the same expression for &quot;val c&quot;, outside of the spreadsheet&#10;&#10;Since the right solution is in the testcase, we have written the testcase inside the example-solution." />
             </node>
           </node>
         </node>
@@ -2765,7 +2765,7 @@
     </node>
     <node concept="j2XGA" id="2fJoDFGqkGg" role="_iOnB">
       <node concept="_fkuM" id="2fJoDFGqkGh" role="j2XGK">
-        <property role="TrG5h" value="TestEvalOrder" />
+        <property role="TrG5h" value="TestPythagoreanTheorem" />
         <node concept="_fkuZ" id="2fJoDFGqkNN" role="_fkp5">
           <node concept="_fku$" id="2fJoDFGqkNO" role="_fkur" />
           <node concept="_emDc" id="2fJoDFGqkNP" role="_fkuY">
