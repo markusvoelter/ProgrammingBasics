@@ -1373,6 +1373,15 @@
           </node>
         </node>
       </node>
+      <node concept="1z9TsT" id="5TsxM4BDA3e" role="lGtFl">
+        <node concept="OjmMv" id="5TsxM4BDA3f" role="1w35rA">
+          <node concept="19SGf9" id="5TsxM4BDA3g" role="OjmMu">
+            <node concept="19SUe$" id="5TsxM4BDA3h" role="19SJt6">
+              <property role="19SUeA" value="This one has an internal exception in the last line" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="_ixoA" id="5TsxM4BDsFN" role="_iOnB" />
     <node concept="3$huGK" id="5TsxM4BDskY" role="_iOnB">
@@ -1563,6 +1572,15 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1z9TsT" id="5TsxM4BDCwb" role="lGtFl">
+        <node concept="OjmMv" id="5TsxM4BDCwc" role="1w35rA">
+          <node concept="19SGf9" id="5TsxM4BDCwd" role="OjmMu">
+            <node concept="19SUe$" id="5TsxM4BDCwe" role="19SJt6">
+              <property role="19SUeA" value="First line fails intentionally" />
             </node>
           </node>
         </node>
