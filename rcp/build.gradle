@@ -12,7 +12,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'base'
 
 // Dependency versions
-ext.mpsVersion = '2017.3.5'
+ext.mpsVersion = '2018.1'
 ext.mbeddrVersion = '1.0.+'
 ext.iets3Version = '0.1.+'
 
@@ -54,9 +54,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mbeddrPlatformArtifacts "org.iets3:core:$iets3Version"
     mbeddrPlatformArtifacts "org.iets3:allScripts:$iets3Version"
-    mbeddrPlatformArtifacts "org.iets3.analysis:z3:$iets3Version"
     mbeddrPlatformArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
     mbeddrPlatformArtifacts "com.mbeddr:platform:$mbeddrVersion"
     jdk "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
@@ -206,9 +204,9 @@ task build_macDistro(type: RunAntScript, dependsOn: [build_genericDistro]) {
 
 task build_dmg(type: CreateDmg, dependsOn: build_macDistro ) {
     description "Main task to build macOS RCP"
-    rcpArtifact rootProject.file('artifacts/de.itemis.rcp/MPS_RCP-mac.zip')
+    rcpArtifact rootProject.file('artifacts/rcp.distro.mac/MPS_RCP-mac.zip')
     jdkDependency "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
-   // backgroundImage rootProject.file('branding/ax.png')
+    backgroundImage rootProject.file('branding/rcpAbout.png')
     dmgFile rootProject.file('artifacts/rcp-macos.dmg')
 }
 
