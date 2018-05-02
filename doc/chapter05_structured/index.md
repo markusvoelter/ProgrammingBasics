@@ -70,7 +70,7 @@ declaration above, you have created a type that you can use like any
 other type. In particular, we can rewrite the `riskFactor` function that
 we have seen before:
 
-![](Records/riskFactorForperson.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172094667)
+![](Records/riskFactorForPerson.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172094667)
 
 The function now takes a whole `Person` as its only argument. Inside the
 function we can access the members of that person `p` using the dot
@@ -95,7 +95,7 @@ database where each row is a record. With what we now know about
 proper way of saying this is that each row is an _instance_ of a record
 type, where that record type defines the fields that all of the
 instances (rows) have. So the record defines the structure, the record
-_instances_ defines specific rows, where each row provides a value for
+_instances_ define specific rows, where each row provides a value for
 each field/member of the record. 
 
 > ![](../plus.png) We have come across the notion of an instance before,
@@ -117,9 +117,11 @@ user-defined records, such as the `Person` above? Here is how:
 
 So, to create an instance of a record, you use the `#` symbol, the name
 of the record, and then values for the members, positionally, like in
-functions, but using curly braces. Once we have values of `Person` type,
-we can call the `riskFactor` function on them (and them, of course,
-write tests):
+functions, but using curly braces (there is also a way of using the
+names of the members explicitly when creating instances; we'll see that
+below. The trade-offs are the same as with functions). Once we have 
+values of `Person` type, we can call the `riskFactor` function on them 
+(and them, of course, write tests):
 
 ![](Records/CallingTheFUnction.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172258024)
 
@@ -164,10 +166,8 @@ On the left we see a few plain records for `Date`, the `BasicData` of a
 person, and the two components of the `BloodPressure`. On the right, we
 see two more records. Here there's something interesting. First the
 `PatientData` uses `BloodPressure` as the type of one of its members. 
-It also uses the `Person` as a type, but as a _reference_. This is an
-important distinction:
-
-The regular use of a record type (in a member) represents _composition_.
+It also uses the `ref<Person>` which is a _reference_. This is an
+important distinction! The regular use of a record type (in a member) represents _composition_.
 This means, that the respective 'BloodPressure' instance is _owned_ by
 the referencing `PatientData` instance. A particular instance can only be
 owned by _one_ other instance, and if that owning instance is deleted, the
@@ -219,7 +219,8 @@ Here are some tests that demonstrate some uses:
 You can join multiple dot expressions together into what is then called
 a _path_ expression. If you come across a reference (as in
 `PatientData.person`) you have to use `.deref` to get to the actual
-record instance from the reference.
+record instance from the reference. After a `.deref` you can continue
+the path expression if needed.
 
 
 

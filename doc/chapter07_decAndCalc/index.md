@@ -14,7 +14,7 @@ represent these decisions to keep them understandable to ourselves and other peo
 who might want to read and understand them. A really important ingredient
 is to choose appropriate abstractions. I 
 will provide some ideas in this chapter.
-
+ 
 ### Mathematical Notations
 
 Remember the midnight equation from school? I actually didn't, and I had
@@ -22,23 +22,23 @@ to look it up :-) But I did remember that it uses a few mathematical
 notations that serve as a nice demo here. So here is the midnight equation,
 packaged into a function:
 
-![](MathNotation/midnight1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387669028)
+![](MathNotation/midnight1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387669028)
 
 Do you recognize it? Hardly. You can make it slightly better by introducing
 intermediate values and names, for example, like this:
 
-![](MathNotation/midnight2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387779123)	
+![](MathNotation/midnight2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387779123)	
 
 But you still have to work on recognizing it. A much better representation
 of the formula is this:
 
-![](MathNotation/midnight3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387760470))
+![](MathNotation/midnight3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387760470)
 
 In KernelF, the language we use for this tutorial, you can actually write
 the formula exactly like this, and you can execute it; all three versions
-return the same, at least for one test case:
+return the same, at least for one test case: 
 
-![](MathNotation/midnight3_tests.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387818002)
+![](MathNotation/midnight3_tests.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387818002)
 
 So why am I showing this? Because it demonstrates how important it is to 
 select the right _notation_. All three representations of the formula do 
@@ -51,12 +51,12 @@ midnight equation has two results, the plus in the numerator can also be
 a minus. You could implement this by returning two values, modularizing
 the calculation accordingly:
 
-![](MathNotation/midnight4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387894925)
+![](MathNotation/midnight4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387894925)
 
 The return type is now a list, and you would have to take that into account
 when working with the return value. Another approach would be to change the function so that you can tell it whether to compute the first or the second solution: 
- 
-![](MathNotation/midnight5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F311056592387904856)
+  
+![](MathNotation/midnight5.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Abcea85e8-fe12-403e-9e6f-8cc27ca73729%28chapter07_decAndCalc%29%2F311056592387904856)
 
 However, in all of these cases, the use of the mathematical notation really
 makes things much easier to read and understand. So, if you are involved
@@ -225,7 +225,7 @@ and we never check any age greater than 120. Why is this _not_ an error? Because
 variables `bmi` and `age` have range limits, expressed in the function signature. So, when
 checking the table for completeness and consistency, the solver of course takes into account
 what values are possible in the first place, based on constraints expressed in other places
-in the program. If we were to decide that we now allow for a BMW less than 10 or for ages greater
+in the program. If we were to decide that we now allow for a BMI less than 10 or for ages greater
 than 120, and we adapted the types in the functions accordingly, the solver would start reporting
 errors.
 
@@ -349,7 +349,9 @@ expressions:
 
 > ![](../mps.png) You attach a value inspector using an intention on any expression, i.e., 
 > by opening the intentions menu via `Ctrl-Alt-Enter` and then selecting the `Attach 
-> Value Inspector` intention.
+> Value Inspector` intention. To actually see a value in the value inspector (as opposed 
+> to two empty brackets), you have to evaluate the expression on which it is attached. 
+> So, for the inspector on the vals, you might want to write a test that refers to the `val`.
 
 A value inspector can be attached to any expression, and, if through whatever means,
 this expression is evaluated, the inspector shows that value. In the example above, we
@@ -391,6 +393,10 @@ function computation as a tree. Let's check this out with a Hello World:
 Here is the computation tree:
 
 ![](tracer-ui1.png)
+
+> ![](../mps.png) To create the trace, select a `val` or an `assert` and press `Ctrl-Alt-Shift-Enter`
+> (like the key combo for evaluation, but with `Shift`). 
+
 
 If you look at the tree, you can see that, for each of the program nodes, there is a tree node
 that shows

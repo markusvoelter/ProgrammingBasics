@@ -32,6 +32,7 @@
       </concept>
       <concept id="2156530943179855331" name="org.iets3.core.expr.collections.structure.ImmutableSetWithOp" flags="ng" index="2iGxMk" />
       <concept id="2156530943179783739" name="org.iets3.core.expr.collections.structure.ImmutableListWithOp" flags="ng" index="2iGZtc" />
+      <concept id="6095949300270588116" name="org.iets3.core.expr.collections.structure.IsNotEmptyOp" flags="ng" index="nW$_3" />
       <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
         <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
       </concept>
@@ -752,7 +753,7 @@
             <node concept="30bdrU" id="NE1gl4Cnnq" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="NE1gl4Cnny" role="S5Trm">
-            <property role="TrG5h" value="first" />
+            <property role="TrG5h" value="firstName" />
             <node concept="30bdrU" id="NE1gl4Cnnz" role="2S399n" />
           </node>
           <node concept="2Ss9d7" id="NE1gl4Cno7" role="S5Trm">
@@ -1035,7 +1036,7 @@
             <node concept="_fku$" id="NE1gl4L7E3" role="_fkur" />
             <node concept="1QScDb" id="NE1gl4L8H5" role="_fkuY">
               <node concept="3o_JK" id="NE1gl4L8SI" role="1QScD9">
-                <ref role="3o_JH" node="NE1gl4Cnny" resolve="first" />
+                <ref role="3o_JH" node="NE1gl4Cnny" resolve="firstName" />
               </node>
               <node concept="1QScDb" id="NE1gl4L8bd" role="30czhm">
                 <node concept="3iAU3G" id="NE1gl4L8nf" role="1QScD9">
@@ -1241,26 +1242,57 @@
           </node>
           <node concept="_fkuZ" id="NE1gl4MiMq" role="_fkp5">
             <node concept="_fku$" id="NE1gl4MiMr" role="_fkur" />
-            <node concept="1QScDb" id="NE1gl4MiMs" role="_fkuY">
-              <node concept="2$dVdw" id="NE1gl4MiO5" role="1QScD9">
-                <node concept="30bXRB" id="NE1gl4Mjc_" role="3iAY4F">
-                  <property role="30bXRw" value="4" />
+            <node concept="1QScDb" id="7c8WaAXNek1" role="_fkuY">
+              <node concept="nW$_3" id="JV9IWPMhAH" role="1QScD9" />
+              <node concept="1QScDb" id="NE1gl4MiMs" role="30czhm">
+                <node concept="3izCyS" id="7c8WaAXMY0O" role="1QScD9">
+                  <node concept="3izI60" id="7c8WaAXMY0P" role="3iAY4F">
+                    <node concept="30cPrO" id="7c8WaAXNayT" role="3izI61">
+                      <node concept="30bdrP" id="7c8WaAXNbiT" role="30dEs_">
+                        <property role="30bdrQ" value="Smith" />
+                      </node>
+                      <node concept="1QScDb" id="7c8WaAXN7yZ" role="30dEsF">
+                        <node concept="3o_JK" id="7c8WaAXN92k" role="1QScD9">
+                          <ref role="3o_JH" node="NE1gl4Cnn9" resolve="name" />
+                        </node>
+                        <node concept="3izPEI" id="7c8WaAXMY0R" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_emDc" id="NE1gl4MiMu" role="30czhm">
+                  <ref role="_emDf" node="NE1gl4L_mf" resolve="olderThan35" />
                 </node>
               </node>
-              <node concept="_emDc" id="NE1gl4MiMu" role="30czhm">
-                <ref role="_emDf" node="NE1gl4L_mf" resolve="olderThan35" />
-              </node>
             </node>
-            <node concept="1QScDb" id="NE1gl4MjAd" role="_fkuS">
-              <node concept="2$dVdw" id="NE1gl4Mk2x" role="1QScD9">
-                <node concept="30bXRB" id="NE1gl4Mkse" role="3iAY4F">
-                  <property role="30bXRw" value="4" />
+            <node concept="2vmpnb" id="JV9IWPMio0" role="_fkuS" />
+          </node>
+          <node concept="_fkuZ" id="JV9IWPMfep" role="_fkp5">
+            <node concept="_fku$" id="JV9IWPMfeq" role="_fkur" />
+            <node concept="1QScDb" id="JV9IWPMfer" role="_fkuY">
+              <node concept="3iB2rE" id="JV9IWPMipj" role="1QScD9" />
+              <node concept="1QScDb" id="JV9IWPMfet" role="30czhm">
+                <node concept="3izCyS" id="JV9IWPMfeu" role="1QScD9">
+                  <node concept="3izI60" id="JV9IWPMfev" role="3iAY4F">
+                    <node concept="30cPrO" id="JV9IWPMfew" role="3izI61">
+                      <node concept="30bdrP" id="JV9IWPMfex" role="30dEs_">
+                        <property role="30bdrQ" value="Joyner" />
+                      </node>
+                      <node concept="1QScDb" id="JV9IWPMfey" role="30dEsF">
+                        <node concept="3o_JK" id="JV9IWPMfez" role="1QScD9">
+                          <ref role="3o_JH" node="NE1gl4Cnn9" resolve="name" />
+                        </node>
+                        <node concept="3izPEI" id="JV9IWPMfe$" role="30czhm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_emDc" id="JV9IWPMfe_" role="30czhm">
+                  <ref role="_emDf" node="NE1gl4L_mf" resolve="olderThan35" />
                 </node>
               </node>
-              <node concept="_emDc" id="NE1gl4Mj_Y" role="30czhm">
-                <ref role="_emDf" node="NE1gl4CCEu" resolve="all" />
-              </node>
             </node>
+            <node concept="2vmpnb" id="JV9IWPMjai" role="_fkuS" />
           </node>
         </node>
       </node>
@@ -1680,14 +1712,14 @@
             <node concept="2Ss9d8" id="NE1gl52O7d" role="3$tU1w">
               <property role="TrG5h" value="Citizen" />
               <node concept="2Ss9d7" id="NE1gl52Oiz" role="S5Trm">
-                <property role="TrG5h" value="taxID" />
+                <property role="TrG5h" value="citizenID" />
                 <node concept="30bdrU" id="NE1gl52Oj1" role="2S399n" />
               </node>
               <node concept="SqngO" id="NE1gl52Oj9" role="S5Trm">
                 <node concept="19S4P_" id="NE1gl52Okq" role="lGtFl" />
               </node>
               <node concept="nbNz6" id="NE1gl52Okw" role="nbNzx">
-                <ref role="n8xKb" node="NE1gl52Oiz" resolve="taxID" />
+                <ref role="n8xKb" node="NE1gl52Oiz" resolve="citizenID" />
               </node>
             </node>
             <node concept="2Ss9d8" id="NE1gl52Olx" role="3$tU1w">
@@ -2777,7 +2809,7 @@
       <property role="TrG5h" value="cityDataMapFrame" />
       <node concept="3$tU02" id="NE1gl58mHS" role="3$tUb0">
         <node concept="2zPypq" id="NE1gl54ap6" role="3$tU1w">
-          <property role="TrG5h" value="cityDataMap" />
+          <property role="TrG5h" value="cityPopMap" />
           <node concept="1DGDZR" id="NE1gl54aF1" role="2zPyp_">
             <node concept="1DGDZQ" id="NE1gl54aFg" role="1DGOg9">
               <node concept="30bdrP" id="NE1gl54btJ" role="1DGDZP">
@@ -2882,7 +2914,7 @@
             <node concept="1QScDb" id="NE1gl59Uoa" role="_fkuY">
               <node concept="1HlZ9G" id="NE1gl59UQD" role="1QScD9" />
               <node concept="_emDc" id="NE1gl59UnL" role="30czhm">
-                <ref role="_emDf" node="NE1gl54ap6" resolve="cityDataMap" />
+                <ref role="_emDf" node="NE1gl54ap6" resolve="cityPopMap" />
               </node>
             </node>
             <node concept="30bXRB" id="NE1gl59VlO" role="_fkuS">
@@ -2896,7 +2928,7 @@
                 <property role="30bdrQ" value="Berlin" />
               </node>
               <node concept="_emDc" id="NE1gl59WRE" role="30czhm">
-                <ref role="_emDf" node="NE1gl54ap6" resolve="cityDataMap" />
+                <ref role="_emDf" node="NE1gl54ap6" resolve="cityPopMap" />
               </node>
             </node>
             <node concept="30bXRB" id="NE1gl59WRF" role="_fkuS">
@@ -2910,7 +2942,7 @@
                 <property role="30bdrQ" value="Stuttgart" />
               </node>
               <node concept="_emDc" id="NE1gl59Zgj" role="30czhm">
-                <ref role="_emDf" node="NE1gl54ap6" resolve="cityDataMap" />
+                <ref role="_emDf" node="NE1gl54ap6" resolve="cityPopMap" />
               </node>
             </node>
             <node concept="30bXRB" id="NE1gl59Zgk" role="_fkuS">
@@ -2924,7 +2956,7 @@
                 <property role="30bdrQ" value="Leipzig" />
               </node>
               <node concept="_emDc" id="NE1gl5a1hb" role="30czhm">
-                <ref role="_emDf" node="NE1gl54ap6" resolve="cityDataMap" />
+                <ref role="_emDf" node="NE1gl54ap6" resolve="cityPopMap" />
               </node>
             </node>
             <node concept="30bXRB" id="NE1gl5a736" role="_fkuS">
@@ -2953,7 +2985,7 @@
             </node>
             <node concept="1QScDb" id="NE1gl5aa_w" role="30czhm">
               <node concept="_emDc" id="NE1gl5ae1j" role="30czhm">
-                <ref role="_emDf" node="NE1gl54ap6" resolve="cityDataMap" />
+                <ref role="_emDf" node="NE1gl54ap6" resolve="cityPopMap" />
               </node>
               <node concept="1DFusj" id="NE1gl5afS4" role="1QScD9">
                 <node concept="1DGDZQ" id="NE1gl5ahod" role="1idJA2">
@@ -3014,6 +3046,236 @@
       </node>
     </node>
     <node concept="_ixoA" id="NE1gl5am4b" role="_iOnB" />
+    <node concept="_ixoA" id="JV9IWPMnw7" role="_iOnB" />
+    <node concept="3$huGK" id="JV9IWPMpzH" role="_iOnB">
+      <property role="TrG5h" value="MultiValues1" />
+      <node concept="3$tU02" id="JV9IWPMpzJ" role="3$tUb0">
+        <node concept="2zPypq" id="JV9IWPMqki" role="3$tU1w">
+          <property role="TrG5h" value="cityPopMap" />
+          <node concept="1DGDZR" id="JV9IWPMqkj" role="2zPyp_">
+            <node concept="1DGDZQ" id="JV9IWPMqkk" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqkl" role="1DGDZP">
+                <property role="30bdrQ" value="Berlin" />
+              </node>
+              <node concept="30bXRB" id="JV9IWPMqkm" role="1DGDZN">
+                <property role="30bXRw" value="3.5" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqkn" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqko" role="1DGDZP">
+                <property role="30bdrQ" value="Hamburg" />
+              </node>
+              <node concept="30bXRB" id="JV9IWPMqkp" role="1DGDZN">
+                <property role="30bXRw" value="1.8" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqkq" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqkr" role="1DGDZP">
+                <property role="30bdrQ" value="Munich" />
+              </node>
+              <node concept="30bXRB" id="JV9IWPMqks" role="1DGDZN">
+                <property role="30bXRw" value="1.5" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqkt" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqku" role="1DGDZP">
+                <property role="30bdrQ" value="Cologne" />
+              </node>
+              <node concept="30bXRB" id="JV9IWPMqkv" role="1DGDZN">
+                <property role="30bXRw" value="1.1" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqkJ" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqkK" role="1DGDZP">
+                <property role="30bdrQ" value="Leipzig" />
+              </node>
+              <node concept="30bXRB" id="JV9IWPMqkL" role="1DGDZN">
+                <property role="30bXRw" value="0.5" />
+              </node>
+              <node concept="19S4P_" id="JV9IWPMZSX" role="lGtFl">
+                <node concept="2Ss9cW" id="JV9IWPMZXD" role="19S4$W">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1DGDPD" id="JV9IWPMqkM" role="2zM23F">
+            <node concept="30bdrU" id="JV9IWPMqkN" role="1bPNon" />
+            <node concept="mLuIC" id="JV9IWPMqkO" role="1bPNsv">
+              <node concept="2gteS_" id="JV9IWPMqkP" role="2gteVg">
+                <property role="2gteVv" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="JV9IWPMqOk" role="3$tU1w">
+          <property role="TrG5h" value="cityStateMap" />
+          <node concept="1DGDZR" id="JV9IWPMqOl" role="2zPyp_">
+            <node concept="1DGDZQ" id="JV9IWPMqOm" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqOn" role="1DGDZP">
+                <property role="30bdrQ" value="Berlin" />
+              </node>
+              <node concept="30bdrP" id="JV9IWPMt3K" role="1DGDZN">
+                <property role="30bdrQ" value="Berlin" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqOp" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqOq" role="1DGDZP">
+                <property role="30bdrQ" value="Hamburg" />
+              </node>
+              <node concept="30bdrP" id="JV9IWPMtos" role="1DGDZN">
+                <property role="30bdrQ" value="Hamburg" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqOs" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqOt" role="1DGDZP">
+                <property role="30bdrQ" value="Munich" />
+              </node>
+              <node concept="30bdrP" id="JV9IWPMw1y" role="1DGDZN">
+                <property role="30bdrQ" value="Bavaria" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqOv" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqOw" role="1DGDZP">
+                <property role="30bdrQ" value="Cologne" />
+              </node>
+              <node concept="30bdrP" id="JV9IWPMxqT" role="1DGDZN">
+                <property role="30bdrQ" value="Nordrhein-Westfalen" />
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMqOL" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMqOM" role="1DGDZP">
+                <property role="30bdrQ" value="Leipzig" />
+              </node>
+              <node concept="30bdrP" id="JV9IWPMBfj" role="1DGDZN">
+                <property role="30bdrQ" value="Sachsen" />
+              </node>
+              <node concept="19S4P_" id="JV9IWPN1i3" role="lGtFl">
+                <node concept="2Ss9cW" id="JV9IWPN1kd" role="19S4$W">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1DGDPD" id="JV9IWPMqOO" role="2zM23F">
+            <node concept="30bdrU" id="JV9IWPMqOP" role="1bPNon" />
+            <node concept="30bdrU" id="JV9IWPMrJD" role="1bPNsv" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="JV9IWPMDh6" role="_iOnB" />
+    <node concept="3$huGK" id="JV9IWPMBBX" role="_iOnB">
+      <property role="TrG5h" value="MultiValues2" />
+      <node concept="3$tU02" id="JV9IWPMBBY" role="3$tUb0">
+        <node concept="2Ss9d8" id="JV9IWPMEU7" role="3$tU1w">
+          <property role="TrG5h" value="CityInfo" />
+          <node concept="2Ss9d7" id="JV9IWPMMiv" role="S5Trm">
+            <property role="TrG5h" value="population" />
+            <node concept="mLuIC" id="JV9IWPMMiM" role="2S399n">
+              <node concept="2gteS_" id="JV9IWPMMiW" role="2gteVg">
+                <property role="2gteVv" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Ss9d7" id="JV9IWPMMjx" role="S5Trm">
+            <property role="TrG5h" value="state" />
+            <node concept="30bdrU" id="JV9IWPMMjH" role="2S399n" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="JV9IWPMMl8" role="3$tU1w">
+          <property role="TrG5h" value="cityInfoMap" />
+          <node concept="1DGDZR" id="JV9IWPMMF6" role="2zPyp_">
+            <node concept="1DGDZQ" id="JV9IWPMMF7" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMMF8" role="1DGDZP">
+                <property role="30bdrQ" value="Berlin" />
+              </node>
+              <node concept="2S399m" id="JV9IWPMMUI" role="1DGDZN">
+                <node concept="2Ss9cW" id="JV9IWPMNhI" role="2S399n">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+                <node concept="30bXRB" id="JV9IWPMNvo" role="2S399l">
+                  <property role="30bXRw" value="3.5" />
+                </node>
+                <node concept="30bdrP" id="JV9IWPMOmt" role="2S399l">
+                  <property role="30bdrQ" value="Berlin" />
+                </node>
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMMFa" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMMFb" role="1DGDZP">
+                <property role="30bdrQ" value="Hamburg" />
+              </node>
+              <node concept="2S399m" id="JV9IWPMO$K" role="1DGDZN">
+                <node concept="2Ss9cW" id="JV9IWPMO$L" role="2S399n">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+                <node concept="30bXRB" id="JV9IWPMO$M" role="2S399l">
+                  <property role="30bXRw" value="1.8" />
+                </node>
+                <node concept="30bdrP" id="JV9IWPMO$N" role="2S399l">
+                  <property role="30bdrQ" value="Hamburg" />
+                </node>
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMMFd" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMMFe" role="1DGDZP">
+                <property role="30bdrQ" value="Munich" />
+              </node>
+              <node concept="2S399m" id="JV9IWPMQe5" role="1DGDZN">
+                <node concept="2Ss9cW" id="JV9IWPMQe6" role="2S399n">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+                <node concept="30bXRB" id="JV9IWPMQe7" role="2S399l">
+                  <property role="30bXRw" value="1.5" />
+                </node>
+                <node concept="30bdrP" id="JV9IWPMQe8" role="2S399l">
+                  <property role="30bdrQ" value="Bayern" />
+                </node>
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMMFg" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMMFh" role="1DGDZP">
+                <property role="30bdrQ" value="Cologne" />
+              </node>
+              <node concept="2S399m" id="JV9IWPMS0h" role="1DGDZN">
+                <node concept="2Ss9cW" id="JV9IWPMS0i" role="2S399n">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+                <node concept="30bXRB" id="JV9IWPMS0j" role="2S399l">
+                  <property role="30bXRw" value="1.1" />
+                </node>
+                <node concept="30bdrP" id="JV9IWPMSEI" role="2S399l">
+                  <property role="30bdrQ" value="Nordrhein-Westfalen" />
+                </node>
+              </node>
+            </node>
+            <node concept="1DGDZQ" id="JV9IWPMMFy" role="1DGOg9">
+              <node concept="30bdrP" id="JV9IWPMMFz" role="1DGDZP">
+                <property role="30bdrQ" value="Leipzig" />
+              </node>
+              <node concept="2S399m" id="JV9IWPMWGF" role="1DGDZN">
+                <node concept="2Ss9cW" id="JV9IWPMWGG" role="2S399n">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+                <node concept="30bXRB" id="JV9IWPMWGH" role="2S399l">
+                  <property role="30bXRw" value="0.5" />
+                </node>
+                <node concept="30bdrP" id="JV9IWPMWGI" role="2S399l">
+                  <property role="30bdrQ" value="Sachsen" />
+                </node>
+              </node>
+              <node concept="19S4P_" id="JV9IWPN2SF" role="lGtFl">
+                <node concept="2Ss9cW" id="JV9IWPN2XL" role="19S4$W">
+                  <ref role="2Ss9cX" node="JV9IWPMEU7" resolve="CityInfo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="JV9IWPMoNc" role="_iOnB" />
   </node>
 </model>
 

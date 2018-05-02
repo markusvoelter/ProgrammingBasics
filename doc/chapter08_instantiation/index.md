@@ -57,8 +57,10 @@ because the range specified on the type is of course a constraint on the
 set of allowed values. The next example defines a new type based on the
 `string` type. That new type, `TrainType`, has a constraint that expresses
 that valid values have to begin with the string `ICE` or `RE` (two kinds
-of trains in Germany, InterCity Express and Regional Express). Finally,
-the new version of the `TrainConnection` defines a constraint that 
+of trains in Germany, InterCity Express and Regional Express). You can express
+a constraint on any type using the `where` keyword. For example, you could
+define the type of odd numbers as `type oddNum : number where isOdd(it)`.
+Finally, the new version of the `TrainConnection` defines a constraint that 
 expresses that the train cannot arrive in the same city from which it
 leaves. We get errors when we try to create instances that do not 
 conform to these rules, which is why all the following tests fail.
@@ -142,7 +144,7 @@ Take a look at the following code:
 A block is a new abstraction, you can see it as a function that has 
 more than one result. The `plusMinus` block takes two numbers, and 
 returs two results: the `plus` result where `a` and `b` are added, 
-as well as the `minus` result that subtracts the two. Two two results 
+as well as the `minus` result that subtracts the two. The two results 
 are computed separately, just as if it were a function with two bodies. 
 So nothing really new here. In fact, if you think about it, it's really
 almost exactly the same as the instantiatable spreadsheet example: we
@@ -228,7 +230,8 @@ via a few tests:
 ![](Dataflow/TestComposite.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F6598033146029115916)
 
 Let's make this a little bit more complicated: both the sum and the difference
-can now be offset by an constant value each. 
+can now be offset by an constant value each. We use the `constNum` block which simply
+outputs the number that is given to it by the configuration parameter `expr`.
 
 ![](Dataflow/composite-4.png)  
  
@@ -246,7 +249,7 @@ can of course also be instantiated:
 Here we have instantiated the composite block from above into a new
 composite block. Of course, once we do this, we have to specify the two
 parameter values (`offsetPlus`, `offsetMinus`). To compute one single
-result, we multiple the sum and the difference. Tests:
+result, we multiply the sum and the difference. Tests:
 
 
 ![](Dataflow/TestComposite3.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3778825259440003171)
@@ -344,7 +347,7 @@ shown above. Consider the following:
 ![](Lambdas/currying.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822148617106)
 
 Using `bind`, you specify some of the parameters of a function call (a process
-called currying). So what happens here is that we use the `plusValue` (which 
+called partial application). So what happens here is that we use the `plusValue` (which 
 is a reference to that original `plus` function that takes two numbers and 
 produces a third one) and bind the first argument to 5. This results in a new
 function value that now only takes _one_ argument (the first one was just bound
@@ -392,7 +395,7 @@ three ways:
 ![](Lambdas/LambdaAdding.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822149730059)
 
 We can pass a reference to a function whose signature is compatible (first test),
-we can pass one whose signature has been made compatible through currying (second
+we can pass one whose signature has been made compatible through partial application (second
 test), and we can pass a value that represents an anonymous function. We have
 not really seen those before, so let's close with explaining these.
 

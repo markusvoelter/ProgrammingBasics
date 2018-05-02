@@ -64,11 +64,17 @@ parameters_. This way, all dependencies in the expression are local to the box.
 The box itself now has no dependencies on its context, there are no 
 dependencies outgoing from the box.
 
+The box can also pass values back to the calling context; this is expressed
+with the lighter shaded square in the picture. In general, the box might have
+any number of "out parameters", but usually, there is only one. It is called
+the _return value_.
+
 When you want to use the expression (for example, in all the locations where
 the original expression was copied before), you map values from that particular context
 to the parameters, you "bind" the box to a context. The crucial point is that in
 your program, you can have several such bindings, thereby using the box in
-different contexts. 
+different contexts. And the return value is the just the value to which the
+calling expression evaluates; it is different, of course, for each call.
 
 ![](multipleCalls.png) 
 

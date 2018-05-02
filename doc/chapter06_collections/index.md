@@ -34,7 +34,7 @@ want to collect several blood pressure measurements to represent how a person's 
 ![](Collections/ComplexSheet.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793188041938)
 
 ... can of course also be seen as a list of five records. We want
-to have an abstraction that allows us to work us with collections such as lists, sets or maps.
+to have an abstraction that allows us to work with collections such as lists, sets or maps.
 
 ### Introduction to Lists
 
@@ -91,7 +91,7 @@ list are given in parentheses. If it is supposed to be an empty list,
 you can leave the list of elements empty. However, then you have to
 specify the type of the elements explictly (because the type system
 cannot derive it from the elements). Here is an empty list of strings:
-
+ 
 ![](Collections/AgeListFrame4.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793189831238)
 
 There are of course other ways of creating lists. Below we will see how
@@ -146,7 +146,7 @@ functions. Functions to which we can pass code are called _higher order_
 functions. This is a somewhat advanced concept if you try to understand
 how it works under the hood. I will explain this later
 in the tutorial, [Chapter 8](../chapter08_instantiation/index.md). For 
-now, we will just _use_ these new kind of function,
+now, we will just _use_ these new kinds of functions,
 and using them is actually quite easy and intuitive.
 
 **Mapping**: Let's say we want to create a new list from the existing
@@ -179,12 +179,13 @@ iteration, and the calling, is handled internally to `map`.
 
 
 **Filtering**: We can also filter the contents of a list according to a criterion. Look at this code:
-
+ 
 ![](Collections/HigherOrderListStuff2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793192252813)
 
 We first define a function `age` that computes a person's age based on
 their `birthdate` and the current year. We then take the `all` list and pick
-from it only those elements where the age is older than 35. Like the
+from it only those elements where the age is older than 35 (remember that we have
+defined `age` as an _extension_ function, so we can use it in dot notation). Like the
 `map` function, `where` does this by calling the expression we pass to
 it for each element in the list. But instead of creating a new list with
 the _result_ of that expression, it uses the element from the old
@@ -192,10 +193,7 @@ list, but _only_ if the expression we pass as an argument evaluates to true. So 
 resulting list is still a `list<Person>`, but it might have fewer
 elements than the original, because those where the expression is false
 are not included. In our example, only the last element in the list, Jim
-Joyner, is younger than 35. We can test this by using the `head`
-function on the two lists: `head(n)` returns the first `n` elements from
-a list; since only the last one is filtered out, the first four elements
-in both lists are the same.
+Joyner, is younger than 35. The two last asserts in this the tests illustrate this.
 
 
  **Checking**: Lets say we want to buy a train group ticket for the
@@ -277,7 +275,7 @@ changes over time? Take a look at the following picture:
 Let us say we are responsible for building a tax calculation system:
 based on input from all kinds of other systems and interactions with
 users, the system is reponsible for calculating the different components
-of the tax a citizen has to pay each year. As a software architect, we
+of the tax a citizen has to pay each year. As software architects, we
 use a principle called separation of concerns (we will discuss this and
 a few others later in this tutorial), where we try to isolate different
 aspects of the overall problem. In this particular example, we
@@ -298,9 +296,7 @@ downstream systems.
 Here is the thing: in this architecture, it is completely feasible to
 implememt the core as a functional program. So let's say you are an
 expert in tax calculation, and your organization decides to use a DSL to
-represent the core calculations. You, as a tax expert, read this
-tutorial here because you are now asked to "become a programmer" so you
-can use this DSL productively. If the system is built according to this
+represent the core calculations. If the system is built according to the
 architecture shown above, you can absolutely stay in the simpler,
 functional world. All the complexity of handling values that change over
 time is "outsourced" into the generic driver part, which is written 
@@ -311,7 +307,7 @@ ideas.
 Here is how one could design the language part of such as system:
 
 ![](TaxExample/ExampleSystem.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196704837)
-
+ 
 In the left column you see a couple of records that represent the data
 that is used in the tax calculation. The driver is
 reponsible for populating these records correctly by retrieving data from its
@@ -322,8 +318,9 @@ the driver and the calculation core: the function `calculate` takes the
 data that is assembled by the driver (here: an instance of `TaxCitizen`)
 as well as the month for which we are supposed to calculate the tax. The
 function then returns an instance of `MonthlyTax` that it calculated
-based on all the complicated decisions and calculations that are the tax
-law for the particular period. Calculating this correctly is the only
+based on all the complicated decisions and calculations 
+that are specified by the tax law for the particular period.
+Calculating this correctly is the only
 thing this function (and hence you, the tax expert) is reponsible for.
 Once returned, it is the driver's reponsibility to store the new
 `MonthlyTax` in the database and initiate downstream processes (such as
@@ -399,7 +396,11 @@ city ...
 
 and then create a list of instances (using `makeRecord`) from the
 spreadsheet. Once we have this list, we can find the population for a
-city with this function:
+city with the function shown next. This is the first time we use `findFirst`:
+it returns the first (and only the first) element in the list for which
+the condition passed as an argument (`it.name == cityName`) is true;
+the variable `cityName` inside the `findFirst` is a reference to the 
+argument of the function.
 
 ![](Maps/findPop.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793197111069)
 
@@ -429,20 +430,30 @@ the value associated with a key using the bracket notation:
 
 Again, looking at performance, because of the way maps work internally,
 the lookup is very fast, independent of the size of the map. No linear
-scanning is required. However, the keys are a set, so you can only store
-one element per key. If you wanted to store several data items, for
-example, the population size and the state in which they are in, you'd
-either have to create several maps (one from city name to population
-size and one from city name to state name) or you have to store a record
-instance as the value that holds both.
+scanning is required. 
 
 Here is how you add to maps:
 
 ![](Maps/addingToMap.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793198739922)
 
 In the `modifiedMap` we have one more entry, the one for Heidenheim. The
-putting of Stuttgart overwrites the old value, because, as I said, there
-can only be one entry per key.
+putting of Stuttgart overwrites the old value. This is because a map only stores
+_one_ element per key. If you wanted to store several data items, for
+example, the population size and the state in which they are in, you'd
+either have to create several maps (one from city name to population
+size and one from city name to state name) or you have to store a record
+instance as the value that holds both. The following code shows the
+option with the two maps:
+
+![](Maps/MultiValues1.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F863326562413025517)
+
+And here is the solution with the record: 
+
+![](Maps/MultiValues2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F863326562413083133)
+
+
+> ![](../plus.png) Note that some languages use the term _dictionary_
+> for what we call a _map_.
 
 <hr/>
 
