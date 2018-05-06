@@ -336,7 +336,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -355,15 +355,15 @@
         <entry file="mps://node://programmingBasics/exercises04/Exercise04_01">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="18">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="173" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292343105" />
+                  <stackElement className="de.slisson.mps.richtext.runtime.selection.RichtextSelection" moduleID="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)">
+                    <property name="endTextPos" value="305" />
+                    <property name="numCells" value="1" />
+                    <property name="leftToRight" value="false" />
+                    <property name="startTextPos" value="400" />
+                    <cellInfo cellId="property_escapedValue">
+                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292469554" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -386,9 +386,15 @@
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
-                <restoreAlways />
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292469551" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -406,22 +412,22 @@
       <file leaf-file-name="Exercise04_02" pinned="false" current-in-tab="true">
         <entry file="mps://node://programmingBasics/exercises04/Exercise04_02">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="173" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="451" />
+                    <property name="caretXRelative" value="24" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" />
+                    <cellInfo cellId="property_escapedValue_word52">
+                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers>
                   <errorMarker text="" propertyCell="false" cellId="Error_1ltshm_a">
-                    <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292492775" />
+                    <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/1969028846765767314" />
                   </errorMarker>
                   <errorMarker text="" propertyCell="false" cellId="Error_1ltshm_a">
                     <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292494342" />
@@ -433,11 +439,6 @@
                 <transactionalProperties />
                 <foldable>
                   <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_61uzgz_a">
-                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292496818" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_a5oslz_b0a">
                       <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481080" />
                     </cellIdElement>
@@ -448,9 +449,15 @@
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
-                <restoreAlways />
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_a5oslz_b0a">
+                      <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481080" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -502,7 +509,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -565,7 +572,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -621,7 +628,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -678,7 +685,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -841,7 +848,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -877,7 +884,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -954,7 +961,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -995,10 +1002,10 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1173" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -1321,18 +1328,18 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="08522cbc-82c9-40dc-be87-1adbdb9cbb64" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04) in IdeaFile[file:///Users/farcasia/ING/progBasics/ProgrammingBasics/src/programmingBasics/solutions/programmingBasics/models/exercises04.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1452,7 +1459,7 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Visualization" order="3" />
@@ -1479,7 +1486,7 @@
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.5594556" weight="0.3031088" />
       <window_info anchor="bottom" id="Documentation" order="7" sideWeight="0.5222063" weight="0.3434466" />
       <window_info anchor="right" id="Context Actions" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.19010417" visible="true" weight="0.3288835" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.19010417" visible="true" weight="0.26490712" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.32929105" />
       <window_info anchor="right" id="Code Review" order="3" />
       <window_info anchor="bottom" id="RefactoringView" order="7" sideWeight="0.4978678" weight="0.32960895" />
@@ -1489,7 +1496,7 @@
       <window_info anchor="right" id="Supertypes" order="3" />
       <window_info anchor="right" id="Graphing" order="3" />
       <window_info anchor="bottom" id="mbeddr TODO" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21458334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18392856" />
       <window_info anchor="right" id="Typesystem Trace" order="3" />
       <window_info anchor="bottom" id="Trace Explorer" order="7" sideWeight="0.4936034" weight="0.27705225" />
       <window_info anchor="right" id="Visualisation" order="3" />
@@ -12177,7 +12184,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -12231,7 +12238,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -12265,7 +12272,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -12426,7 +12433,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -12481,7 +12488,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -13017,7 +13024,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -13213,7 +13220,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -14898,15 +14905,15 @@
     <entry file="mps://node://programmingBasics/exercises04/Exercise04_01">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="18">
             <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="173" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292343105" />
+              <stackElement className="de.slisson.mps.richtext.runtime.selection.RichtextSelection" moduleID="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)">
+                <property name="endTextPos" value="305" />
+                <property name="numCells" value="1" />
+                <property name="leftToRight" value="false" />
+                <property name="startTextPos" value="400" />
+                <cellInfo cellId="property_escapedValue">
+                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292469554" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -14929,9 +14936,15 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292469551" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -14947,22 +14960,22 @@
     </entry>
     <entry file="mps://node://programmingBasics/exercises04/Exercise04_02">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="173" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="451" />
+                <property name="caretXRelative" value="24" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" />
+                <cellInfo cellId="property_escapedValue_word52">
+                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers>
               <errorMarker text="" propertyCell="false" cellId="Error_1ltshm_a">
-                <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292492775" />
+                <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/1969028846765767314" />
               </errorMarker>
               <errorMarker text="" propertyCell="false" cellId="Error_1ltshm_a">
                 <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292494342" />
@@ -14974,11 +14987,6 @@
             <transactionalProperties />
             <foldable>
               <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_61uzgz_a">
-                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292496818" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_a5oslz_b0a">
                   <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481080" />
                 </cellIdElement>
@@ -14989,9 +14997,15 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_a5oslz_b0a">
+                  <node node_reference="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481080" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292480638" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:684276d4-b4e1-4ef9-a603-4ad03b09accf(exercises04)/2589396728292481083" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

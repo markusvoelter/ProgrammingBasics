@@ -51,7 +51,6 @@
     </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
       <concept id="6711455295499418158" name="org.iets3.core.expr.doc.structure.ExampleSolution" flags="ng" index="j2XGA">
-        <property id="6711455295499418212" name="show" index="j2XHG" />
         <child id="6711455295499418168" name="contents" index="j2XGK" />
       </concept>
     </language>
@@ -1414,7 +1413,7 @@
         <node concept="OjmMv" id="2fJoDFGrDq1" role="1w35rA">
           <node concept="19SGf9" id="2fJoDFGrDq2" role="OjmMu">
             <node concept="19SUe$" id="2fJoDFGrDq3" role="19SJt6">
-              <property role="19SUeA" value="In this exercise, we will write a function that calculates the total compound interest generated&#10;for an original amount of money (called original principal), an annual interest rate, a compound&#10;frequency, and an overall amount of time when the interest is applied.&#10;&#10;You will write this formula in steps.&#10;&#10;- Write a function called &quot;accumulationFunction&quot;, that has arguments interestRate, compundFrequency,&#10;  and timeInYears, that returns the accumulation  " />
+              <property role="19SUeA" value="Imagine you have an amount of money that you want to invest, and that the investment you make has&#10;a compound interest.&#10;&#10;In this exercise, you will write a function that calculates the total compound interest generated&#10;from an original amount of money (called original principal), an annual interest rate, a compound&#10;frequency, and an overall amount of time when the interest is applied. This formula gives you an&#10;understanding of how much your initial amount of money grows over time.&#10;&#10;You will write the formula for the total compound interest in steps.&#10;&#10;- First, write a function called &quot;accumulationFunction&quot;. It shows how much does the value of&#10;  one dollar grow after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, and timeInYears,&#10;  and it returns the accumulation function. This function is equal to&#10;  (1 + interestRate / compoundFrequency) ^ (compundFrequeny * timeInYears).&#10;- Second, write a function called &quot;totalAccumulatedValue&quot;. It shows the total amount of money&#10;  you have after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, timeInYears, and&#10;  principalAmount. This function is equal to the result of the first function multiplied with the&#10;  principalAmount.&#10;- Third, write a function called &quot;totalCompoundInterest&quot;. It shows the value of money you have&#10;  earned after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, timeInYears, and&#10;  principalAmount. This function is equal to the result of the second function minus the&#10;  principalAmount." />
             </node>
           </node>
         </node>
@@ -1423,7 +1422,7 @@
     <node concept="_ixoA" id="2fJoDFGrDwQ" role="_iOnB" />
     <node concept="1aga60" id="2fJoDFGrGn_" role="_iOnB">
       <property role="TrG5h" value="accumulationFunction" />
-      <node concept="2vmvVl" id="2fJoDFGrGnB" role="1ahQXP" />
+      <node concept="2vmvVl" id="1HjpkR3Y7Ei" role="1ahQXP" />
     </node>
     <node concept="_ixoA" id="2fJoDFGrGw8" role="_iOnB" />
     <node concept="1aga60" id="2fJoDFGrGK4" role="_iOnB">
@@ -1441,27 +1440,38 @@
         <node concept="OjmMv" id="2fJoDFGrDwT" role="1w35rA">
           <node concept="19SGf9" id="2fJoDFGrDwU" role="OjmMu">
             <node concept="19SUe$" id="2fJoDFGrDwV" role="19SJt6">
-              <property role="19SUeA" value="Tip 1: To write a function, type &quot;fun&quot;." />
+              <property role="19SUeA" value="Tip 1: To call a function, type its name.&#10;Tip 2: You can use type number{2} for all the numbers in this exercise.&#10;Tip 3: To add an argument to the list, just press enter inside the parenthesis of a function.&#10;Tip 4: To add a type to an argument, just type &quot;:&quot; after its name." />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="j2XGA" id="2fJoDFGrDwW" role="_iOnB">
-      <property role="j2XHG" value="true" />
       <node concept="1aga60" id="2fJoDFGrHhJ" role="j2XGK">
         <property role="TrG5h" value="sol_accumulationFunction" />
         <node concept="1ahQXy" id="2fJoDFGrHin" role="1ahQWs">
           <property role="TrG5h" value="interestRate" />
-          <node concept="mLuIC" id="2fJoDFGrHkD" role="3ix9CU" />
+          <node concept="mLuIC" id="2fJoDFGrHkD" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y58W" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrHlu" role="1ahQWs">
           <property role="TrG5h" value="compundFrequency" />
-          <node concept="mLuIC" id="2fJoDFGrHlY" role="3ix9CU" />
+          <node concept="mLuIC" id="2fJoDFGrHlY" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5hV" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrHm6" role="1ahQWs">
           <property role="TrG5h" value="timeInYears" />
-          <node concept="mLuIC" id="2fJoDFGrHmC" role="3ix9CU" />
+          <node concept="mLuIC" id="2fJoDFGrHmC" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5rT" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1aduha" id="2fJoDFGrHmM" role="1ahQXP">
           <node concept="1adJid" id="2fJoDFGrHmZ" role="1aduh9">
@@ -1502,19 +1512,35 @@
         <property role="TrG5h" value="sol_totalAccumulatedValue" />
         <node concept="1ahQXy" id="2fJoDFGrHVa" role="1ahQWs">
           <property role="TrG5h" value="interestRate" />
-          <node concept="mLuIC" id="2fJoDFGrHVb" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y5Ap" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5Aq" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrHVc" role="1ahQWs">
           <property role="TrG5h" value="compundFrequency" />
-          <node concept="mLuIC" id="2fJoDFGrHVd" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y5FT" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5FU" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrHVe" role="1ahQWs">
           <property role="TrG5h" value="timeInYears" />
-          <node concept="mLuIC" id="2fJoDFGrHVf" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y5LC" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5LD" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrIo_" role="1ahQWs">
           <property role="TrG5h" value="principalAmount" />
-          <node concept="mLuIC" id="2fJoDFGrIrV" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y5RA" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5RB" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="30dDTi" id="2fJoDFGrItJ" role="1ahQXP">
           <node concept="1af_rf" id="2fJoDFGrIum" role="30dEs_">
@@ -1539,19 +1565,35 @@
         <property role="TrG5h" value="sol_totalCompoundInterest" />
         <node concept="1ahQXy" id="2fJoDFGrIyG" role="1ahQWs">
           <property role="TrG5h" value="interestRate" />
-          <node concept="mLuIC" id="2fJoDFGrIyH" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y5XQ" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5XR" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrIyI" role="1ahQWs">
           <property role="TrG5h" value="compundFrequency" />
-          <node concept="mLuIC" id="2fJoDFGrIyJ" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y64i" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y64j" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrIyK" role="1ahQWs">
           <property role="TrG5h" value="timeInYears" />
-          <node concept="mLuIC" id="2fJoDFGrIyL" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y6aU" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y6aV" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="2fJoDFGrIyM" role="1ahQWs">
           <property role="TrG5h" value="principalAmount" />
-          <node concept="mLuIC" id="2fJoDFGrIyN" role="3ix9CU" />
+          <node concept="mLuIC" id="1HjpkR3Y6hI" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y6hJ" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
         <node concept="30dvUo" id="2fJoDFGrJWT" role="1ahQXP">
           <node concept="1afdae" id="2fJoDFGrK1$" role="30dEs_">
