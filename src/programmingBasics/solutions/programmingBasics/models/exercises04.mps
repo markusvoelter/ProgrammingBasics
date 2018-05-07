@@ -28,6 +28,12 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
+      <concept id="5115872837157187871" name="org.iets3.core.expr.base.structure.ParensExpression" flags="ng" index="30bsCy">
+        <child id="5115872837157187954" name="expr" index="30bsDf" />
+      </concept>
+      <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
+      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
@@ -81,6 +87,8 @@
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+      <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
+      <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
       </concept>
@@ -151,6 +159,32 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
+      <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
+        <child id="4790956042240983402" name="expressions" index="1aduh9" />
+      </concept>
+      <concept id="4790956042241105569" name="org.iets3.core.expr.lambda.structure.ValRef" flags="ng" index="1adzI2">
+        <reference id="4790956042241106533" name="val" index="1adwt6" />
+      </concept>
+      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
+        <child id="4790956042241053105" name="expr" index="1adJii" />
+      </concept>
+      <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
+        <reference id="4790956042240460422" name="arg" index="1afue_" />
+      </concept>
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
+        <reference id="4790956042240522408" name="function" index="1afhQb" />
+        <child id="4790956042240522406" name="args" index="1afhQ5" />
+      </concept>
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+        <child id="4790956042240100927" name="args" index="1ahQWs" />
+        <child id="4790956042240100950" name="body" index="1ahQXP" />
+      </concept>
+      <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
+        <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
   </registry>
@@ -1370,6 +1404,220 @@
       </node>
     </node>
     <node concept="_ixoA" id="2fJoDFGr7Pa" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="2fJoDFGrDpY">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="Exercise04_02" />
+    <node concept="_ixoA" id="2fJoDFGrDpZ" role="_iOnB">
+      <node concept="1z9TsT" id="2fJoDFGrDq0" role="lGtFl">
+        <node concept="OjmMv" id="2fJoDFGrDq1" role="1w35rA">
+          <node concept="19SGf9" id="2fJoDFGrDq2" role="OjmMu">
+            <node concept="19SUe$" id="2fJoDFGrDq3" role="19SJt6">
+              <property role="19SUeA" value="Imagine you have an amount of money that you want to invest, and that the investment you make has&#10;a compound interest.&#10;&#10;In this exercise, you will write a function that calculates the total compound interest generated&#10;from an original amount of money (called original principal), an annual interest rate, a compound&#10;frequency, and an overall amount of time when the interest is applied. This formula gives you an&#10;understanding of how much your initial amount of money grows over time.&#10;&#10;You will write the formula for the total compound interest in steps.&#10;&#10;- First, write a function called &quot;accumulationFunction&quot;. It shows how much does the value of&#10;  one dollar grow after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, and timeInYears,&#10;  and it returns the accumulation function. This function is equal to&#10;  (1 + interestRate / compoundFrequency) ^ (compundFrequeny * timeInYears).&#10;- Second, write a function called &quot;totalAccumulatedValue&quot;. It shows the total amount of money&#10;  you have after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, timeInYears, and&#10;  principalAmount. This function is equal to the result of the first function multiplied with the&#10;  principalAmount.&#10;- Third, write a function called &quot;totalCompoundInterest&quot;. It shows the value of money you have&#10;  earned after any amount of time.&#10;  This function has the following arguments: interestRate, compoundFrequency, timeInYears, and&#10;  principalAmount. This function is equal to the result of the second function minus the&#10;  principalAmount." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2fJoDFGrDwQ" role="_iOnB" />
+    <node concept="1aga60" id="2fJoDFGrGn_" role="_iOnB">
+      <property role="TrG5h" value="accumulationFunction" />
+      <node concept="2vmvVl" id="1HjpkR3Y7Ei" role="1ahQXP" />
+    </node>
+    <node concept="_ixoA" id="2fJoDFGrGw8" role="_iOnB" />
+    <node concept="1aga60" id="2fJoDFGrGK4" role="_iOnB">
+      <property role="TrG5h" value="totalAccumulatedValue" />
+      <node concept="2vmvVl" id="2fJoDFGrGK6" role="1ahQXP" />
+    </node>
+    <node concept="_ixoA" id="2fJoDFGrGSA" role="_iOnB" />
+    <node concept="1aga60" id="2fJoDFGrH8C" role="_iOnB">
+      <property role="TrG5h" value="totalCompoundInterest" />
+      <node concept="2vmvVl" id="2fJoDFGrH8E" role="1ahQXP" />
+    </node>
+    <node concept="_ixoA" id="2fJoDFGrG6N" role="_iOnB" />
+    <node concept="_ixoA" id="2fJoDFGrDwR" role="_iOnB">
+      <node concept="1z9TsT" id="2fJoDFGrDwS" role="lGtFl">
+        <node concept="OjmMv" id="2fJoDFGrDwT" role="1w35rA">
+          <node concept="19SGf9" id="2fJoDFGrDwU" role="OjmMu">
+            <node concept="19SUe$" id="2fJoDFGrDwV" role="19SJt6">
+              <property role="19SUeA" value="Tip 1: To call a function, type its name.&#10;Tip 2: You can use type number{2} for all the numbers in this exercise.&#10;Tip 3: To add an argument to the list, just press enter inside the parenthesis of a function.&#10;Tip 4: To add a type to an argument, just type &quot;:&quot; after its name." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="j2XGA" id="2fJoDFGrDwW" role="_iOnB">
+      <node concept="1aga60" id="2fJoDFGrHhJ" role="j2XGK">
+        <property role="TrG5h" value="sol_accumulationFunction" />
+        <node concept="1ahQXy" id="2fJoDFGrHin" role="1ahQWs">
+          <property role="TrG5h" value="interestRate" />
+          <node concept="mLuIC" id="2fJoDFGrHkD" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y58W" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrHlu" role="1ahQWs">
+          <property role="TrG5h" value="compundFrequency" />
+          <node concept="mLuIC" id="2fJoDFGrHlY" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5hV" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrHm6" role="1ahQWs">
+          <property role="TrG5h" value="timeInYears" />
+          <node concept="mLuIC" id="2fJoDFGrHmC" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5rT" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1aduha" id="2fJoDFGrHmM" role="1ahQXP">
+          <node concept="1adJid" id="2fJoDFGrHmZ" role="1aduh9">
+            <property role="TrG5h" value="fraction" />
+            <node concept="30dvO6" id="2fJoDFGrHo3" role="1adJii">
+              <node concept="1afdae" id="2fJoDFGrHpN" role="30dEs_">
+                <ref role="1afue_" node="2fJoDFGrHlu" resolve="compundFrequency" />
+              </node>
+              <node concept="1afdae" id="2fJoDFGrHr7" role="30dEsF">
+                <ref role="1afue_" node="2fJoDFGrHin" resolve="interestRate" />
+              </node>
+            </node>
+          </node>
+          <node concept="a0Byk" id="2fJoDFGrH$a" role="1aduh9">
+            <node concept="30dDTi" id="2fJoDFGrHPz" role="2zCggm">
+              <node concept="1afdae" id="2fJoDFGrHSh" role="30dEs_">
+                <ref role="1afue_" node="2fJoDFGrHm6" resolve="timeInYears" />
+              </node>
+              <node concept="1afdae" id="2fJoDFGrHN5" role="30dEsF">
+                <ref role="1afue_" node="2fJoDFGrHlu" resolve="compundFrequency" />
+              </node>
+            </node>
+            <node concept="30bsCy" id="2fJoDFGrHEF" role="a0GsM">
+              <node concept="30dDZf" id="2fJoDFGrHIG" role="30bsDf">
+                <node concept="1adzI2" id="2fJoDFGrHKp" role="30dEs_">
+                  <ref role="1adwt6" node="2fJoDFGrHmZ" resolve="fraction" />
+                </node>
+                <node concept="30bXRB" id="2fJoDFGrHFO" role="30dEsF">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_ixoA" id="2fJoDFGrHhL" role="j2XGK" />
+      <node concept="1aga60" id="2fJoDFGrHV9" role="j2XGK">
+        <property role="TrG5h" value="sol_totalAccumulatedValue" />
+        <node concept="1ahQXy" id="2fJoDFGrHVa" role="1ahQWs">
+          <property role="TrG5h" value="interestRate" />
+          <node concept="mLuIC" id="1HjpkR3Y5Ap" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5Aq" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrHVc" role="1ahQWs">
+          <property role="TrG5h" value="compundFrequency" />
+          <node concept="mLuIC" id="1HjpkR3Y5FT" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5FU" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrHVe" role="1ahQWs">
+          <property role="TrG5h" value="timeInYears" />
+          <node concept="mLuIC" id="1HjpkR3Y5LC" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5LD" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrIo_" role="1ahQWs">
+          <property role="TrG5h" value="principalAmount" />
+          <node concept="mLuIC" id="1HjpkR3Y5RA" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5RB" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="30dDTi" id="2fJoDFGrItJ" role="1ahQXP">
+          <node concept="1af_rf" id="2fJoDFGrIum" role="30dEs_">
+            <ref role="1afhQb" node="2fJoDFGrHhJ" resolve="sol_accumulationFunction" />
+            <node concept="1afdae" id="2fJoDFGrIuX" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrHVa" resolve="interestRate" />
+            </node>
+            <node concept="1afdae" id="2fJoDFGrIw3" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrHVc" resolve="compundFrequency" />
+            </node>
+            <node concept="1afdae" id="2fJoDFGrIxm" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrHVe" resolve="timeInYears" />
+            </node>
+          </node>
+          <node concept="1afdae" id="2fJoDFGrItn" role="30dEsF">
+            <ref role="1afue_" node="2fJoDFGrIo_" resolve="principalAmount" />
+          </node>
+        </node>
+      </node>
+      <node concept="_ixoA" id="2fJoDFGrHhO" role="j2XGK" />
+      <node concept="1aga60" id="2fJoDFGrIyF" role="j2XGK">
+        <property role="TrG5h" value="sol_totalCompoundInterest" />
+        <node concept="1ahQXy" id="2fJoDFGrIyG" role="1ahQWs">
+          <property role="TrG5h" value="interestRate" />
+          <node concept="mLuIC" id="1HjpkR3Y5XQ" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y5XR" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrIyI" role="1ahQWs">
+          <property role="TrG5h" value="compundFrequency" />
+          <node concept="mLuIC" id="1HjpkR3Y64i" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y64j" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrIyK" role="1ahQWs">
+          <property role="TrG5h" value="timeInYears" />
+          <node concept="mLuIC" id="1HjpkR3Y6aU" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y6aV" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1ahQXy" id="2fJoDFGrIyM" role="1ahQWs">
+          <property role="TrG5h" value="principalAmount" />
+          <node concept="mLuIC" id="1HjpkR3Y6hI" role="3ix9CU">
+            <node concept="2gteS_" id="1HjpkR3Y6hJ" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="30dvUo" id="2fJoDFGrJWT" role="1ahQXP">
+          <node concept="1afdae" id="2fJoDFGrK1$" role="30dEs_">
+            <ref role="1afue_" node="2fJoDFGrIyM" resolve="principalAmount" />
+          </node>
+          <node concept="1af_rf" id="2fJoDFGrJsD" role="30dEsF">
+            <ref role="1afhQb" node="2fJoDFGrHV9" resolve="sol_totalAccumulatedValue" />
+            <node concept="1afdae" id="2fJoDFGrJwH" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrIyG" resolve="interestRate" />
+            </node>
+            <node concept="1afdae" id="2fJoDFGrJC_" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrIyI" resolve="compundFrequency" />
+            </node>
+            <node concept="1afdae" id="2fJoDFGrJKx" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrIyK" resolve="timeInYears" />
+            </node>
+            <node concept="1afdae" id="2fJoDFGrJSH" role="1afhQ5">
+              <ref role="1afue_" node="2fJoDFGrIyM" resolve="principalAmount" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="2fJoDFGrDCB" role="_iOnB" />
   </node>
 </model>
 
