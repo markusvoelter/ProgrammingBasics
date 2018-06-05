@@ -25,9 +25,7 @@ logger.info 'Repository username: {}', project.nexusUsername
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
-        'https://projects.itemis.de/nexus/content/repositories/iets3/',
-	    'https://projects.itemis.de/nexus/content/repositories/iets3_snapshots/'
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
         ]
 
 //will pull the groovy classes/types from nexus to the classpath
@@ -54,7 +52,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    mbeddrPlatformArtifacts "org.iets3:allScripts:$iets3Version"
+	mbeddrPlatformArtifacts "org.iets3:opensource:$iets3Version"
     mbeddrPlatformArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
     mbeddrPlatformArtifacts "com.mbeddr:platform:$mbeddrVersion"
     jdk "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
