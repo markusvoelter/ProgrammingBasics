@@ -1,5 +1,5 @@
 
-Go back to [Types](../chapter06_collections/index.md)
+Go back to [Collections](../chapter06_collections/index.md)
 
 <hr/>
 

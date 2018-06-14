@@ -1,5 +1,5 @@
 
-Go back to [Types](../chapter07_decAndCalc/index.md)
+Go back to [Decisions and Calculations](../chapter07_decAndCalc/index.md)
 
 <hr/>
 

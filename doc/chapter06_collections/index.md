@@ -1,5 +1,5 @@
 
-Go back to [Types](../chapter05_structured/index.md)
+Go back to [Structured Values](../chapter05_structured/index.md)
 
 <hr/>
 

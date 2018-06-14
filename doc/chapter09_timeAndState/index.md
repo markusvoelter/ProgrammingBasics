@@ -1,5 +1,5 @@
 
-Go back to [Types](../chapter08_instantiation/index.md)
+Go back to [Instantiation](../chapter08_instantiation/index.md)
 
 <hr/>
 

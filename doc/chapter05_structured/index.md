@@ -42,7 +42,9 @@ this down as a first-class declaration:
 ![](Records/FirstRecord.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172079031)
 
 A `record` is literally like a row in a database, the members of the
-record are typed names, just like the parameters of functions. So, not
+record correspond to the columns; both are essentially typed names.
+A record is also a little bit similar to functions: the members
+correspond to a function's arguments. So, not
 much fundamtenally new here.
 
 However, conceptually we have done something important: we have created
@@ -99,10 +101,10 @@ _instances_ define specific rows, where each row provides a value for
 each field/member of the record. 
 
 > ![](../plus.png) We have come across the notion of an instance before,
-> even though we did not make this explicit: `7` is an instance of the
-> type `number`, `true` is an instance of the type `boolean` and `Hello`
-> is an instance of the type `string`. So if `T` is the type of `<expr>`,
-> then `<expr>` is an instance of `T`. _instanceof_ is the opposite of
+> even though we did not make this explicit: we have said that `7` has type type `number`, `true` 
+> is a `boolean` and `Hello` is an instance of the type `string`. 
+> So if `<expr>` _has type_ `T`, we can also say that then `<expr>` is an instance of `T`.
+> _instanceof_ is essentially the same as 
 > _has type_. We wil discuss instances much 
 > more in [Chapter 8](../chapter08_instantiation/index.md).
 
@@ -121,7 +123,7 @@ functions, but using curly braces (there is also a way of using the
 names of the members explicitly when creating instances; we'll see that
 below. The trade-offs are the same as with functions). Once we have 
 values of `Person` type, we can call the `riskFactor` function on them 
-(and them, of course, write tests):
+(and then, of course, write tests):
 
 ![](Records/CallingTheFUnction.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172258024)
 
@@ -175,12 +177,14 @@ composed/owned instance is deleted as well. Essentially, composition
 creates a tree.
  
 The relationship between `PatientData` and `Person` is different, it is
-a (non-composition) reference. Here, the target instance has stands on
+a (non-composition) reference. Here, the target instance stands on
 its own, it is _not_ owned by the referencing instance, and the
 lifecycles are not connected: if the instance of `PatientData` is
 deleted, the `Person` that was referenced by that particular
 `PersonData` continues to exist. The same instance can be referenced
-by several other instances.
+by several other instances. In the following diagram, boxes represent record
+instances, solid lines represent containment, and dotted lines represent
+references.
 
 ![](containment.png)
 
@@ -258,7 +262,7 @@ The `with` operation allows you to create a copy of the current record
 value, with one or more of the members changed. The original value, the
 one on which you called `with`, remains unchanged, as the test shows.
 Here is another example that changes a nested instance. You can see how
-we use the `old` keyword to refer to the value that is in the orignal
+we use the `old` keyword to refer to the value that is in the original
 value, the one on which we called `with`.
 
 ![](Records/Change2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Ae00f4849-fe23-45e3-8ca0-de542fab6857%28chapter05_structured%29%2F6455317040172977675)
@@ -267,7 +271,7 @@ value, the one on which we called `with`.
 
 Why is this useful? Why don't just actually change a member? The reason
 is that this means our programs do not have to deal with time! If we
-were to actually _change_ a value, then we as programmers, and all our
+were to actually _change_ a value, then we, as programmers, and all our
 tools, will have to track _how a value changes over time_. This makes
 everything more complicated. Sometimes this is in fact necessary, and we
 will cover changing, or _mutable_ data later in the tutorial. But for
@@ -276,11 +280,12 @@ now, we stick with immutable data.
 Here is another reason. Imagine one part of the program, let's say part
 `S`, hands a value to another part of the program `R` for it to do
 something with. Now, while `R`  performs its work, that other part `S`
-of the program continues to run and modifies the value. This would mean
+of the program continues to run and modifies the value (i.e., different parts
+of the program run _concurrently_, at the same time). This would mean
 that from the perspective of the receiver `R`,  the value changes on its
 own, spontaneously. This is really really bad for correctness of
 programs. If values can never change, this whole class of errors that can
-occur if parts of programs can run _concurrently_ are just impossible. 
+occur in concurrent programs are just impossible. 
 
 For now, we don't have concurrency in our progams. And it is quite
 possible that you will never explicitly deal with concurrency in the code
