@@ -132,7 +132,6 @@
     </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
       <concept id="6711455295499418158" name="org.iets3.core.expr.doc.structure.ExampleSolution" flags="ng" index="j2XGA">
-        <property id="6711455295499418212" name="show" index="j2XHG" />
         <child id="6711455295499418168" name="contents" index="j2XGK" />
       </concept>
     </language>
@@ -246,7 +245,6 @@
       </node>
     </node>
     <node concept="j2XGA" id="1EAjey__i7W" role="_iOnB">
-      <property role="j2XHG" value="true" />
       <node concept="1aga60" id="5Dgw6dTrlYh" role="j2XGK">
         <property role="TrG5h" value="gravitationalForce" />
         <node concept="30dDTi" id="5Dgw6dTrmiQ" role="1ahQXP">
