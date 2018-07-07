@@ -132,6 +132,7 @@
     </language>
     <language id="32190be6-23f7-4e17-aad4-fb739bb3569f" name="org.iets3.core.expr.doc">
       <concept id="6711455295499418158" name="org.iets3.core.expr.doc.structure.ExampleSolution" flags="ng" index="j2XGA">
+        <property id="6711455295499418212" name="show" index="j2XHG" />
         <child id="6711455295499418168" name="contents" index="j2XGK" />
       </concept>
     </language>
@@ -151,12 +152,16 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
+        <property id="1330041117646892934" name="prec" index="2gteVv" />
+      </concept>
       <concept id="1330041117646892901" name="org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec" flags="ng" index="2gteSW">
         <property id="1330041117646892912" name="max" index="2gteSD" />
         <property id="1330041117646892911" name="min" index="2gteSQ" />
       </concept>
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
         <child id="1330041117646892920" name="range" index="2gteSx" />
+        <child id="1330041117646892937" name="prec" index="2gteVg" />
       </concept>
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
@@ -241,6 +246,7 @@
       </node>
     </node>
     <node concept="j2XGA" id="1EAjey__i7W" role="_iOnB">
+      <property role="j2XHG" value="true" />
       <node concept="1aga60" id="5Dgw6dTrlYh" role="j2XGK">
         <property role="TrG5h" value="gravitationalForce" />
         <node concept="30dDTi" id="5Dgw6dTrmiQ" role="1ahQXP">
@@ -268,19 +274,35 @@
         </node>
         <node concept="1ahQXy" id="5Dgw6dTrmcu" role="1ahQWs">
           <property role="TrG5h" value="G" />
-          <node concept="mLuIC" id="5Dgw6dTrmcK" role="3ix9CU" />
+          <node concept="mLuIC" id="5Dgw6dTrmcK" role="3ix9CU">
+            <node concept="2gteS_" id="5Dgw6dTrJof" role="2gteVg">
+              <property role="2gteVv" value="15" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="5Dgw6dTrmgv" role="1ahQWs">
           <property role="TrG5h" value="m1" />
-          <node concept="mLuIC" id="5Dgw6dTrmh1" role="3ix9CU" />
+          <node concept="mLuIC" id="5Dgw6dTrmh1" role="3ix9CU">
+            <node concept="2gteS_" id="5Dgw6dTrJs2" role="2gteVg">
+              <property role="2gteVv" value="5" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="5Dgw6dTrmh9" role="1ahQWs">
           <property role="TrG5h" value="m2" />
-          <node concept="mLuIC" id="5Dgw6dTrmhK" role="3ix9CU" />
+          <node concept="mLuIC" id="5Dgw6dTrmhK" role="3ix9CU">
+            <node concept="2gteS_" id="5Dgw6dTrJ$O" role="2gteVg">
+              <property role="2gteVv" value="5" />
+            </node>
+          </node>
         </node>
         <node concept="1ahQXy" id="5Dgw6dTrmhS" role="1ahQWs">
           <property role="TrG5h" value="r" />
-          <node concept="mLuIC" id="5Dgw6dTrmi$" role="3ix9CU" />
+          <node concept="mLuIC" id="5Dgw6dTrmi$" role="3ix9CU">
+            <node concept="2gteS_" id="5Dgw6dTrJJ1" role="2gteVg">
+              <property role="2gteVv" value="5" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="_ixoA" id="5Dgw6dTrlKk" role="j2XGK" />
