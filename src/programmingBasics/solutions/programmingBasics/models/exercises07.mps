@@ -88,6 +88,7 @@
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ImmutableListType" flags="ng" index="3iBYCm" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="2850607030358693529" name="org.iets3.core.expr.base.structure.SimpleExpressionValueInspector" flags="ng" index="29jrl$" />
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
         <child id="7971844778466793072" name="then" index="2fGnzA" />
         <child id="7971844778466793070" name="when" index="2fGnzS" />
@@ -227,7 +228,7 @@
         <node concept="OjmMv" id="1EAjey__i8j" role="1w35rA">
           <node concept="19SGf9" id="1EAjey__i8H" role="OjmMu">
             <node concept="19SUe$" id="1EAjey__i9L" role="19SJt6">
-              <property role="19SUeA" value="In this exercise, you are going to look at various ways of making decisions&#10;and performing calculations.&#10;&#10;For this exercise, do the following:&#10;- write a gravitationalForce function that calculates the gravitational force&#10;  according to Newton's law of universal gravitation. Consider all ingredients&#10;  of the formula as parameters of the function. You can find the law on&#10;  Wikipedia.&#10;- write three functions, that have &quot;hour&quot; as a parameter. The functions are named&#10;  &quot;greetingWithIf&quot;, &quot;greetingWithAlt&quot;, and &quot;greetingWithSplit&quot;. All these&#10;  functions return &quot;Good morning&quot; if the hour is in range [0, 12), &quot;Good&#10;  afternoon&quot; if the hour is in range [12, 18), &quot;Good evening&quot; if the hour&#10;  is in range [18, 23), and &quot;Good night&quot; otherwise. The difference between&#10;  the three functions is that one is written with &quot;if&quot; statements, one with&#10;  the &quot;alt&quot; statement, and one with the &quot;split&quot; statement.&#10;- write a function with a decision table for the calculation of the allowed&#10;  vacation days based on age and years in service. You can take the rules&#10;  for the vacation days from&#10;  url(https://openrules.wordpress.com/2016/01/04/decision-table-for-vacation-days-calculation/).&#10;  Take the rules from table &quot;Single-Hit Decision Table&quot;. The function name&#10;  should be &quot;vacationDays&quot;, and it should have two parameters, &quot;age&quot; and&#10;  &quot;yearsInService&quot;.&#10;- write a recursive function, called &quot;stackedBooks&quot;, that given a list of&#10;  book titles, creates a single string with all the book titles. The book&#10;  titles appear in the string in the same order as in the list, and they&#10;  are placed one next to the other, without any characters in between.&#10;" />
+              <property role="19SUeA" value="In this exercise, you are going to look at various ways of making decisions&#10;and performing calculations.&#10;&#10;For this exercise, do the following:&#10;- write a gravitationalForce function that calculates the gravitational force&#10;  according to Newton's law of universal gravitation. Consider all ingredients&#10;  of the formula as parameters of the function. You can find the law on&#10;  Wikipedia.&#10;- write three functions, that have &quot;hour&quot; as a parameter. The functions are named&#10;  &quot;greetingWithIf&quot;, &quot;greetingWithAlt&quot;, and &quot;greetingWithSplit&quot;. All these&#10;  functions return &quot;Good morning&quot; if the hour is in range [0, 12), &quot;Good&#10;  afternoon&quot; if the hour is in range [12, 18), &quot;Good evening&quot; if the hour&#10;  is in range [18, 23), and &quot;Good night&quot; otherwise. The difference between&#10;  the three functions is that one is written with &quot;if&quot; statements, one with&#10;  the &quot;alt&quot; statement, and one with the &quot;split&quot; statement.&#10;- write a function with a decision table for the calculation of the allowed&#10;  vacation days based on age and years in service. You can take the rules&#10;  for the vacation days from&#10;  url(https://openrules.wordpress.com/2016/01/04/decision-table-for-vacation-days-calculation/).&#10;  Take the rules from table &quot;Single-Hit Decision Table&quot;. The function name&#10;  should be &quot;vacationDays&quot;, and it should have two parameters, &quot;age&quot; and&#10;  &quot;yearsInService&quot;.&#10;- write a recursive function, called &quot;stackedBooks&quot;, that given a list of&#10;  book titles, &quot;books&quot;, creates a single string with all the book titles. The book&#10;  titles appear in the string in the same order as in the list, and they&#10;  are placed one next to the other, without any characters in between.&#10;- create a test case for the &quot;stackedBooks&quot; example. Add a value inspector for&#10;  &quot;books&quot; somewhere inside the recursive function, and&#10;  inspect its value after running the test case. You can also open the trace&#10;  inspector to see the values in the &quot;stackedBooks&quot; function when the test case&#10;  is running.&#10;" />
             </node>
           </node>
         </node>
@@ -238,7 +239,7 @@
         <node concept="OjmMv" id="5Dgw6dTrwz4" role="1w35rA">
           <node concept="19SGf9" id="5Dgw6dTrwz5" role="OjmMu">
             <node concept="19SUe$" id="5Dgw6dTrwz6" role="19SJt6">
-              <property role="19SUeA" value="Tip 1: To create a decision table, type &quot;dectab&quot; in a function body.&#10;Tip 2: To add new rows or columns to the decision table, press enter on the last&#10;       row / column." />
+              <property role="19SUeA" value="Tip 1: To create a decision table, type &quot;dectab&quot; in a function body.&#10;Tip 2: To add new rows or columns to the decision table, press enter on the last&#10;       row / column.&#10;Tip 3: You can press Alt/Option + Enter on the element you want to add an inspector value&#10;       to, and select the option from the list.&#10;Tip 4: Press Alt/Option + Cmd/Ctrl + Shift + Enter on an assert to open the trace explorer." />
             </node>
           </node>
         </node>
@@ -801,6 +802,7 @@
             <node concept="3iB2rE" id="5Dgw6dTrAeM" role="1QScD9" />
             <node concept="1afdae" id="5Dgw6dTrAcv" role="30czhm">
               <ref role="1afue_" node="5Dgw6dTrAaR" resolve="books" />
+              <node concept="29jrl$" id="5Dgw6dTrZiT" role="lGtFl" />
             </node>
           </node>
           <node concept="30bdrP" id="5Dgw6dTrAf_" role="39w5ZG" />
