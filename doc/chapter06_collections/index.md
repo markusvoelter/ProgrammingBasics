@@ -81,7 +81,7 @@ arbitrary length.
 
 So in the code above, we see the word "list" twice. Behind the colon it
 is used as a type, similar to `number` or `Person`. What is special
-about this type is that it also specifies the _type of the elements in
+about this type is that it also specifies the _type of the elements
 in the list_ between the angle brackets. This is new: one type (`list`)
 has a second type (`number`) as a parameter. We will return to this
 below. The second use of `list` is behind the equals sign. As we know
@@ -193,7 +193,7 @@ list, but _only_ if the expression we pass as an argument evaluates to true. So 
 resulting list is still a `list<Person>`, but it might have fewer
 elements than the original, because those where the expression is false
 are not included. In our example, only the last element in the list, Jim
-Joyner, is younger than 35. The two last asserts in this the tests illustrate this.
+Joyner, is younger than 35. The two last asserts in the tests illustrate this.
 
 
  **Checking**: Lets say we want to buy a train group ticket for the
@@ -340,7 +340,7 @@ only be in the set once. Consider these tests:
 ![](Sets/addingToLists.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A78a11fed-32ce-4e6e-924f-b137d7d5481f%28chapter06_collections%29%2F930561793196831048)
 
 In the value definitions, in case of the set, the second `World` is not
-added, because there is already a value `World` in the set. This is why
+added, because there is already a value `World` in the set. This is why the
 resulting set only has two elements instead of three (the list has three). The
 same is true when adding the string `"42"` (yes it is a string, not a
 number, because of the quotation marks).

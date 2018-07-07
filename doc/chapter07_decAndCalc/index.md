@@ -203,7 +203,7 @@ If we apply the solver to that table, it reports:
 
     Error: Missing Row. For instance, the following case is not covered: age = 50. 
 
-A solver tries to proof that for all possible values, the tables has a result. If it finds an 
+A solver tries to proof that for all possible values, the table has a result. If it finds an 
 example for which this is not the case, it reports this example. It reports such an example
 to the user as an error; `age = 50` is such an example. 
 
@@ -249,7 +249,7 @@ Let's say you're a little child. You want to add two numbers. But the only thing
 in terms of your math expertise, is to add one to a number or substract one. Now let's also 
 imagine you are a little child who can write code :-) How would you implement adding two numbers 
 when you only know how to add or subtract one? Here is what we have initially; the tests fail, 
-or course, since we just return zero from our `add` function.
+of course, since we just return zero from our `add` function.
 
 ![](Recursion/addingByRecursion.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3Af86acbf6-5925-4972-9b81-61d10c38bde1%28chapter07_decAndCalc%29%2F3051004821913096173)
 
@@ -378,12 +378,12 @@ of expressions inside spreadsheets, even hierarchically:
 **The Computation Trace:** The value inspectors shown above work nicely for simple
 cases. But they also have drawbacks: you have to attach the inspectors manually to all
 nodes whose value you want to inspect. And if the same program node is executed several
-times (as in the case in the function body of the `speed` function), the comma-separated
+times (as in the case of the function body of the `speed` function), the comma-separated
 list of values is not a very good solution in general. Enter the tracer.
 
 Let us recap how the execution of a functional program works. A functional computation is 
 essentially a tree: if you evaluate an expression, then, as part of the evaluation, all 
-expression on which the current one depends are evaluated first. So, if we evaluate `a + b`
+expressions on which the current one depends are evaluated first. So, if we evaluate `a + b`
 where `a` and `b` are references to `val`s, then the first step is to evaluate 
 `a` and `b` before we perform the actual addition. So, here's the idea: we can display any
 function computation as a tree. Let's check this out with a Hello World:
