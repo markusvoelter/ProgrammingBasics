@@ -12,7 +12,7 @@ into you.
 
 ### Instantiation recapped
 
-So let us recap what we have seen of instantiation so far, as try to define
+So let us recap what we have seen of instantiation so far, and try to define
 the idea as we go along. Consider the following program:
 
 ![](Recap/Instanitation101.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F3051004821923634773)
@@ -230,7 +230,7 @@ via a few tests:
 ![](Dataflow/TestComposite.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F6598033146029115916)
 
 Let's make this a little bit more complicated: both the sum and the difference
-can now be offset by an constant value each. We use the `constNum` block which simply
+can now be offset by a constant value each. We use the `constNum` block which simply
 outputs the number that is given to it by the configuration parameter `expr`.
 
 ![](Dataflow/composite-4.png)  
@@ -309,7 +309,7 @@ So, what about functions? Can we instantiate functions? Look at this code:
 You could say that the function call "instantiates a function". After all, the 
 function defines "holes", i.e., the parameters, and the call provides values.
 The problem is that the function call executes right away, evaluates to the
-result value (15 and 5 in the example above), and the assigns that value to the `val`. So the "function instance" created by the call (kind of) has an
+result value (15 and 5 in the example above), and then assigns that value to the `val`. So the "function instance" created by the call (kind of) has an
 infinitesimal lifetime, it never really exists. So, can function calls 
 themselves (not the thing they evaluate to) be values? Let's see. 
  
@@ -370,7 +370,7 @@ elements of the list we pass as the first argument. We implement this
 function using the `map` operator on the list which we have seen before.
 
 So do you realize what we have just done? We have implemented our own version
-of `map`! We can rename the function and make it an extension function, the
+of `map`! We can rename the function and make it an extension function, then
 we can literally use them in identical ways:
 
 ![](Lambdas/doWithLists2.png)&nbsp;&nbsp;[src](http://127.0.0.1:63320/node?ref=r%3A3a1c0b08-ecea-441c-a1ee-79d5b39fbb64%28chapter08_instantiation%29%2F731163822148721273)
