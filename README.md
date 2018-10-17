@@ -128,7 +128,7 @@ Currently, it involves several steps to get the examples to run. We are working
 on a much simpler (one-click) solution, but for now you have to work through the
 following steps:
 
-1. Download and install [Jetbrains MPS, Version 2018.1.x](https://www.jetbrains.com/mps/download) in the variant specific to your operating system. MPS is implemented in Java, but it brings along its own JDK.
+1. Download and install [Jetbrains MPS, Version 2018.2.x](https://www.jetbrains.com/mps/download) in the variant specific to your operating system. MPS is implemented in Java, but it brings along its own JDK.
 
 2. Install the mbeddr.platform. This is a whole set of extensions to MPS that
 have been used in the implementation of this tutorial. 
