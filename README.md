@@ -178,7 +178,7 @@ We are working on those :-)
 
 * [Markus Voelter](http://voelter.de), independent consultant and [itemis](http://itemis.de) (Idea, Writing)
 * Ana-Maria Sutii (Exercises)
-* Alexander Rimer (RCP Build)
+* [Alexander Rimer](https://github.com/arimer) (RCP Build)
 
 
 
